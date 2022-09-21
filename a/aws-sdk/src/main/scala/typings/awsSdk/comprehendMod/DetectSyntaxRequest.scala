@@ -12,7 +12,7 @@ trait DetectSyntaxRequest extends StObject {
   var LanguageCode: SyntaxLanguageCode
   
   /**
-    * A UTF-8 string. Each string must contain fewer that 5,000 bytes of UTF encoded characters.
+    * A UTF-8 string. The maximum string size is 5 KB.
     */
   var Text: CustomerInputString
 }

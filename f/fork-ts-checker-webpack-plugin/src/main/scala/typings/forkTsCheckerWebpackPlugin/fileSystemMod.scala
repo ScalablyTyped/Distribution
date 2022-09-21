@@ -2,16 +2,12 @@ package typings.forkTsCheckerWebpackPlugin
 
 import typings.node.fsMod.Dirent
 import typings.node.fsMod.Stats
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileSystemMod {
   
-  /**
-    * Interface to abstract file system implementation details.
-    */
   @js.native
   trait FileSystem extends StObject {
     
@@ -34,7 +30,7 @@ object fileSystemMod {
     
     def realPath(path: String): String = js.native
     
-    def updateTimes(path: String, atime: Date, mtime: Date): Unit = js.native
+    def updateTimes(path: String, atime: js.Date, mtime: js.Date): Unit = js.native
     
     def writeFile(path: String, data: String): Unit = js.native
   }

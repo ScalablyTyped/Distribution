@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object varintMod {
   
-  @JSImport("multiformats/types/src/varint", JSImport.Namespace)
+  @JSImport("multiformats/dist/types/src/varint", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

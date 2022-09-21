@@ -12,7 +12,7 @@ trait AsyncErrorDetails extends StObject {
   var Code: js.UndefOr[MaxLength1024String] = js.undefined
   
   /**
-    * A generic descritpion of the error condition in English.
+    * A generic description of the error condition in English.
     */
   var Message: js.UndefOr[MaxLength1024String] = js.undefined
   

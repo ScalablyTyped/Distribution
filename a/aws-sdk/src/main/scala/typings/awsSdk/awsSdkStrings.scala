@@ -636,6 +636,7 @@ import typings.awsSdk.comprehendMod._PiiEntityType
 import typings.awsSdk.comprehendMod._SentimentType
 import typings.awsSdk.comprehendMod._Split
 import typings.awsSdk.comprehendMod._SyntaxLanguageCode
+import typings.awsSdk.comprehendMod._TargetedSentimentEntityType
 import typings.awsSdk.comprehendmedicalMod._AttributeName
 import typings.awsSdk.comprehendmedicalMod._EntitySubType
 import typings.awsSdk.comprehendmedicalMod._ICD10CMAttributeType
@@ -3300,7 +3301,6 @@ import typings.awsSdk.rumMod._StateEnum
 import typings.awsSdk.s3Mod._ArchiveStatus
 import typings.awsSdk.s3Mod._BucketAccelerateStatus
 import typings.awsSdk.s3Mod._BucketLogsPermission
-import typings.awsSdk.s3Mod._BucketVersioningStatus
 import typings.awsSdk.s3Mod._ChecksumAlgorithm
 import typings.awsSdk.s3Mod._CompressionType
 import typings.awsSdk.s3Mod._DeleteMarkerReplicationStatus
@@ -3314,8 +3314,6 @@ import typings.awsSdk.s3Mod._InventoryFrequency
 import typings.awsSdk.s3Mod._InventoryIncludedObjectVersions
 import typings.awsSdk.s3Mod._InventoryOptionalField
 import typings.awsSdk.s3Mod._JSONType
-import typings.awsSdk.s3Mod._MFADelete
-import typings.awsSdk.s3Mod._MFADeleteStatus
 import typings.awsSdk.s3Mod._MetadataDirective
 import typings.awsSdk.s3Mod._MetricsStatus
 import typings.awsSdk.s3Mod._ObjectAttributes
@@ -3337,11 +3335,14 @@ import typings.awsSdk.s3Mod._apiVersion
 import typings.awsSdk.s3controlMod._AsyncOperationName
 import typings.awsSdk.s3controlMod._BucketCannedACL
 import typings.awsSdk.s3controlMod._BucketLocationConstraint
+import typings.awsSdk.s3controlMod._BucketVersioningStatus
 import typings.awsSdk.s3controlMod._ExpirationStatus
 import typings.awsSdk.s3controlMod._JobManifestFieldName
 import typings.awsSdk.s3controlMod._JobManifestFormat
 import typings.awsSdk.s3controlMod._JobReportScope
 import typings.awsSdk.s3controlMod._JobStatus
+import typings.awsSdk.s3controlMod._MFADelete
+import typings.awsSdk.s3controlMod._MFADeleteStatus
 import typings.awsSdk.s3controlMod._MultiRegionAccessPointStatus
 import typings.awsSdk.s3controlMod._NetworkOrigin
 import typings.awsSdk.s3controlMod._ObjectLambdaAllowedFeature
@@ -8921,6 +8922,12 @@ object awsSdkStrings {
   inline def ATTENUATE_3_DB: ATTENUATE_3_DB = "ATTENUATE_3_DB".asInstanceOf[ATTENUATE_3_DB]
   
   @js.native
+  sealed trait ATTRIBUTE
+    extends StObject
+       with _TargetedSentimentEntityType
+  inline def ATTRIBUTE: ATTRIBUTE = "ATTRIBUTE".asInstanceOf[ATTRIBUTE]
+  
+  @js.native
   sealed trait ATTRIBUTES
     extends StObject
        with _SavingsPlansDataType
@@ -13153,6 +13160,12 @@ object awsSdkStrings {
   inline def BODY: BODY = "BODY".asInstanceOf[BODY]
   
   @js.native
+  sealed trait BOOK
+    extends StObject
+       with _TargetedSentimentEntityType
+  inline def BOOK: BOOK = "BOOK".asInstanceOf[BOOK]
+  
+  @js.native
   sealed trait BOOLEAN
     extends StObject
        with _ColumnDataType
@@ -13341,6 +13354,12 @@ object awsSdkStrings {
     extends StObject
        with _ReportGroupTrendFieldType
   inline def BRANCH_COVERAGE: BRANCH_COVERAGE = "BRANCH_COVERAGE".asInstanceOf[BRANCH_COVERAGE]
+  
+  @js.native
+  sealed trait BRAND
+    extends StObject
+       with _TargetedSentimentEntityType
+  inline def BRAND: BRAND = "BRAND".asInstanceOf[BRAND]
   
   @js.native
   sealed trait BRAND_NAME
@@ -15745,6 +15764,7 @@ object awsSdkStrings {
   sealed trait COMMERCIAL_ITEM
     extends StObject
        with typings.awsSdk.comprehendMod._EntityType
+       with _TargetedSentimentEntityType
   inline def COMMERCIAL_ITEM: COMMERCIAL_ITEM = "COMMERCIAL_ITEM".asInstanceOf[COMMERCIAL_ITEM]
   
   @js.native
@@ -19936,6 +19956,7 @@ object awsSdkStrings {
        with _ReferenceType
        with _ResourceSortType
        with _ScalarType
+       with _TargetedSentimentEntityType
        with _TypeHint
   inline def DATE: DATE = "DATE".asInstanceOf[DATE]
   
@@ -21814,6 +21835,7 @@ object awsSdkStrings {
        with _EventSourceOptInStatus
        with _ExecutionRoleIdentityConfig
        with _FeatureActivationsInputPrepareScheduleActions
+       with typings.awsSdk.sagemakerMod._FeatureStatus
        with typings.awsSdk.piMod._FeatureStatus
        with _FileSourceConvert608To708
        with _FirewallFailOpenStatus
@@ -23854,7 +23876,6 @@ object awsSdkStrings {
     extends StObject
        with _IdentifierType
        with _WirelessDeviceIdType
-  inline def DevEui: DevEui = "DevEui".asInstanceOf[DevEui]
   
   @js.native
   sealed trait DeviceTypeAndroid
@@ -23946,7 +23967,9 @@ object awsSdkStrings {
        with _KeyState
        with _LDAPSStatus
        with _MFADelete
+       with typings.awsSdk.s3Mod._MFADelete
        with _MFADeleteStatus
+       with typings.awsSdk.s3Mod._MFADeleteStatus
        with _MetricsStatus
        with _ModelCacheSetting
        with _NotebookOutputOption
@@ -25075,6 +25098,7 @@ object awsSdkStrings {
        with _EventIngestion
        with _EventSourceOptInStatus
        with _FeatureActivationsInputPrepareScheduleActions
+       with typings.awsSdk.sagemakerMod._FeatureStatus
        with typings.awsSdk.piMod._FeatureStatus
        with _FirewallFailOpenStatus
        with _ForwardingConfigState
@@ -25927,6 +25951,7 @@ object awsSdkStrings {
        with _Frequency
        with typings.awsSdk.connectMod._IntegrationType
        with _PlaylistType
+       with _TargetedSentimentEntityType
        with _TriggerType
        with _WebhookFilterType
   inline def EVENT: EVENT = "EVENT".asInstanceOf[EVENT]
@@ -26653,6 +26678,7 @@ object awsSdkStrings {
        with typings.awsSdk.chimesdkmediapipelinesMod._ArtifactsState
        with _BucketAccelerateStatus
        with _BucketVersioningStatus
+       with typings.awsSdk.s3Mod._BucketVersioningStatus
        with _ClientAuthenticationStatus
        with _ConnectionNotificationState
        with _DeleteMarkerReplicationStatus
@@ -26666,7 +26692,9 @@ object awsSdkStrings {
        with _KeyState
        with _LDAPSStatus
        with _MFADelete
+       with typings.awsSdk.s3Mod._MFADelete
        with _MFADeleteStatus
+       with typings.awsSdk.s3Mod._MFADeleteStatus
        with _MetricsStatus
        with _ModelCacheSetting
        with _PositionConfigurationStatus
@@ -27211,6 +27239,11 @@ object awsSdkStrings {
     extends StObject
        with _ProtectiveEquipmentType
   inline def FACE_COVER: FACE_COVER = "FACE_COVER".asInstanceOf[FACE_COVER]
+  
+  @js.native
+  sealed trait FACILITY
+    extends StObject
+       with _TargetedSentimentEntityType
   
   @js.native
   sealed trait FAHRENHEIT
@@ -29859,6 +29892,12 @@ object awsSdkStrings {
        with typings.awsSdk.wafregionalMod._GeoMatchConstraintValue
        with _PhoneNumberCountryCode
   inline def GA: GA = "GA".asInstanceOf[GA]
+  
+  @js.native
+  sealed trait GAME
+    extends StObject
+       with _TargetedSentimentEntityType
+  inline def GAME: GAME = "GAME".asInstanceOf[GAME]
   
   @js.native
   sealed trait GAME_SESSION_ACTIVATION_TIMEOUT
@@ -38385,6 +38424,7 @@ object awsSdkStrings {
     extends StObject
        with typings.awsSdk.comprehendMod._EntityType
        with _PriorityType
+       with _TargetedSentimentEntityType
   
   @js.native
   sealed trait LOCKED
@@ -41000,6 +41040,12 @@ object awsSdkStrings {
   inline def MOV: MOV = "MOV".asInstanceOf[MOV]
   
   @js.native
+  sealed trait MOVIE
+    extends StObject
+       with _TargetedSentimentEntityType
+  inline def MOVIE: MOVIE = "MOVIE".asInstanceOf[MOVIE]
+  
+  @js.native
   sealed trait MP
     extends StObject
        with _CountryCode
@@ -41313,6 +41359,11 @@ object awsSdkStrings {
   inline def MULTI_PERIOD: MULTI_PERIOD = "MULTI_PERIOD".asInstanceOf[MULTI_PERIOD]
   
   @js.native
+  sealed trait MUSIC
+    extends StObject
+       with _TargetedSentimentEntityType
+  
+  @js.native
   sealed trait MUSIC_AND_EFFECTS
     extends StObject
        with _Ac3BitstreamMode
@@ -41474,7 +41525,6 @@ object awsSdkStrings {
        with typings.awsSdk.pollyMod._Gender
        with _GenderType
        with _KnownGenderType
-  inline def Male_ : Male_ = "Male".asInstanceOf[Male_]
   
   @js.native
   sealed trait ManageAttributeSets
@@ -45441,6 +45491,7 @@ object awsSdkStrings {
        with _InvitationType
        with _OrganizationNodeType
        with _PrincipalType
+       with _TargetedSentimentEntityType
        with _Type
   inline def ORGANIZATION: ORGANIZATION = "ORGANIZATION".asInstanceOf[ORGANIZATION]
   
@@ -45571,6 +45622,7 @@ object awsSdkStrings {
        with _LoadBalancerTlsCertificateFailureReason
        with _PartyType
        with typings.awsSdk.wisdomMod._RecommendationSourceType
+       with _TargetedSentimentEntityType
   inline def OTHER: OTHER = "OTHER".asInstanceOf[OTHER]
   
   @js.native
@@ -47333,6 +47385,7 @@ object awsSdkStrings {
     extends StObject
        with _ContactType
        with typings.awsSdk.comprehendMod._EntityType
+       with _TargetedSentimentEntityType
   
   @js.native
   sealed trait PERSONAL
@@ -47351,6 +47404,11 @@ object awsSdkStrings {
     extends StObject
        with _SensitiveDataItemCategory
   inline def PERSONAL_INFORMATION: PERSONAL_INFORMATION = "PERSONAL_INFORMATION".asInstanceOf[PERSONAL_INFORMATION]
+  
+  @js.native
+  sealed trait PERSONAL_TITLE
+    extends StObject
+       with _TargetedSentimentEntityType
   
   @js.native
   sealed trait PER_BROKER
@@ -50012,6 +50070,7 @@ object awsSdkStrings {
        with _EntitySubType
        with typings.awsSdk.comprehendMod._EntityType
        with _ICD10CMAttributeType
+       with _TargetedSentimentEntityType
   inline def QUANTITY: QUANTITY = "QUANTITY".asInstanceOf[QUANTITY]
   
   @js.native
@@ -56789,6 +56848,11 @@ object awsSdkStrings {
   inline def SOFT: SOFT = "SOFT".asInstanceOf[SOFT]
   
   @js.native
+  sealed trait SOFTWARE
+    extends StObject
+       with _TargetedSentimentEntityType
+  
+  @js.native
   sealed trait SOFTWARE_TOKEN_MFA
     extends StObject
        with _ChallengeNameType
@@ -60008,11 +60072,11 @@ object awsSdkStrings {
   inline def SoftFailure: SoftFailure = "SoftFailure".asInstanceOf[SoftFailure]
   
   @js.native
-  sealed trait Software
+  sealed trait Software_
     extends StObject
        with _DisruptionType
        with typings.awsSdk.resiliencehubMod._TestType
-  inline def Software: Software = "Software".asInstanceOf[Software]
+  inline def Software_ : Software_ = "Software".asInstanceOf[Software_]
   
   @js.native
   sealed trait Sop
@@ -60584,6 +60648,7 @@ object awsSdkStrings {
        with typings.awsSdk.chimeMod._AccountStatus
        with _BucketAccelerateStatus
        with _BucketVersioningStatus
+       with typings.awsSdk.s3Mod._BucketVersioningStatus
        with _EnvironmentHealthStatus
        with _FlowStatus
        with _JobStatus
@@ -69616,7 +69681,6 @@ object awsSdkStrings {
   sealed trait c5DotxlargeDotelasticsearch
     extends StObject
        with _ESPartitionInstanceType
-  inline def c5DotxlargeDotelasticsearch: c5DotxlargeDotelasticsearch = "c5.xlarge.elasticsearch".asInstanceOf[c5DotxlargeDotelasticsearch]
   
   @js.native
   sealed trait c5DotxlargeDotsearch
@@ -73788,7 +73852,6 @@ object awsSdkStrings {
   sealed trait geolocation
     extends StObject
        with typings.awsSdk.forecastserviceMod._AttributeType
-  inline def geolocation: geolocation = "geolocation".asInstanceOf[geolocation]
   
   @js.native
   sealed trait git_
@@ -75479,7 +75542,6 @@ object awsSdkStrings {
        with _MetricStreamOutputFormat
        with typings.awsSdk.pollyMod._OutputFormat
        with _TargetFormat
-  inline def json__ : json__ = "json".asInstanceOf[json__]
   
   @js.native
   sealed trait jxsv

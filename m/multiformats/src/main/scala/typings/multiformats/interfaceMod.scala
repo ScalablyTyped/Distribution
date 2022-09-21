@@ -34,6 +34,7 @@ object interfaceMod {
     /**
       * Decodes **plain** (and not a multibase) string. Unlike
       * decode
+      *
       * @param text
       */
     def baseDecode(text: String): js.typedarray.Uint8Array
@@ -56,6 +57,7 @@ object interfaceMod {
     /**
       * Base encodes to a **plain** (and not a multibase) string. Unlike
       * `encode` no multibase prefix is added.
+      *
       * @param bytes
       */
     def baseEncode(bytes: js.typedarray.Uint8Array): String
@@ -131,6 +133,7 @@ object interfaceMod {
     /**
       * Decodes **multibase** string (which must have a multibase prefix added).
       * If prefix does not match
+      *
       * @param multibase
       */
     def decode(multibase: Multibase[Prefix]): js.typedarray.Uint8Array

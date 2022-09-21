@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@wordpress/token-list" : "2.17.0"
+      "@wordpress/token-list" : "2.18.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@wordpress/token-list" : "2.17.0"
+      "@wordpress/token-list" : "2.18.0"
     }
   ],
   "compile-devDependencies" : [

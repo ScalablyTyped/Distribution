@@ -6,17 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object digestMod {
   
-  @JSImport("multiformats/types/src/hashes/digest", JSImport.Namespace)
+  @JSImport("multiformats/dist/types/src/hashes/digest", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("multiformats/types/src/hashes/digest", "Digest")
+  @JSImport("multiformats/dist/types/src/hashes/digest", "Digest")
   @js.native
   open class Digest[Code /* <: Double */, Size /* <: Double */] protected ()
     extends StObject
        with typings.multiformats.hashesInterfaceMod.MultihashDigest[Double] {
     /**
       * Creates a multihash digest.
+      *
       * @param {Code} code
       * @param {Size} size
       * @param {Uint8Array} digest
@@ -57,7 +58,7 @@ object digestMod {
   
   inline def decode(multihash: js.typedarray.Uint8Array): MultihashDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(multihash.asInstanceOf[js.Any]).asInstanceOf[MultihashDigest]
   
-  inline def equals_(a: MultihashDigest, b: MultihashDigest): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equals_(a: MultihashDigest, b: Any): /* is multiformats.multiformats/dist/types/src/hashes/interface.MultihashDigest<number> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[/* is multiformats.multiformats/dist/types/src/hashes/interface.MultihashDigest<number> */ Boolean]
   
   type MultihashDigest = typings.multiformats.hashesInterfaceMod.MultihashDigest[Double]
 }

@@ -8,21 +8,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object jsonMod {
   
-  @JSImport("multiformats/types/src/codecs/json", JSImport.Namespace)
+  @JSImport("multiformats/dist/types/src/codecs/json", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("multiformats/types/src/codecs/json", "code")
+  @JSImport("multiformats/dist/types/src/codecs/json", "code")
   @js.native
   val code: `512` = js.native
   
-  inline def decode[T](data: ByteView[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(data.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def decode[T](data: typings.multiformats.blockInterfaceMod.ByteView[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(data.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  inline def encode[T](node: T): ByteView[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(node.asInstanceOf[js.Any]).asInstanceOf[ByteView[T]]
+  inline def encode[T](node: T): typings.multiformats.blockInterfaceMod.ByteView[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(node.asInstanceOf[js.Any]).asInstanceOf[typings.multiformats.blockInterfaceMod.ByteView[T]]
   
-  @JSImport("multiformats/types/src/codecs/json", "name")
+  @JSImport("multiformats/dist/types/src/codecs/json", "name")
   @js.native
   val name: json = js.native
   
-  type ByteView[T] = typings.multiformats.codecsInterfaceMod.ByteView[T]
+  type ByteView[T] = typings.multiformats.blockInterfaceMod.ByteView[T]
 }

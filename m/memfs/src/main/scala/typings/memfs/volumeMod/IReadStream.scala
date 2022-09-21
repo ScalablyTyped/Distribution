@@ -20,9 +20,9 @@ trait IReadStream extends Readable {
   
   var bytesRead: Double = js.native
   
-  def close(callback: TCallback[Unit]): js.Any = js.native
+  def close(callback: TCallback[Unit]): Any = js.native
   
-  def open(): js.Any = js.native
+  def open(): Any = js.native
   
   var path: String = js.native
 }

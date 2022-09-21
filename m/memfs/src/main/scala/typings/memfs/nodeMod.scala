@@ -5,10 +5,8 @@ import typings.memfs.anon.Atime
 import typings.memfs.anon.Children
 import typings.memfs.statsMod.default
 import typings.memfs.volumeMod.Volume
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
-import typings.std.Date
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +15,7 @@ object nodeMod {
   
   @JSImport("memfs/lib/node", "File")
   @js.native
-  class File protected () extends StObject {
+  open class File protected () extends StObject {
     /**
       * Open a Link-Node pair. `node` is provided separately as that might be a different node
       * rather the one `link` points to, because it might be a symlink.
@@ -61,6 +59,14 @@ object nodeMod {
       */
     var position: Double = js.native
     
+    def read(buf: js.typedarray.Uint8Array): Double = js.native
+    def read(buf: js.typedarray.Uint8Array, offset: Double): Double = js.native
+    def read(buf: js.typedarray.Uint8Array, offset: Double, length: Double): Double = js.native
+    def read(buf: js.typedarray.Uint8Array, offset: Double, length: Double, position: Double): Double = js.native
+    def read(buf: js.typedarray.Uint8Array, offset: Double, length: Unit, position: Double): Double = js.native
+    def read(buf: js.typedarray.Uint8Array, offset: Unit, length: Double): Double = js.native
+    def read(buf: js.typedarray.Uint8Array, offset: Unit, length: Double, position: Double): Double = js.native
+    def read(buf: js.typedarray.Uint8Array, offset: Unit, length: Unit, position: Double): Double = js.native
     def read(buf: Buffer): Double = js.native
     def read(buf: Buffer, offset: Double): Double = js.native
     def read(buf: Buffer, offset: Double, length: Double): Double = js.native
@@ -69,14 +75,6 @@ object nodeMod {
     def read(buf: Buffer, offset: Unit, length: Double): Double = js.native
     def read(buf: Buffer, offset: Unit, length: Double, position: Double): Double = js.native
     def read(buf: Buffer, offset: Unit, length: Unit, position: Double): Double = js.native
-    def read(buf: Uint8Array): Double = js.native
-    def read(buf: Uint8Array, offset: Double): Double = js.native
-    def read(buf: Uint8Array, offset: Double, length: Double): Double = js.native
-    def read(buf: Uint8Array, offset: Double, length: Double, position: Double): Double = js.native
-    def read(buf: Uint8Array, offset: Double, length: Unit, position: Double): Double = js.native
-    def read(buf: Uint8Array, offset: Unit, length: Double): Double = js.native
-    def read(buf: Uint8Array, offset: Unit, length: Double, position: Double): Double = js.native
-    def read(buf: Uint8Array, offset: Unit, length: Unit, position: Double): Double = js.native
     
     def seekTo(position: Double): Unit = js.native
     
@@ -101,8 +99,10 @@ object nodeMod {
   
   @JSImport("memfs/lib/node", "Link")
   @js.native
-  class Link protected () extends EventEmitter {
+  open class Link protected () extends EventEmitter {
     def this(vol: Volume, parent: Link, name: String) = this()
+    
+    /* private */ var _steps: Any = js.native
     
     var children: StringDictionary[js.UndefOr[Link]] = js.native
     
@@ -123,6 +123,8 @@ object nodeMod {
     
     var length: Double = js.native
     
+    var name: String = js.native
+    
     var node: Node = js.native
     
     var parent: Link = js.native
@@ -132,7 +134,10 @@ object nodeMod {
     
     def setNode(node: Node): Unit = js.native
     
-    var steps: js.Array[String] = js.native
+    def steps: js.Array[String] = js.native
+    def steps_=(`val`: js.Array[String]): Unit = js.native
+    
+    def syncSteps(): Unit = js.native
     
     def toJSON(): Children = js.native
     
@@ -154,11 +159,11 @@ object nodeMod {
   
   @JSImport("memfs/lib/node", "Node")
   @js.native
-  class Node protected () extends EventEmitter {
+  open class Node protected () extends EventEmitter {
     def this(ino: Double) = this()
     def this(ino: Double, perm: Double) = this()
     
-    var atime: Date = js.native
+    var atime: js.Date = js.native
     
     var buf: Buffer = js.native
     
@@ -176,7 +181,7 @@ object nodeMod {
     
     def chown(uid: Double, gid: Double): Unit = js.native
     
-    var ctime: Date = js.native
+    var ctime: js.Date = js.native
     
     def del(): Unit = js.native
     
@@ -201,12 +206,20 @@ object nodeMod {
     
     var mode: Double = js.native
     
-    var mtime: Date = js.native
+    var mtime: js.Date = js.native
     
     var nlink: Double = js.native
     
     var perm: Double = js.native
     
+    def read(buf: js.typedarray.Uint8Array): Double = js.native
+    def read(buf: js.typedarray.Uint8Array, off: Double): Double = js.native
+    def read(buf: js.typedarray.Uint8Array, off: Double, len: Double): Double = js.native
+    def read(buf: js.typedarray.Uint8Array, off: Double, len: Double, pos: Double): Double = js.native
+    def read(buf: js.typedarray.Uint8Array, off: Double, len: Unit, pos: Double): Double = js.native
+    def read(buf: js.typedarray.Uint8Array, off: Unit, len: Double): Double = js.native
+    def read(buf: js.typedarray.Uint8Array, off: Unit, len: Double, pos: Double): Double = js.native
+    def read(buf: js.typedarray.Uint8Array, off: Unit, len: Unit, pos: Double): Double = js.native
     def read(buf: Buffer): Double = js.native
     def read(buf: Buffer, off: Double): Double = js.native
     def read(buf: Buffer, off: Double, len: Double): Double = js.native
@@ -215,14 +228,6 @@ object nodeMod {
     def read(buf: Buffer, off: Unit, len: Double): Double = js.native
     def read(buf: Buffer, off: Unit, len: Double, pos: Double): Double = js.native
     def read(buf: Buffer, off: Unit, len: Unit, pos: Double): Double = js.native
-    def read(buf: Uint8Array): Double = js.native
-    def read(buf: Uint8Array, off: Double): Double = js.native
-    def read(buf: Uint8Array, off: Double, len: Double): Double = js.native
-    def read(buf: Uint8Array, off: Double, len: Double, pos: Double): Double = js.native
-    def read(buf: Uint8Array, off: Double, len: Unit, pos: Double): Double = js.native
-    def read(buf: Uint8Array, off: Unit, len: Double): Double = js.native
-    def read(buf: Uint8Array, off: Unit, len: Double, pos: Double): Double = js.native
-    def read(buf: Uint8Array, off: Unit, len: Unit, pos: Double): Double = js.native
     
     def setBuffer(buf: Buffer): Unit = js.native
     

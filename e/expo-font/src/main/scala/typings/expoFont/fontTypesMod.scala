@@ -17,7 +17,7 @@ object fontTypesMod {
     def apply(value: String): js.UndefOr[FontDisplay & String] = js.native
     
     /**
-      * (Default on web) The font display strategy is defined by the user agent or platform.
+      * __(Default)__ The font display strategy is defined by the user agent or platform.
       * This generally defaults to the text being invisible until the font is loaded.
       * Good for buttons or banners that require a specific treatment.
       */
@@ -28,8 +28,8 @@ object fontTypesMod {
     /* "auto" */ val AUTO: typings.expoFont.fontTypesMod.FontDisplay.AUTO & String = js.native
     
     /**
-      * The text will be invisible until the font has loaded.
-      * If the font fails to load, nothing will appear.
+      * The text will be invisible until the font has loaded. If the font fails to load then nothing
+      * will appear - it's best to turn this off when debugging missing text.
       */
     @js.native
     sealed trait BLOCK
@@ -39,9 +39,10 @@ object fontTypesMod {
     
     /**
       * Splits the behavior between `SWAP` and `BLOCK`.
-      * There will be a [100ms timeout](https://developers.google.com/web/updates/2016/02/font-display?hl=en) where the text with a custom font is invisible,
-      * after that the text will either swap to the styled text or it'll show the unstyled text and continue to load the custom font.
-      * This is good for buttons that need a custom font but should also be quickly available to screen-readers.
+      * There will be a [100ms timeout](https://developers.google.com/web/updates/2016/02/font-display?hl=en)
+      * where the text with a custom font is invisible, after that the text will either swap to the
+      * styled text or it'll show the unstyled text and continue to load the custom font. This is good
+      * for buttons that need a custom font but should also be quickly available to screen-readers.
       */
     @js.native
     sealed trait FALLBACK
@@ -50,8 +51,8 @@ object fontTypesMod {
     /* "fallback" */ val FALLBACK: typings.expoFont.fontTypesMod.FontDisplay.FALLBACK & String = js.native
     
     /**
-      * This works almost identically to `FALLBACK`,
-      * the only difference is that the browser will decide to load the font based on slow connection speed or critical resource demand.
+      * This works almost identically to `FALLBACK`, the only difference is that the browser will
+      * decide to load the font based on slow connection speed or critical resource demand.
       */
     @js.native
     sealed trait OPTIONAL
@@ -61,7 +62,7 @@ object fontTypesMod {
     
     /**
       * Fallback text is rendered immediately with a default font while the desired font is loaded.
-      * This is good for making the content appear to load instantly and is usally preferred.
+      * This is good for making the content appear to load instantly and is usually preferred.
       */
     @js.native
     sealed trait SWAP
@@ -72,6 +73,10 @@ object fontTypesMod {
   
   trait FontResource extends StObject {
     
+    /**
+      * _Web Only._ Sets the [`font-display`](#fontdisplay) property for a given typeface in the
+      * browser.
+      */
     var display: js.UndefOr[FontDisplay] = js.undefined
     
     var uri: String | Double

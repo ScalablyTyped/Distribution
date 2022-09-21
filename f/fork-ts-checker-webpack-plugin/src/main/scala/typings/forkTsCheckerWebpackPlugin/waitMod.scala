@@ -10,5 +10,5 @@ object waitMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(timeout: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(timeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def wait_(timeout: Double): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(timeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
 }

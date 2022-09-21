@@ -1,7 +1,5 @@
 package typings.saferBuffer
 
-import typings.std.ArrayBuffer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +8,7 @@ object mod {
   
   @JSImport("safer-buffer", "Buffer")
   @js.native
-  class Buffer protected ()
+  open class Buffer protected ()
     extends typings.buffer.mod.Buffer {
     /**
       * Produces a Buffer backed by the same allocated memory as
@@ -19,19 +17,19 @@ object mod {
       *
       * @param arrayBuffer The ArrayBuffer with which to share memory.
       */
-    def this(arrayBuffer: ArrayBuffer) = this()
+    def this(arrayBuffer: js.typedarray.ArrayBuffer) = this()
     /**
       * Allocates a new buffer containing the given {array} of octets.
       *
       * @param array The octets to store.
       */
-    def this(array: js.Array[js.Any]) = this()
+    def this(array: js.Array[Any]) = this()
     /**
       * Allocates a new buffer containing the given {array} of octets.
       *
       * @param array The octets to store.
       */
-    def this(array: Uint8Array) = this()
+    def this(array: js.typedarray.Uint8Array) = this()
     /**
       * Copies the passed {buffer} data onto a new {Buffer} instance.
       *
@@ -106,7 +104,7 @@ object mod {
     /**
       * The same as buf1.compare(buf2).
       */
-    inline def compare(buf1: Uint8Array, buf2: Uint8Array): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(buf1.asInstanceOf[js.Any], buf2.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def compare(buf1: js.typedarray.Uint8Array, buf2: js.typedarray.Uint8Array): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(buf1.asInstanceOf[js.Any], buf2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Returns a buffer which is the result of concatenating all the buffers in the list together.
@@ -119,8 +117,8 @@ object mod {
       * @param totalLength Total length of the buffers when concatenated.
       *   If totalLength is not provided, it is read from the buffers in the list. However, this adds an additional loop to the function, so it is faster to provide the length explicitly.
       */
-    inline def concat(list: js.Array[Uint8Array]): typings.buffer.mod.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(list.asInstanceOf[js.Any]).asInstanceOf[typings.buffer.mod.Buffer]
-    inline def concat(list: js.Array[Uint8Array], totalLength: Double): typings.buffer.mod.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(list.asInstanceOf[js.Any], totalLength.asInstanceOf[js.Any])).asInstanceOf[typings.buffer.mod.Buffer]
+    inline def concat(list: js.Array[js.typedarray.Uint8Array]): typings.buffer.mod.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(list.asInstanceOf[js.Any]).asInstanceOf[typings.buffer.mod.Buffer]
+    inline def concat(list: js.Array[js.typedarray.Uint8Array], totalLength: Double): typings.buffer.mod.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(list.asInstanceOf[js.Any], totalLength.asInstanceOf[js.Any])).asInstanceOf[typings.buffer.mod.Buffer]
     
     /**
       * When passed a reference to the .buffer property of a TypedArray instance,
@@ -132,23 +130,23 @@ object mod {
       * @param byteOffset
       * @param length
       */
-    inline def from(arrayBuffer: ArrayBuffer): typings.buffer.mod.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(arrayBuffer.asInstanceOf[js.Any]).asInstanceOf[typings.buffer.mod.Buffer]
-    inline def from(arrayBuffer: ArrayBuffer, byteOffset: Double): typings.buffer.mod.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(arrayBuffer.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any])).asInstanceOf[typings.buffer.mod.Buffer]
-    inline def from(arrayBuffer: ArrayBuffer, byteOffset: Double, length: Double): typings.buffer.mod.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(arrayBuffer.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.buffer.mod.Buffer]
-    inline def from(arrayBuffer: ArrayBuffer, byteOffset: Unit, length: Double): typings.buffer.mod.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(arrayBuffer.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.buffer.mod.Buffer]
+    inline def from(arrayBuffer: js.typedarray.ArrayBuffer): typings.buffer.mod.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(arrayBuffer.asInstanceOf[js.Any]).asInstanceOf[typings.buffer.mod.Buffer]
+    inline def from(arrayBuffer: js.typedarray.ArrayBuffer, byteOffset: Double): typings.buffer.mod.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(arrayBuffer.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any])).asInstanceOf[typings.buffer.mod.Buffer]
+    inline def from(arrayBuffer: js.typedarray.ArrayBuffer, byteOffset: Double, length: Double): typings.buffer.mod.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(arrayBuffer.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.buffer.mod.Buffer]
+    inline def from(arrayBuffer: js.typedarray.ArrayBuffer, byteOffset: Unit, length: Double): typings.buffer.mod.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(arrayBuffer.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.buffer.mod.Buffer]
     /**
       * Allocates a new Buffer using an {array} of octets.
       *
       * @param array
       */
-    inline def from(array: js.Array[js.Any]): typings.buffer.mod.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(array.asInstanceOf[js.Any]).asInstanceOf[typings.buffer.mod.Buffer]
+    inline def from(array: js.Array[Any]): typings.buffer.mod.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(array.asInstanceOf[js.Any]).asInstanceOf[typings.buffer.mod.Buffer]
+    inline def from(buffer: js.typedarray.Uint8Array): typings.buffer.mod.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.buffer.mod.Buffer]
     /**
       * Copies the passed {buffer} data onto a new Buffer instance.
       *
       * @param buffer
       */
     inline def from(buffer: typings.buffer.mod.Buffer): typings.buffer.mod.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.buffer.mod.Buffer]
-    inline def from(buffer: Uint8Array): typings.buffer.mod.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.buffer.mod.Buffer]
     /**
       * Creates a new Buffer containing the given JavaScript string {str}.
       * If provided, the {encoding} parameter identifies the character encoding.
@@ -164,7 +162,7 @@ object mod {
       *
       * @param obj object to test.
       */
-    inline def isBuffer(obj: js.Any): /* is buffer.buffer.Buffer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuffer")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is buffer.buffer.Buffer */ Boolean]
+    inline def isBuffer(obj: Any): /* is buffer.buffer.Buffer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuffer")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is buffer.buffer.Buffer */ Boolean]
     
     /**
       * Returns true if {encoding} is a valid encoding argument.

@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object isPendingMod {
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/utils/async/isPending", JSImport.Namespace)
+  @JSImport("fork-ts-checker-webpack-plugin/lib/utils/async/is-pending", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(promise: js.Promise[js.Any]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(promise.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-  inline def default(promise: js.Promise[js.Any], timeout: Double): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(promise.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def isPending(promise: js.Promise[Any]): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("isPending")(promise.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+  inline def isPending(promise: js.Promise[Any], timeout: Double): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("isPending")(promise.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
 }

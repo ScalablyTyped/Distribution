@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "clean-css"
-version := "4.2-dt-20220819Z-016667"
+version := "4.2-dt-20220921Z-650c8a"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

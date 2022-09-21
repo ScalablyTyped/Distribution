@@ -1,7 +1,7 @@
 
 # Scala.js typings for compression-webpack-plugin
 
-Typings are for version 6.0
+Typings are for version 10.0.0
 
 ## Library description:
 Prepare compressed versions of assets to serve them with Content-Encoding
@@ -10,10 +10,10 @@ Prepare compressed versions of assets to serve them with Content-Encoding
 | ------------------ | :-------------: |
 | Full name          | compression-webpack-plugin |
 | Keywords           | webpack |
-| # releases         | 21 |
-| # dependents       | 508 |
-| # downloads        | 50630978 |
-| # stars            | 13 |
+| # releases         | 26 |
+| # dependents       | 0.0 |
+| # downloads        | 6469251.333333333 |
+| # stars            | 1328.0 |
 
 ## Links
 - [Homepage](https://github.com/webpack-contrib/compression-webpack-plugin)
@@ -24,7 +24,7 @@ Prepare compressed versions of assets to serve them with Content-Encoding
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -133,7 +133,7 @@ type DisruptionPolicy = StringDictionary[FailurePolicy]
 type DisruptionResiliencyScore = StringDictionary[Double]
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.Software
+  - typings.awsSdk.awsSdkStrings.Software_
   - typings.awsSdk.awsSdkStrings.Hardware
   - typings.awsSdk.awsSdkStrings.AZ
   - typings.awsSdk.awsSdkStrings.Region_
@@ -316,7 +316,7 @@ type TestRecommendationList = js.Array[TestRecommendation]
 type TestRisk = _TestRisk | String
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.Software
+  - typings.awsSdk.awsSdkStrings.Software_
   - typings.awsSdk.awsSdkStrings.Hardware
   - typings.awsSdk.awsSdkStrings.AZ
   - typings.awsSdk.awsSdkStrings.Region_

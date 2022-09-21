@@ -501,7 +501,7 @@ object mod extends Shortcut {
     /**
       * Output source map if requested with `sourceMap` option
       */
-    var sourceMap: SourceMapGenerator
+    var sourceMap: js.UndefOr[SourceMapGenerator] = js.undefined
     
     /**
       * Contains statistics on the minify process
@@ -520,14 +520,8 @@ object mod extends Shortcut {
   }
   object Output {
     
-    inline def apply(
-      errors: js.Array[String],
-      sourceMap: SourceMapGenerator,
-      stats: Efficiency,
-      styles: String,
-      warnings: js.Array[String]
-    ): Output = {
-      val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], sourceMap = sourceMap.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any])
+    inline def apply(errors: js.Array[String], stats: Efficiency, styles: String, warnings: js.Array[String]): Output = {
+      val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any])
       __obj.asInstanceOf[Output]
     }
     
@@ -538,6 +532,8 @@ object mod extends Shortcut {
       inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value*))
       
       inline def setSourceMap(value: SourceMapGenerator): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
+      
+      inline def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
       
       inline def setStats(value: Efficiency): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       

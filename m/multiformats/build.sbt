@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "multiformats"
-version := "9.9.0-32eac2"
+version := "10.0.0-pre.4-553159"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

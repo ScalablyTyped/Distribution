@@ -52,7 +52,7 @@ trait CreateBucketRequest extends StObject {
   var ObjectLockEnabledForBucket: js.UndefOr[typings.awsSdk.s3controlMod.ObjectLockEnabledForBucket] = js.undefined
   
   /**
-    * The ID of the Outposts where the bucket is being created.  This is required by Amazon S3 on Outposts buckets. 
+    * The ID of the Outposts where the bucket is being created.  This ID is required by Amazon S3 on Outposts buckets. 
     */
   var OutpostId: js.UndefOr[NonEmptyMaxLength64String] = js.undefined
 }

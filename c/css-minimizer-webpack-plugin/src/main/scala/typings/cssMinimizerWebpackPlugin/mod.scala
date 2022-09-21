@@ -1,244 +1,628 @@
 package typings.cssMinimizerWebpackPlugin
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.cssnano.mod.CssNanoOptions
-import typings.postcss.mod.SourceMapOptions
-import typings.std.RegExp
+import org.scalablytyped.runtime.TopLevel
+import typings.cssMinimizerWebpackPlugin.anon.Code
+import typings.cssMinimizerWebpackPlugin.anon.Errorpluginstringundefine
+import typings.cssMinimizerWebpackPlugin.anon.From
+import typings.cssMinimizerWebpackPlugin.anon.Implementation
+import typings.jestWorker.mod.Worker
+import typings.postcss.rootMod.default
+import typings.std.AddEventListenerOptions
+import typings.std.EventListenerOptions
+import typings.std.EventListenerOrEventListenerObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  /**
+    * @template [T=CssNanoOptionsExtended]
+    */
   @JSImport("css-minimizer-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ ()
+  /**
+    * @param {BasePluginOptions & DefinedDefaultMinimizerAndOptions<T>} [options]
+    */
+  open class ^[T] ()
     extends StObject
-       with CssMinimizerPlugin {
-    def this(options: Options) = this()
+       with CssMinimizerPlugin[T] {
+    def this(options: BasePluginOptions & DefinedDefaultMinimizerAndOptions[T]) = this()
     
     /**
-      * Apply the plugin
+      * @param {Compiler} compiler
+      * @returns {void}
       */
     /* CompleteClass */
     @JSName("apply")
-    override def apply(
-      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
-    ): Unit = js.native
-  }
-  
-  trait CacheKeys
-    extends StObject
-       with DefaultCacheKeys
-       with /* key */ StringDictionary[String]
-  object CacheKeys {
-    
-    inline def apply(
-      `css-minimizer-webpack-plugin`: String,
-      `css-minimizer-webpack-plugin-options`: String,
-      cssMinimizer: String,
-      hash: String,
-      path: String
-    ): CacheKeys = {
-      val __obj = js.Dynamic.literal(cssMinimizer = cssMinimizer.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-      __obj.updateDynamic("css-minimizer-webpack-plugin")(`css-minimizer-webpack-plugin`.asInstanceOf[js.Any])
-      __obj.updateDynamic("css-minimizer-webpack-plugin-options")(`css-minimizer-webpack-plugin-options`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CacheKeys]
-    }
-  }
-  
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebpackPluginInstance * / any */ trait CssMinimizerPlugin extends StObject {
+    override def apply(compiler: Compiler): Unit = js.native
     
     /**
-      * Apply the plugin
+      * @private
+      * @param {Compiler} compiler
+      * @param {Compilation} compilation
+      * @param {Record<string, import("webpack").sources.Source>} assets
+      * @param {{availableNumberOfCores: number}} optimizeOptions
+      * @returns {Promise<void>}
       */
-    @JSName("apply")
-    def apply(
-      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
-    ): Unit
-  }
-  object CssMinimizerPlugin {
+    /* private */ /* CompleteClass */
+    var optimize: Any = js.native
     
-    inline def apply(
-      apply: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any => Unit
-    ): CssMinimizerPlugin = {
-      val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply))
-      __obj.asInstanceOf[CssMinimizerPlugin]
-    }
-    
-    extension [Self <: CssMinimizerPlugin](x: Self) {
-      
-      inline def setApply(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any => Unit
-      ): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
-    }
+    /**
+      * @private
+      * @type {InternalPluginOptions<T>}
+      */
+    /* private */ /* CompleteClass */
+    var options: Any = js.native
   }
+  @JSImport("css-minimizer-webpack-plugin", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
-    * Default cache keys
+    * @private
+    * @param {Error | ErrorObject | string} error
+    * @param {string} file
+    * @param {SourceMapConsumer} [sourceMap]
+    * @param {Compilation["requestShortener"]} [requestShortener]
+    * @returns {Error}
     */
-  trait DefaultCacheKeys extends StObject {
-    
-    var `css-minimizer-webpack-plugin`: String
-    
-    var `css-minimizer-webpack-plugin-options`: String
-    
-    var cssMinimizer: String
-    
-    var hash: String
-    
-    var path: String
-  }
-  object DefaultCacheKeys {
-    
-    inline def apply(
-      `css-minimizer-webpack-plugin`: String,
-      `css-minimizer-webpack-plugin-options`: String,
-      cssMinimizer: String,
-      hash: String,
-      path: String
-    ): DefaultCacheKeys = {
-      val __obj = js.Dynamic.literal(cssMinimizer = cssMinimizer.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-      __obj.updateDynamic("css-minimizer-webpack-plugin")(`css-minimizer-webpack-plugin`.asInstanceOf[js.Any])
-      __obj.updateDynamic("css-minimizer-webpack-plugin-options")(`css-minimizer-webpack-plugin-options`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DefaultCacheKeys]
-    }
-    
-    extension [Self <: DefaultCacheKeys](x: Self) {
-      
-      inline def `setCss-minimizer-webpack-plugin`(value: String): Self = StObject.set(x, "css-minimizer-webpack-plugin", value.asInstanceOf[js.Any])
-      
-      inline def `setCss-minimizer-webpack-plugin-options`(value: String): Self = StObject.set(x, "css-minimizer-webpack-plugin-options", value.asInstanceOf[js.Any])
-      
-      inline def setCssMinimizer(value: String): Self = StObject.set(x, "cssMinimizer", value.asInstanceOf[js.Any])
-      
-      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
-      
-      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
-    }
-  }
+  /* static member */
+  @JSImport("css-minimizer-webpack-plugin", "buildError")
+  @js.native
+  def buildError: Any = js.native
+  inline def buildError_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buildError")(x.asInstanceOf[js.Any])
   
-  trait Options extends StObject {
+  /**
+    * @private
+    * @param {Warning | WarningObject | string} warning
+    * @param {string} file
+    * @param {WarningsFilter} [warningsFilter]
+    * @param {SourceMapConsumer} [sourceMap]
+    * @param {Compilation["requestShortener"]} [requestShortener]
+    * @returns {Error & { hideStack?: boolean, file?: string } | undefined}
+    */
+  /* static member */
+  @JSImport("css-minimizer-webpack-plugin", "buildWarning")
+  @js.native
+  def buildWarning: Any = js.native
+  inline def buildWarning_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buildWarning")(x.asInstanceOf[js.Any])
+  
+  inline def cleanCssMinify(
+    input: typings.cssMinimizerWebpackPlugin.utilsMod.Input,
+    sourceMap: Unit,
+    minimizerOptions: typings.cssMinimizerWebpackPlugin.utilsMod.CustomOptions
+  ): js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("cleanCssMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult]]
+  inline def cleanCssMinify(
+    input: typings.cssMinimizerWebpackPlugin.utilsMod.Input,
+    sourceMap: typings.cssMinimizerWebpackPlugin.utilsMod.RawSourceMap,
+    minimizerOptions: typings.cssMinimizerWebpackPlugin.utilsMod.CustomOptions
+  ): js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("cleanCssMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult]]
+  
+  inline def cssnanoMinify(input: typings.cssMinimizerWebpackPlugin.utilsMod.Input): js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("cssnanoMinify")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult]]
+  inline def cssnanoMinify(
+    input: typings.cssMinimizerWebpackPlugin.utilsMod.Input,
+    sourceMap: Unit,
+    minimizerOptions: typings.cssMinimizerWebpackPlugin.utilsMod.CustomOptions
+  ): js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("cssnanoMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult]]
+  inline def cssnanoMinify(
+    input: typings.cssMinimizerWebpackPlugin.utilsMod.Input,
+    sourceMap: typings.cssMinimizerWebpackPlugin.utilsMod.RawSourceMap
+  ): js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("cssnanoMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult]]
+  inline def cssnanoMinify(
+    input: typings.cssMinimizerWebpackPlugin.utilsMod.Input,
+    sourceMap: typings.cssMinimizerWebpackPlugin.utilsMod.RawSourceMap,
+    minimizerOptions: typings.cssMinimizerWebpackPlugin.utilsMod.CustomOptions
+  ): js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("cssnanoMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult]]
+  
+  inline def cssoMinify(
+    input: typings.cssMinimizerWebpackPlugin.utilsMod.Input,
+    sourceMap: Unit,
+    minimizerOptions: typings.cssMinimizerWebpackPlugin.utilsMod.CustomOptions
+  ): js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("cssoMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult]]
+  inline def cssoMinify(
+    input: typings.cssMinimizerWebpackPlugin.utilsMod.Input,
+    sourceMap: typings.cssMinimizerWebpackPlugin.utilsMod.RawSourceMap,
+    minimizerOptions: typings.cssMinimizerWebpackPlugin.utilsMod.CustomOptions
+  ): js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("cssoMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult]]
+  
+  inline def esbuildMinify(
+    input: typings.cssMinimizerWebpackPlugin.utilsMod.Input,
+    sourceMap: Unit,
+    minimizerOptions: typings.cssMinimizerWebpackPlugin.utilsMod.CustomOptions
+  ): js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("esbuildMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult]]
+  inline def esbuildMinify(
+    input: typings.cssMinimizerWebpackPlugin.utilsMod.Input,
+    sourceMap: typings.cssMinimizerWebpackPlugin.utilsMod.RawSourceMap,
+    minimizerOptions: typings.cssMinimizerWebpackPlugin.utilsMod.CustomOptions
+  ): js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("esbuildMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult]]
+  
+  /**
+    * @private
+    * @param {Parallel} parallel
+    * @returns {number}
+    */
+  /* static member */
+  @JSImport("css-minimizer-webpack-plugin", "getAvailableNumberOfCores")
+  @js.native
+  def getAvailableNumberOfCores: Any = js.native
+  inline def getAvailableNumberOfCores_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAvailableNumberOfCores")(x.asInstanceOf[js.Any])
+  
+  /**
+    * @private
+    * @param {any} input
+    * @returns {boolean}
+    */
+  /* static member */
+  @JSImport("css-minimizer-webpack-plugin", "isSourceMap")
+  @js.native
+  def isSourceMap: Any = js.native
+  inline def isSourceMap_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSourceMap")(x.asInstanceOf[js.Any])
+  
+  inline def lightningCssMinify(
+    input: typings.cssMinimizerWebpackPlugin.utilsMod.Input,
+    sourceMap: Unit,
+    minimizerOptions: typings.cssMinimizerWebpackPlugin.utilsMod.CustomOptions
+  ): js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("lightningCssMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult]]
+  inline def lightningCssMinify(
+    input: typings.cssMinimizerWebpackPlugin.utilsMod.Input,
+    sourceMap: typings.cssMinimizerWebpackPlugin.utilsMod.RawSourceMap,
+    minimizerOptions: typings.cssMinimizerWebpackPlugin.utilsMod.CustomOptions
+  ): js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("lightningCssMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult]]
+  
+  inline def parcelCssMinify(
+    input: typings.cssMinimizerWebpackPlugin.utilsMod.Input,
+    sourceMap: Unit,
+    minimizerOptions: typings.cssMinimizerWebpackPlugin.utilsMod.CustomOptions
+  ): js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("parcelCssMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult]]
+  inline def parcelCssMinify(
+    input: typings.cssMinimizerWebpackPlugin.utilsMod.Input,
+    sourceMap: typings.cssMinimizerWebpackPlugin.utilsMod.RawSourceMap,
+    minimizerOptions: typings.cssMinimizerWebpackPlugin.utilsMod.CustomOptions
+  ): js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("parcelCssMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult]]
+  
+  type Asset = typings.webpack.mod.Asset
+  
+  trait BasePluginOptions extends StObject {
     
-    /**
-      * Enable file caching.
-      * @default 'node_modules/.cache/css-minimizer-webpack-plugin'
-      */
-    var cache: js.UndefOr[Boolean | String] = js.undefined
+    var exclude: js.UndefOr[Rules] = js.undefined
     
-    /**
-      * Allows you to override default cache keys.
-      */
-    var cacheKeys: js.UndefOr[js.Function2[/* defaultCacheKeys */ CacheKeys, /* file */ String, CacheKeys]] = js.undefined
+    var include: js.UndefOr[Rules] = js.undefined
     
-    /**
-      * Files to exclude.
-      */
-    var exclude: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
+    var parallel: js.UndefOr[Parallel] = js.undefined
     
-    /**
-      * Files to include
-      */
-    var include: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
+    var test: js.UndefOr[Rules] = js.undefined
     
-    /**
-      * Allows you to override default minify function.
-      * By default plugin uses cssnano package. Useful for using and testing unpublished versions or forks.
-      */
-    var minify: js.UndefOr[
-        js.Function3[/* data */ js.Any, /* inputMap */ js.Any, /* minimizerOptions */ js.Any, js.Any]
-      ] = js.undefined
-    
-    var minimizerOptions: js.UndefOr[CssNanoOptions] = js.undefined
-    
-    /**
-      * Use multi-process parallel running to improve the build speed.
-      * Default number of concurrent runs: os.cpus().length - 1.
-      */
-    var parallel: js.UndefOr[Boolean | Double] = js.undefined
-    
-    /**
-      * Enable (and configure) source map support.
-      * Use PostCss SourceMap options.
-      * Default configuration when enabled: { inline: false }.
-      */
-    var sourceMap: js.UndefOr[Boolean | SourceMapOptions] = js.undefined
-    
-    /**
-      * Test to match files against.
-      */
-    var test: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
-    
-    /**
-      * Allow to filter css-minimizer warnings (By default cssnano).
-      * Return true to keep the warning, a falsy value (false/null/undefined) otherwise.
-      */
-    var warningsFilter: js.UndefOr[
-        js.Function3[
-          /* warning */ String, 
-          /* file */ String, 
-          /* source */ String, 
-          js.UndefOr[Boolean | Null]
-        ]
-      ] = js.undefined
+    var warningsFilter: js.UndefOr[WarningsFilter] = js.undefined
   }
-  object Options {
+  object BasePluginOptions {
     
-    inline def apply(): Options = {
+    inline def apply(): BasePluginOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Options]
+      __obj.asInstanceOf[BasePluginOptions]
     }
     
-    extension [Self <: Options](x: Self) {
+    extension [Self <: BasePluginOptions](x: Self) {
       
-      inline def setCache(value: Boolean | String): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
-      
-      inline def setCacheKeys(value: (/* defaultCacheKeys */ CacheKeys, /* file */ String) => CacheKeys): Self = StObject.set(x, "cacheKeys", js.Any.fromFunction2(value))
-      
-      inline def setCacheKeysUndefined: Self = StObject.set(x, "cacheKeys", js.undefined)
-      
-      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
-      
-      inline def setExclude(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: Rules): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: Rule*): Self = StObject.set(x, "exclude", js.Array(value*))
       
-      inline def setInclude(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: Rules): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
       inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      inline def setIncludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: Rule*): Self = StObject.set(x, "include", js.Array(value*))
       
-      inline def setMinify(value: (/* data */ js.Any, /* inputMap */ js.Any, /* minimizerOptions */ js.Any) => js.Any): Self = StObject.set(x, "minify", js.Any.fromFunction3(value))
-      
-      inline def setMinifyUndefined: Self = StObject.set(x, "minify", js.undefined)
-      
-      inline def setMinimizerOptions(value: CssNanoOptions): Self = StObject.set(x, "minimizerOptions", value.asInstanceOf[js.Any])
-      
-      inline def setMinimizerOptionsUndefined: Self = StObject.set(x, "minimizerOptions", js.undefined)
-      
-      inline def setParallel(value: Boolean | Double): Self = StObject.set(x, "parallel", value.asInstanceOf[js.Any])
+      inline def setParallel(value: Parallel): Self = StObject.set(x, "parallel", value.asInstanceOf[js.Any])
       
       inline def setParallelUndefined: Self = StObject.set(x, "parallel", js.undefined)
       
-      inline def setSourceMap(value: Boolean | SourceMapOptions): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
-      
-      inline def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
-      
-      inline def setTest(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      inline def setTest(value: Rules): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
       
       inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
       
-      inline def setTestVarargs(value: (String | RegExp)*): Self = StObject.set(x, "test", js.Array(value :_*))
+      inline def setTestVarargs(value: Rule*): Self = StObject.set(x, "test", js.Array(value*))
       
       inline def setWarningsFilter(
-        value: (/* warning */ String, /* file */ String, /* source */ String) => js.UndefOr[Boolean | Null]
+        value: (/* warning */ Warning | WarningObject | String, /* file */ String, /* source */ js.UndefOr[String]) => Boolean
       ): Self = StObject.set(x, "warningsFilter", js.Any.fromFunction3(value))
       
       inline def setWarningsFilterUndefined: Self = StObject.set(x, "warningsFilter", js.undefined)
     }
   }
+  
+  type BasicMinimizerImplementation[T] = js.Function3[
+    /* input */ Input, 
+    /* sourceMap */ js.UndefOr[RawSourceMap], 
+    /* minifyOptions */ InferDefaultType[T], 
+    js.Promise[MinimizedResult]
+  ]
+  
+  type Compilation = typings.webpack.mod.Compilation
+  
+  type Compiler = typings.webpack.mod.Compiler
+  
+  /**
+    * @template [T=CssNanoOptionsExtended]
+    */
+  trait CssMinimizerPlugin[T] extends StObject {
+    
+    /**
+      * @param {Compiler} compiler
+      * @returns {void}
+      */
+    @JSName("apply")
+    def apply(compiler: Compiler): Unit
+    
+    /**
+      * @private
+      * @param {Compiler} compiler
+      * @param {Compilation} compilation
+      * @param {Record<string, import("webpack").sources.Source>} assets
+      * @param {{availableNumberOfCores: number}} optimizeOptions
+      * @returns {Promise<void>}
+      */
+    /* private */ var optimize: Any
+    
+    /**
+      * @private
+      * @type {InternalPluginOptions<T>}
+      */
+    /* private */ var options: Any
+  }
+  object CssMinimizerPlugin {
+    
+    inline def apply[T](apply: Compiler => Unit, optimize: Any, options: Any): CssMinimizerPlugin[T] = {
+      val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), optimize = optimize.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CssMinimizerPlugin[T]]
+    }
+    
+    extension [Self <: CssMinimizerPlugin[?], T](x: Self & CssMinimizerPlugin[T]) {
+      
+      inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+      
+      inline def setOptimize(value: Any): Self = StObject.set(x, "optimize", value.asInstanceOf[js.Any])
+      
+      inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait CssNanoOptions extends StObject {
+    
+    var configFile: js.UndefOr[String] = js.undefined
+    
+    var preset: js.UndefOr[(js.Tuple2[String, js.Object]) | String] = js.undefined
+  }
+  object CssNanoOptions {
+    
+    inline def apply(): CssNanoOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CssNanoOptions]
+    }
+    
+    extension [Self <: CssNanoOptions](x: Self) {
+      
+      inline def setConfigFile(value: String): Self = StObject.set(x, "configFile", value.asInstanceOf[js.Any])
+      
+      inline def setConfigFileUndefined: Self = StObject.set(x, "configFile", js.undefined)
+      
+      inline def setPreset(value: (js.Tuple2[String, js.Object]) | String): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
+      
+      inline def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
+    }
+  }
+  
+  trait CssNanoOptionsExtended
+    extends StObject
+       with CssNanoOptions {
+    
+    var processorOptions: js.UndefOr[ProcessOptionsExtender] = js.undefined
+  }
+  object CssNanoOptionsExtended {
+    
+    inline def apply(): CssNanoOptionsExtended = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CssNanoOptionsExtended]
+    }
+    
+    extension [Self <: CssNanoOptionsExtended](x: Self) {
+      
+      inline def setProcessorOptions(value: ProcessOptionsExtender): Self = StObject.set(x, "processorOptions", value.asInstanceOf[js.Any])
+      
+      inline def setProcessorOptionsUndefined: Self = StObject.set(x, "processorOptions", js.undefined)
+    }
+  }
+  
+  type CustomOptions = StringDictionary[Any]
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.cssMinimizerWebpackPlugin.anon.MinimizerOptions[T]
+    - typings.cssMinimizerWebpackPlugin.anon.Minify[T]
+  */
+  trait DefinedDefaultMinimizerAndOptions[T] extends StObject
+  object DefinedDefaultMinimizerAndOptions {
+    
+    inline def Minify[T](): typings.cssMinimizerWebpackPlugin.anon.Minify[T] = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[typings.cssMinimizerWebpackPlugin.anon.Minify[T]]
+    }
+    
+    inline def MinimizerOptions[T](minify: MinimizerImplementation[T]): typings.cssMinimizerWebpackPlugin.anon.MinimizerOptions[T] = {
+      val __obj = js.Dynamic.literal(minify = minify.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.cssMinimizerWebpackPlugin.anon.MinimizerOptions[T]]
+    }
+  }
+  
+  trait ErrorObject extends StObject {
+    
+    var column: js.UndefOr[Double] = js.undefined
+    
+    var line: js.UndefOr[Double] = js.undefined
+    
+    var message: String
+    
+    var stack: js.UndefOr[String] = js.undefined
+  }
+  object ErrorObject {
+    
+    inline def apply(message: String): ErrorObject = {
+      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ErrorObject]
+    }
+    
+    extension [Self <: ErrorObject](x: Self) {
+      
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      
+      inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+      
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      
+      inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+      
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      
+      inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      
+      inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+    }
+  }
+  
+  type InferDefaultType[T] = CustomOptions
+  
+  type Input = StringDictionary[String]
+  
+  trait InternalOptions[T] extends StObject {
+    
+    var input: String
+    
+    var inputSourceMap: js.UndefOr[RawSourceMap] = js.undefined
+    
+    var minimizer: Implementation[T]
+    
+    var name: String
+  }
+  object InternalOptions {
+    
+    inline def apply[T](input: String, minimizer: Implementation[T], name: String): InternalOptions[T] = {
+      val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], minimizer = minimizer.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[InternalOptions[T]]
+    }
+    
+    extension [Self <: InternalOptions[?], T](x: Self & InternalOptions[T]) {
+      
+      inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      
+      inline def setInputSourceMap(value: RawSourceMap): Self = StObject.set(x, "inputSourceMap", value.asInstanceOf[js.Any])
+      
+      inline def setInputSourceMapUndefined: Self = StObject.set(x, "inputSourceMap", js.undefined)
+      
+      inline def setMinimizer(value: Implementation[T]): Self = StObject.set(x, "minimizer", value.asInstanceOf[js.Any])
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait InternalPluginOptions[T]
+    extends StObject
+       with BasePluginOptions {
+    
+    var minimizer: Implementation[T]
+  }
+  object InternalPluginOptions {
+    
+    inline def apply[T](minimizer: Implementation[T]): InternalPluginOptions[T] = {
+      val __obj = js.Dynamic.literal(minimizer = minimizer.asInstanceOf[js.Any])
+      __obj.asInstanceOf[InternalPluginOptions[T]]
+    }
+    
+    extension [Self <: InternalPluginOptions[?], T](x: Self & InternalPluginOptions[T]) {
+      
+      inline def setMinimizer(value: Implementation[T]): Self = StObject.set(x, "minimizer", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait InternalResult extends StObject {
+    
+    var errors: js.Array[js.Error | ErrorObject | String]
+    
+    var outputs: js.Array[Code]
+    
+    var warnings: js.Array[Warning | WarningObject | String]
+  }
+  object InternalResult {
+    
+    inline def apply(
+      errors: js.Array[js.Error | ErrorObject | String],
+      outputs: js.Array[Code],
+      warnings: js.Array[Warning | WarningObject | String]
+    ): InternalResult = {
+      val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any])
+      __obj.asInstanceOf[InternalResult]
+    }
+    
+    extension [Self <: InternalResult](x: Self) {
+      
+      inline def setErrors(value: js.Array[js.Error | ErrorObject | String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      
+      inline def setErrorsVarargs(value: (js.Error | ErrorObject | String)*): Self = StObject.set(x, "errors", js.Array(value*))
+      
+      inline def setOutputs(value: js.Array[Code]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+      
+      inline def setOutputsVarargs(value: Code*): Self = StObject.set(x, "outputs", js.Array(value*))
+      
+      inline def setWarnings(value: js.Array[Warning | WarningObject | String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+      
+      inline def setWarningsVarargs(value: (Warning | WarningObject | String)*): Self = StObject.set(x, "warnings", js.Array(value*))
+    }
+  }
+  
+  type JestWorker = Worker
+  
+  trait MinimizedResult extends StObject {
+    
+    var code: String
+    
+    var errors: js.UndefOr[js.Array[String | js.Error | ErrorObject]] = js.undefined
+    
+    var map: js.UndefOr[typings.sourceMap.mod.RawSourceMap] = js.undefined
+    
+    var warnings: js.UndefOr[js.Array[Warning | WarningObject]] = js.undefined
+  }
+  object MinimizedResult {
+    
+    inline def apply(code: String): MinimizedResult = {
+      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
+      __obj.asInstanceOf[MinimizedResult]
+    }
+    
+    extension [Self <: MinimizedResult](x: Self) {
+      
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      
+      inline def setErrors(value: js.Array[String | js.Error | ErrorObject]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      
+      inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+      
+      inline def setErrorsVarargs(value: (String | js.Error | ErrorObject)*): Self = StObject.set(x, "errors", js.Array(value*))
+      
+      inline def setMap(value: typings.sourceMap.mod.RawSourceMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      
+      inline def setWarnings(value: js.Array[Warning | WarningObject]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+      
+      inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+      
+      inline def setWarningsVarargs(value: (Warning | WarningObject)*): Self = StObject.set(x, "warnings", js.Array(value*))
+    }
+  }
+  
+  type MinimizerImplementation[T] = BasicMinimizerImplementation[T] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in keyof any ]: css-minimizer-webpack-plugin.css-minimizer-webpack-plugin.BasicMinimizerImplementation<T[P]>}
+    */ typings.cssMinimizerWebpackPlugin.cssMinimizerWebpackPluginStrings.MinimizerImplementation & TopLevel[T])
+  
+  type MinimizerOptions[T] = InferDefaultType[T] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in keyof any ]:? css-minimizer-webpack-plugin.css-minimizer-webpack-plugin.InferDefaultType<T[P]> | undefined}
+    */ typings.cssMinimizerWebpackPlugin.cssMinimizerWebpackPluginStrings.MinimizerOptions & TopLevel[T])
+  
+  @js.native
+  trait MinimizerWorker[T]
+    extends StObject
+       with typings.std.Worker {
+    
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+    
+    def minify(options: InternalOptions[T]): InternalResult = js.native
+    
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
+    
+    def transform(options: String): InternalResult = js.native
+  }
+  
+  type Parallel = js.UndefOr[Boolean | Double]
+  
+  type Parser = typings.postcss.mod.Parser[default | typings.postcss.documentMod.default]
+  
+  type ProcessOptions = typings.postcss.mod.ProcessOptions
+  
+  type ProcessOptionsExtender = ProcessOptions | From
+  
+  type RawSourceMap = typings.sourceMap.mod.RawSourceMap
+  
+  type Rule = js.RegExp | String
+  
+  type Rules = js.Array[Rule] | Rule
+  
+  type Schema = typings.schemaUtils.validateMod.Schema
+  
+  type Stringifier = typings.postcss.mod.Stringifier
+  
+  type Syntax = typings.postcss.mod.Syntax
+  
+  type Warning = Errorpluginstringundefine | String
+  
+  trait WarningObject extends StObject {
+    
+    var column: js.UndefOr[Double] = js.undefined
+    
+    var line: js.UndefOr[Double] = js.undefined
+    
+    var message: String
+    
+    var plugin: js.UndefOr[String] = js.undefined
+    
+    var text: js.UndefOr[String] = js.undefined
+  }
+  object WarningObject {
+    
+    inline def apply(message: String): WarningObject = {
+      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+      __obj.asInstanceOf[WarningObject]
+    }
+    
+    extension [Self <: WarningObject](x: Self) {
+      
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      
+      inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+      
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      
+      inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+      
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      
+      inline def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+      
+      inline def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
+      
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    }
+  }
+  
+  type WarningsFilter = js.Function3[
+    /* warning */ Warning | WarningObject | String, 
+    /* file */ String, 
+    /* source */ js.UndefOr[String], 
+    Boolean
+  ]
+  
+  type WebpackError = typings.webpack.mod.WebpackError
 }

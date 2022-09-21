@@ -2,19 +2,20 @@ package typings.forkTsCheckerWebpackPlugin
 
 import typings.forkTsCheckerWebpackPlugin.anon.Canceled
 import typings.std.ReturnType
+import typings.webpack.mod.Compiler
+import typings.webpack.mod.MultiCompiler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluginHooksMod {
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/hooks/pluginHooks", JSImport.Namespace)
+  @JSImport("fork-ts-checker-webpack-plugin/lib/plugin-hooks", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getForkTsCheckerWebpackPluginHooks(
-    compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.MultiCompiler */ js.Any
-  ): Canceled = ^.asInstanceOf[js.Dynamic].applyDynamic("getForkTsCheckerWebpackPluginHooks")(compiler.asInstanceOf[js.Any]).asInstanceOf[Canceled]
+  inline def getPluginHooks(compiler: Compiler): Canceled = ^.asInstanceOf[js.Dynamic].applyDynamic("getPluginHooks")(compiler.asInstanceOf[js.Any]).asInstanceOf[Canceled]
+  inline def getPluginHooks(compiler: MultiCompiler): Canceled = ^.asInstanceOf[js.Dynamic].applyDynamic("getPluginHooks")(compiler.asInstanceOf[js.Any]).asInstanceOf[Canceled]
   
   type ForkTsCheckerWebpackPluginHooks = ReturnType[js.Function0[Canceled]]
 }

@@ -27,7 +27,7 @@ trait DocumentClassifierInputDataConfig extends StObject {
   var S3Uri: js.UndefOr[typings.awsSdk.comprehendMod.S3Uri] = js.undefined
   
   /**
-    * The Amazon S3 URI for the input data. The Amazon S3 bucket must be in the same AWS Region as the API endpoint that you are calling. The URI can point to a single input file or it can provide the prefix for a collection of input files. 
+    * This specifies the Amazon S3 location where the test annotations for an entity recognizer are located. The URI must be in the same AWS Region as the API endpoint that you are calling. 
     */
   var TestS3Uri: js.UndefOr[S3Uri] = js.undefined
 }

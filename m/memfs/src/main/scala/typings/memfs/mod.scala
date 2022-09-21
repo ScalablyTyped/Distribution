@@ -23,7 +23,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("memfs", "Volume")
   @js.native
-  class Volume ()
+  open class Volume ()
     extends typings.memfs.volumeMod.Volume {
     def this(props: js.Object) = this()
   }
@@ -63,42 +63,42 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("memfs", "fs.Dirent")
     @js.native
-    class Dirent protected () extends default {
-      def this(args: js.Any*) = this()
+    open class Dirent protected () extends default {
+      def this(args: Any*) = this()
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("memfs", "fs.FSWatcher")
     @js.native
-    class FSWatcher ()
+    open class FSWatcher ()
       extends typings.memfs.volumeMod.FSWatcher
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("memfs", "fs.ReadStream")
     @js.native
-    class ReadStream protected () extends IReadStream {
-      def this(args: js.Any*) = this()
+    open class ReadStream protected () extends IReadStream {
+      def this(args: Any*) = this()
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("memfs", "fs.StatWatcher")
     @js.native
-    class StatWatcher ()
+    open class StatWatcher ()
       extends typings.memfs.volumeMod.StatWatcher
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("memfs", "fs.Stats")
     @js.native
-    class Stats protected ()
+    open class Stats protected ()
       extends typings.memfs.statsMod.default[TStatNumber] {
-      def this(args: js.Any*) = this()
+      def this(args: Any*) = this()
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("memfs", "fs.WriteStream")
     @js.native
-    class WriteStream protected () extends IWriteStream {
-      def this(args: js.Any*) = this()
+    open class WriteStream protected () extends IWriteStream {
+      def this(args: Any*) = this()
     }
     
     type _To = IFs
@@ -116,27 +116,27 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("memfs", "vol.FSWatcher")
     @js.native
-    class FSWatcher ()
+    open class FSWatcher ()
       extends typings.memfs.volumeMod.FSWatcher
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("memfs", "vol.ReadStream")
     @js.native
-    class ReadStream protected () extends IReadStream {
-      def this(args: js.Any*) = this()
+    open class ReadStream protected () extends IReadStream {
+      def this(args: Any*) = this()
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("memfs", "vol.StatWatcher")
     @js.native
-    class StatWatcher ()
+    open class StatWatcher ()
       extends typings.memfs.volumeMod.StatWatcher
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("memfs", "vol.WriteStream")
     @js.native
-    class WriteStream protected () extends IWriteStream {
-      def this(args: js.Any*) = this()
+    open class WriteStream protected () extends IWriteStream {
+      def this(args: Any*) = this()
     }
     
     type _To = typings.memfs.volumeMod.Volume
@@ -149,11 +149,11 @@ object mod {
   trait IFs
     extends typings.memfs.volumeMod.Volume {
     
-    var Dirent: Instantiable1[/* args (repeated) */ js.Any, default] = js.native
+    var Dirent: Instantiable1[/* args (repeated) */ Any, default] = js.native
     
-    var Stats: Instantiable1[/* args (repeated) */ js.Any, typings.memfs.statsMod.default[TStatNumber]] = js.native
+    var Stats: Instantiable1[/* args (repeated) */ Any, typings.memfs.statsMod.default[TStatNumber]] = js.native
     
-    var _toUnixTimestamp: js.Any = js.native
+    var _toUnixTimestamp: Any = js.native
     
     var constants: COPYFILEEXCL = js.native
     

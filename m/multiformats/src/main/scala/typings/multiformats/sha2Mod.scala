@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object sha2Mod {
   
-  @JSImport("multiformats/types/src/hashes/sha2", "sha256")
+  @JSImport("multiformats/dist/types/src/hashes/sha2", "sha256")
   @js.native
   val sha256: Hasher[`sha2-256`, `18`] = js.native
   
-  @JSImport("multiformats/types/src/hashes/sha2", "sha512")
+  @JSImport("multiformats/dist/types/src/hashes/sha2", "sha512")
   @js.native
   val sha512: Hasher[`sha2-512`, `19`] = js.native
 }

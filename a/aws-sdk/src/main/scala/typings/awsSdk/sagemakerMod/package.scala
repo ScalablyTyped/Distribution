@@ -995,6 +995,13 @@ type FeatureParameterValue = java.lang.String
 type FeatureParameters = js.Array[FeatureParameter]
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type FeatureStatus = _FeatureStatus | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Integral
   - typings.awsSdk.awsSdkStrings.Fractional
   - typings.awsSdk.awsSdkStrings.String_

@@ -1,5 +1,6 @@
 package typings.ipldCar
 
+import typings.multiformats.linkInterfaceMod.Version
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +29,7 @@ object verifyStoreReaderMod {
   
   type BlockReader = typings.ipldCar.apiMod.BlockReader
   
-  type CID = typings.multiformats.mod.CID
+  type CID = typings.multiformats.mod.CID[Any, Double, Double, Version]
   
   type CIDIterator = typings.ipldCar.apiMod.CIDIterator
   

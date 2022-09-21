@@ -2,10 +2,9 @@ package typings.swaggerStats
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.RequestHandler
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.fastify.instanceMod.FastifyInstance
-import typings.fastify.loggerMod.FastifyLoggerInstance
+import typings.fastify.loggerMod.FastifyBaseLogger
+import typings.fastify.typeProviderMod.FastifyTypeProviderDefault
 import typings.fastify.utilsMod.RawReplyDefaultExpression
 import typings.fastify.utilsMod.RawRequestDefaultExpression
 import typings.fastify.utilsMod.RawServerDefault
@@ -39,7 +38,8 @@ object mod {
       RawServerDefault, 
       RawRequestDefaultExpression[RawServerDefault], 
       RawReplyDefaultExpression[RawServerDefault], 
-      FastifyLoggerInstance
+      FastifyBaseLogger, 
+      FastifyTypeProviderDefault
     ],
     opts: SWStats,
     done: js.Function0[Unit]
@@ -63,8 +63,32 @@ object mod {
     val version: String = js.native
   }
   
-  inline def getMiddleware(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMiddleware")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  inline def getMiddleware(opts: SWStats): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMiddleware")(opts.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def getMiddleware(): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMiddleware")().asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  inline def getMiddleware(opts: SWStats): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMiddleware")(opts.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
   inline def getPromClient(): TypeofPromClient = ^.asInstanceOf[js.Dynamic].applyDynamic("getPromClient")().asInstanceOf[TypeofPromClient]
   
@@ -84,7 +108,7 @@ object mod {
     
     var swagger: Boolean
     
-    var tags: js.UndefOr[js.Any] = js.undefined
+    var tags: js.UndefOr[Any] = js.undefined
   }
   object APIOperationDefinition {
     
@@ -111,7 +135,7 @@ object mod {
       
       inline def setSwagger(value: Boolean): Self = StObject.set(x, "swagger", value.asInstanceOf[js.Any])
       
-      inline def setTags(value: js.Any): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Any): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
@@ -233,13 +257,13 @@ object mod {
       
       inline def setLasterrorsUndefined: Self = StObject.set(x, "lasterrors", js.undefined)
       
-      inline def setLasterrorsVarargs(value: RequestResponseRecord*): Self = StObject.set(x, "lasterrors", js.Array(value :_*))
+      inline def setLasterrorsVarargs(value: RequestResponseRecord*): Self = StObject.set(x, "lasterrors", js.Array(value*))
       
       inline def setLongestreq(value: js.Array[RequestResponseRecord]): Self = StObject.set(x, "longestreq", value.asInstanceOf[js.Any])
       
       inline def setLongestreqUndefined: Self = StObject.set(x, "longestreq", js.undefined)
       
-      inline def setLongestreqVarargs(value: RequestResponseRecord*): Self = StObject.set(x, "longestreq", js.Array(value :_*))
+      inline def setLongestreqVarargs(value: RequestResponseRecord*): Self = StObject.set(x, "longestreq", js.Array(value*))
       
       inline def setMethod(value: RecordHTTPMethodSubsetReq): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -467,7 +491,7 @@ object mod {
   
   trait RequestResponseRecord
     extends StObject
-       with /* field */ StringDictionary[js.Any] {
+       with /* field */ StringDictionary[Any] {
     
     var `@timestamp`: String
     
@@ -559,7 +583,7 @@ object mod {
     }
   }
   
-  /* Inlined std.Partial<{  hostname :string,   name :string,   version :string,   ip :string,   swaggerSpec :std.Record<any, any>,   uriPath :string,   timelineBucketDuration :number,   durationBuckets :std.Array<number>,   requestSizeBuckets :std.Array<number>,   responseSizeBuckets :std.Array<number>,   apdexThreshold :number, onResponseFinish (req : node.http.IncomingMessage, res : node.http.ServerResponse, rrr : swagger-stats.swagger-stats.RequestResponseRecord): void,   authentication :boolean, onAuthenticate (req : node.http.IncomingMessage, username : string, password : string): boolean,   sessionMaxAge :number,   elasticsearch :string,   elasticsearchIndexPrefix :string,   elasticsearchUsername :string,   elasticsearchPassword :string,   swaggerOnly :boolean,   metricsPrefix :string,   enableEgress :boolean}> */
+  /* Inlined std.Partial<{  hostname :string,   name :string,   version :string,   ip :string,   swaggerSpec :std.Record<any, any>,   uriPath :string,   timelineBucketDuration :number,   durationBuckets :std.Array<number>,   requestSizeBuckets :std.Array<number>,   responseSizeBuckets :std.Array<number>,   apdexThreshold :number, onResponseFinish (req : node.http.IncomingMessage, res : node.http.ServerResponse<node.http.IncomingMessage>, rrr : swagger-stats.swagger-stats.RequestResponseRecord): void,   authentication :boolean, onAuthenticate (req : node.http.IncomingMessage, username : string, password : string): boolean,   sessionMaxAge :number,   elasticsearch :string,   elasticsearchIndexPrefix :string,   elasticsearchUsername :string,   elasticsearchPassword :string,   swaggerOnly :boolean,   metricsPrefix :string,   enableEgress :boolean}> */
   trait SWStats extends StObject {
     
     var apdexThreshold: js.UndefOr[Double] = js.undefined
@@ -593,7 +617,7 @@ object mod {
     var onResponseFinish: js.UndefOr[
         js.Function3[
           /* req */ IncomingMessage, 
-          /* res */ ServerResponse, 
+          /* res */ ServerResponse[IncomingMessage], 
           /* rrr */ RequestResponseRecord, 
           Unit
         ]
@@ -607,7 +631,7 @@ object mod {
     
     var swaggerOnly: js.UndefOr[Boolean] = js.undefined
     
-    var swaggerSpec: js.UndefOr[Record[js.Any, js.Any]] = js.undefined
+    var swaggerSpec: js.UndefOr[Record[Any, Any]] = js.undefined
     
     var timelineBucketDuration: js.UndefOr[Double] = js.undefined
     
@@ -636,7 +660,7 @@ object mod {
       
       inline def setDurationBucketsUndefined: Self = StObject.set(x, "durationBuckets", js.undefined)
       
-      inline def setDurationBucketsVarargs(value: Double*): Self = StObject.set(x, "durationBuckets", js.Array(value :_*))
+      inline def setDurationBucketsVarargs(value: Double*): Self = StObject.set(x, "durationBuckets", js.Array(value*))
       
       inline def setElasticsearch(value: String): Self = StObject.set(x, "elasticsearch", value.asInstanceOf[js.Any])
       
@@ -679,7 +703,7 @@ object mod {
       inline def setOnAuthenticateUndefined: Self = StObject.set(x, "onAuthenticate", js.undefined)
       
       inline def setOnResponseFinish(
-        value: (/* req */ IncomingMessage, /* res */ ServerResponse, /* rrr */ RequestResponseRecord) => Unit
+        value: (/* req */ IncomingMessage, /* res */ ServerResponse[IncomingMessage], /* rrr */ RequestResponseRecord) => Unit
       ): Self = StObject.set(x, "onResponseFinish", js.Any.fromFunction3(value))
       
       inline def setOnResponseFinishUndefined: Self = StObject.set(x, "onResponseFinish", js.undefined)
@@ -688,13 +712,13 @@ object mod {
       
       inline def setRequestSizeBucketsUndefined: Self = StObject.set(x, "requestSizeBuckets", js.undefined)
       
-      inline def setRequestSizeBucketsVarargs(value: Double*): Self = StObject.set(x, "requestSizeBuckets", js.Array(value :_*))
+      inline def setRequestSizeBucketsVarargs(value: Double*): Self = StObject.set(x, "requestSizeBuckets", js.Array(value*))
       
       inline def setResponseSizeBuckets(value: js.Array[Double]): Self = StObject.set(x, "responseSizeBuckets", value.asInstanceOf[js.Any])
       
       inline def setResponseSizeBucketsUndefined: Self = StObject.set(x, "responseSizeBuckets", js.undefined)
       
-      inline def setResponseSizeBucketsVarargs(value: Double*): Self = StObject.set(x, "responseSizeBuckets", js.Array(value :_*))
+      inline def setResponseSizeBucketsVarargs(value: Double*): Self = StObject.set(x, "responseSizeBuckets", js.Array(value*))
       
       inline def setSessionMaxAge(value: Double): Self = StObject.set(x, "sessionMaxAge", value.asInstanceOf[js.Any])
       
@@ -704,7 +728,7 @@ object mod {
       
       inline def setSwaggerOnlyUndefined: Self = StObject.set(x, "swaggerOnly", js.undefined)
       
-      inline def setSwaggerSpec(value: Record[js.Any, js.Any]): Self = StObject.set(x, "swaggerSpec", value.asInstanceOf[js.Any])
+      inline def setSwaggerSpec(value: Record[Any, Any]): Self = StObject.set(x, "swaggerSpec", value.asInstanceOf[js.Any])
       
       inline def setSwaggerSpecUndefined: Self = StObject.set(x, "swaggerSpec", js.undefined)
       

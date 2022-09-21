@@ -6,30 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object performanceMod {
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/profile/Performance", JSImport.Namespace)
+  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript/worker/lib/performance", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createPerformance(): Performance = ^.asInstanceOf[js.Dynamic].applyDynamic("createPerformance")().asInstanceOf[Performance]
+  inline def disablePerformanceIfNeeded(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disablePerformanceIfNeeded")().asInstanceOf[Unit]
   
-  @js.native
-  trait Performance extends StObject {
-    
-    def disable(): Unit = js.native
-    
-    def enable(): Unit = js.native
-    
-    def mark(name: String): Unit = js.native
-    
-    def markEnd(name: String): Unit = js.native
-    
-    def markStart(name: String): Unit = js.native
-    
-    def measure(name: String): Unit = js.native
-    def measure(name: String, startMark: String): Unit = js.native
-    def measure(name: String, startMark: String, endMark: String): Unit = js.native
-    def measure(name: String, startMark: Unit, endMark: String): Unit = js.native
-    
-    def print(): Unit = js.native
-  }
+  inline def enablePerformanceIfNeeded(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enablePerformanceIfNeeded")().asInstanceOf[Unit]
+  
+  inline def printPerformanceMeasuresIfNeeded(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printPerformanceMeasuresIfNeeded")().asInstanceOf[Unit]
 }

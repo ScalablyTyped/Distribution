@@ -65,6 +65,13 @@ type BucketLocationConstraint = _BucketLocationConstraint | String
 
 type BucketName = String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Enabled_
+  - typings.awsSdk.awsSdkStrings.Suspended_
+  - java.lang.String
+*/
+type BucketVersioningStatus = _BucketVersioningStatus | String
+
 type Buckets = js.Array[S3BucketArnString]
 
 type ConfigId = String
@@ -205,6 +212,22 @@ type KmsKeyArnString = String
 type LifecycleRules = js.Array[LifecycleRule]
 
 type Location = String
+
+type MFA = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Enabled_
+  - typings.awsSdk.awsSdkStrings.Disabled_
+  - java.lang.String
+*/
+type MFADelete = _MFADelete | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Enabled_
+  - typings.awsSdk.awsSdkStrings.Disabled_
+  - java.lang.String
+*/
+type MFADeleteStatus = _MFADeleteStatus | String
 
 type ManifestPrefixString = String
 

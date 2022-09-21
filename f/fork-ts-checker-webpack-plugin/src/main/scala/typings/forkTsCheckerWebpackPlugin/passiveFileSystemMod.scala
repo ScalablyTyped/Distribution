@@ -7,16 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object passiveFileSystemMod {
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/file-system/PassiveFileSystem", JSImport.Namespace)
+  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript/worker/lib/file-system/passive-file-system", "passiveFileSystem")
   @js.native
-  val ^ : js.Any = js.native
-  
-  /**
-    * It's an implementation of FileSystem interface which reads from the real file system, but write to the in-memory file system.
-    *
-    * @param caseSensitive
-    * @param realFileSystem
-    */
-  inline def createPassiveFileSystem(caseSensitive: Boolean, realFileSystem: FileSystem): FileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("createPassiveFileSystem")(caseSensitive.asInstanceOf[js.Any], realFileSystem.asInstanceOf[js.Any])).asInstanceOf[FileSystem]
-  inline def createPassiveFileSystem(caseSensitive: Unit, realFileSystem: FileSystem): FileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("createPassiveFileSystem")(caseSensitive.asInstanceOf[js.Any], realFileSystem.asInstanceOf[js.Any])).asInstanceOf[FileSystem]
+  val passiveFileSystem: FileSystem = js.native
 }

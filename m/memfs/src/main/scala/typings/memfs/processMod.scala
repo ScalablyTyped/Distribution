@@ -22,11 +22,11 @@ object processMod {
     
     def emitWarning(message: String, `type`: String): Unit
     
-    def getgid(): Double
+    var getgid: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    def getuid(): Double
+    var getuid: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    def nextTick(callback: js.Function1[/* repeated */ js.Any, Unit], args: js.Any*): Unit
+    def nextTick(callback: js.Function1[/* repeated */ Any, Unit], args: Any*): Unit
     
     var platform: String
   }
@@ -35,12 +35,10 @@ object processMod {
     inline def apply(
       cwd: () => String,
       emitWarning: (String, String) => Unit,
-      getgid: () => Double,
-      getuid: () => Double,
-      nextTick: (js.Function1[/* repeated */ js.Any, Unit], /* repeated */ js.Any) => Unit,
+      nextTick: (js.Function1[/* repeated */ Any, Unit], /* repeated */ Any) => Unit,
       platform: String
     ): IProcess = {
-      val __obj = js.Dynamic.literal(cwd = js.Any.fromFunction0(cwd), emitWarning = js.Any.fromFunction2(emitWarning), getgid = js.Any.fromFunction0(getgid), getuid = js.Any.fromFunction0(getuid), nextTick = js.Any.fromFunction2(nextTick), platform = platform.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(cwd = js.Any.fromFunction0(cwd), emitWarning = js.Any.fromFunction2(emitWarning), nextTick = js.Any.fromFunction2(nextTick), platform = platform.asInstanceOf[js.Any])
       __obj.asInstanceOf[IProcess]
     }
     
@@ -52,9 +50,13 @@ object processMod {
       
       inline def setGetgid(value: () => Double): Self = StObject.set(x, "getgid", js.Any.fromFunction0(value))
       
+      inline def setGetgidUndefined: Self = StObject.set(x, "getgid", js.undefined)
+      
       inline def setGetuid(value: () => Double): Self = StObject.set(x, "getuid", js.Any.fromFunction0(value))
       
-      inline def setNextTick(value: (js.Function1[/* repeated */ js.Any, Unit], /* repeated */ js.Any) => Unit): Self = StObject.set(x, "nextTick", js.Any.fromFunction2(value))
+      inline def setGetuidUndefined: Self = StObject.set(x, "getuid", js.undefined)
+      
+      inline def setNextTick(value: (js.Function1[/* repeated */ Any, Unit], /* repeated */ Any) => Unit): Self = StObject.set(x, "nextTick", js.Any.fromFunction2(value))
       
       inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     }

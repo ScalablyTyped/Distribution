@@ -7,68 +7,6 @@
 | [3d-bin-packing](./3/3d-bin-packing) | - | - |
 | [7zip-bin](./7/7zip-bin) | - | - |
 | [7zip-min](./7/7zip-min) | - | - |
-| [_dot_acorn-Hl0KT3mL](./_/_dot_acorn-Hl0KT3mL) | - | - |
-| [_dot_ansi-to-html-x9bQETx](./_/_dot_ansi-to-html-x9bQETxB) | - | - |
-| [_dot_asar-zSSQS56p](./_/_dot_asar-zSSQS56p) | - | - |
-| [_dot_astring-r5uHvUcV](./_/_dot_astring-r5uHvUcV) | - | - |
-| [_dot_autoprefixer-hGRVcKd](./_/_dot_autoprefixer-hGRVcKdE) | - | - |
-| [_dot_browserfs-H4gEcI12](./_/_dot_browserfs-H4gEcI12) | - | - |
-| [_dot_browserslist-yAK9Ztn](./_/_dot_browserslist-yAK9ZtnC) | - | - |
-| [_dot_bunyan-seq-DnilJv2c](./_/_dot_bunyan-seq-DnilJv2c) | - | - |
-| [_dot_c8-Pa3eLO7m](./_/_dot_c8-Pa3eLO7m) | - | - |
-| [_dot_concurrently-5oeeHgI](./_/_dot_concurrently-5oeeHgIv) | - | - |
-| [_dot_crc-32-bILx1QHy](./_/_dot_crc-32-bILx1QHy) | - | - |
-| [_dot_csvtojson-9Fxy25kk](./_/_dot_csvtojson-9Fxy25kk) | - | - |
-| [_dot_depcheck-00c8X8Nf](./_/_dot_depcheck-00c8X8Nf) | - | - |
-| [_dot_dependency-tree-gsCd](./_/_dot_dependency-tree-gsCd6byU) | - | - |
-| [_dot_devextreme-b5DqTZzf](./_/_dot_devextreme-b5DqTZzf) | - | - |
-| [_dot_dice-coefficient-37y](./_/_dot_dice-coefficient-37yiUWK1) | - | - |
-| [_dot_dir-compare-lTUqokTJ](./_/_dot_dir-compare-lTUqokTJ) | - | - |
-| [_dot_direction-FkfK3EVQ](./_/_dot_direction-FkfK3EVQ) | - | - |
-| [_dot_double-metaphone-haF](./_/_dot_double-metaphone-haF7Gh8V) | - | - |
-| [_dot_editorconfig-Lg6Iaxj](./_/_dot_editorconfig-Lg6IaxjZ) | - | - |
-| [_dot_electron-osx-sign-6M](./_/_dot_electron-osx-sign-6Mga3sBG) | - | - |
-| [_dot_expo-glr2XJCr](./_/_dot_expo-glr2XJCr) | - | - |
-| [_dot_expo-modules-autolin](./_/_dot_expo-modules-autolinking-bLOnVmmV) | - | - |
-| [_dot_extract-zip-4br4dGJZ](./_/_dot_extract-zip-4br4dGJZ) | - | - |
-| [_dot_fast-xml-parser-SoMr](./_/_dot_fast-xml-parser-SoMrbExG) | - | - |
-| [_dot_find-process-cDiQKmD](./_/_dot_find-process-cDiQKmDv) | - | - |
-| [_dot_gitlab-nBHG3ede](./_/_dot_gitlab-nBHG3ede) | - | - |
-| [_dot_google-p12-pem-IsoaL](./_/_dot_google-p12-pem-IsoaL9yu) | - | - |
-| [_dot_handlebars-PfdZsGKG](./_/_dot_handlebars-PfdZsGKG) | - | - |
-| [_dot_has-yarn-05sFDN61](./_/_dot_has-yarn-05sFDN61) | - | - |
-| [_dot_highlight_dot_js-Y75](./_/_dot_highlight_dot_js-Y75vKsj1) | - | - |
-| [_dot_http-status-WCexcwEj](./_/_dot_http-status-WCexcwEj) | - | - |
-| [_dot_human-signals-or0Twm](./_/_dot_human-signals-or0Twmk9) | - | - |
-| [_dot_iconv-lite-yWELqwMl](./_/_dot_iconv-lite-yWELqwMl) | - | - |
-| [_dot_immutable-HHD54iTc](./_/_dot_immutable-HHD54iTc) | - | - |
-| [_dot_indent-string-Uz18R3](./_/_dot_indent-string-Uz18R38G) | - | - |
-| [_dot_intl-messageformat-G](./_/_dot_intl-messageformat-GJXgwETY) | - | - |
-| [_dot_is-docker-hGMXcpuW](./_/_dot_is-docker-hGMXcpuW) | - | - |
-| [_dot_is-fullwidth-code-po](./_/_dot_is-fullwidth-code-point-yonQV7qF) | - | - |
-| [_dot_is-path-cwd-KkENxyrk](./_/_dot_is-path-cwd-KkENxyrk) | - | - |
-| [_dot_json5-L9lAIA0w](./_/_dot_json5-L9lAIA0w) | - | - |
-| [_dot_logkitty-0luekPG6](./_/_dot_logkitty-0luekPG6) | - | - |
-| [_dot_lz-string-ZJ90LfOo](./_/_dot_lz-string-ZJ90LfOo) | - | - |
-| [_dot_mini-svg-data-uri-ck](./_/_dot_mini-svg-data-uri-ck5jdzhU) | - | - |
-| [_dot_nanoid-Dv9xcG2u](./_/_dot_nanoid-Dv9xcG2u) | - | - |
-| [_dot_protobufjs-eQaYEpP4](./_/_dot_protobufjs-eQaYEpP4) | - | - |
-| [_dot_regexp-tree-SaQo4gle](./_/_dot_regexp-tree-SaQo4gle) | - | - |
-| [_dot_regjsparser-8A6ZFEHp](./_/_dot_regjsparser-8A6ZFEHp) | - | - |
-| [_dot_rlp-SSbBRrRg](./_/_dot_rlp-SSbBRrRg) | - | - |
-| [_dot_sucrase-TbLAtQ5t](./_/_dot_sucrase-TbLAtQ5t) | - | - |
-| [_dot_svgo-SsALBlVy](./_/_dot_svgo-SsALBlVy) | - | - |
-| [_dot_syllable-lG6WqZzp](./_/_dot_syllable-lG6WqZzp) | - | - |
-| [_dot_terser-MCwkxx7L](./_/_dot_terser-MCwkxx7L) | - | - |
-| [_dot_tlds-UAYyXFUf](./_/_dot_tlds-UAYyXFUf) | - | - |
-| [_dot_tree-kill-EpdEDHw9](./_/_dot_tree-kill-EpdEDHw9) | - | - |
-| [_dot_tslint-xANLscI2](./_/_dot_tslint-xANLscI2) | - | - |
-| [_dot_typescript-nn5FuAjk](./_/_dot_typescript-nn5FuAjk) | - | - |
-| [_dot_uvu-1yNNGH0U](./_/_dot_uvu-1yNNGH0U) | - | - |
-| [_dot_vega-lite-8ozrbXDH](./_/_dot_vega-lite-8ozrbXDH) | - | - |
-| [_dot_vm2-tfWr5Jhg](./_/_dot_vm2-tfWr5Jhg) | - | - |
-| [_dot_webpack-cdYQfbEx](./_/_dot_webpack-cdYQfbEx) | - | - |
-| [_dot_xss-53LNG4LO](./_/_dot_xss-53LNG4LO) | - | - |
 | [a-big-triangle](./a/a-big-triangle) | Draws a big triangle | triangle, webgl, draw |
 | [a11y-dialog](./a/a11y-dialog) | A tiny script to make dialog windows accessible to | modal, dialog, accessibility, a11y, focus |
 | [a2hs_dot_js](./a/a2hs_dot_js) | A useful modern JavaScript solution that helps you | add to home, add website to home screen, add pwa to home screen, install to home screen, install pwa, ios progressive web app, ios pwa |
@@ -653,7 +591,6 @@
 | [aws-iot-device-sdk](./a/aws-iot-device-sdk) | AWS IoT Node.js SDK for Embedded Devices | api, amazon, aws, iot, mqtt |
 | [aws-kcl](./a/aws-kcl) | Kinesis Client Libray (KCL) in Node.js. | api, amazon, aws, big data, kinesis, kinesis client library, kcl, node.js |
 | [aws-lambda](./a/aws-lambda) | Deploy AWS Lambda functions from command line usin | lambda, aws lambda, deploy, deploy lambda |
-| [aws-lambda-fastify](./a/aws-lambda-fastify) | aws-lambda-fastify@2.2.0 has been deprecated. Plea | aws, lambda, serverless, amazon, cloud, node, nodejs, javascript, proxy, api, api-gateway, fastify, web |
 | [aws-lambda-http-server](./a/aws-lambda-http-server) | run http server as aws lambda function | aws-lambda, serverless, proxy, http, proxy, api-gateway, express, koa, fastify, server-base |
 | [aws-lambda-mock-context](./a/aws-lambda-mock-context) | AWS Lambda mock context object | aws, lambda, context, ctx, function, mocking, mock, promise |
 | [aws-param-store](./a/aws-param-store) | Library for loading parameters from AWS Parameter  | AWS, SSM, secret, parameter store, parameter, store |
@@ -1456,6 +1393,7 @@
 | [clean-regexp](./c/clean-regexp) | Clean up regular expressions | regex, regexp, regular, expression, clean, cleanup, digit, word |
 | [clean-semver](./c/clean-semver) | Clean a semver-compatible version. | semver, clean, version |
 | [clean-stack](./c/clean-stack) | Clean up error stack traces | clean, stack, trace, traces, error, electron |
+| [clean-webpack-plugin](./c/clean-webpack-plugin) | A webpack plugin to remove/clean your build folder | webpack, plugin, clean, node |
 | [clear](./c/clear) | Clear the terminal screen if possible | ansi, clear, terminal |
 | [clear-module](./c/clear-module) | Clear a module from the cache | clear, module, require, import, cache, uncache, uncached, unrequire, derequire, delete, remove, rm, fresh |
 | [clearbladejs-client](./c/clearbladejs-client) | - | - |
@@ -1612,6 +1550,7 @@
 | [compressible](./c/compressible) | Compressible Content-Type / mime checking | compress, gzip, mime, content-type |
 | [compression](./c/compression) | Node.js compression middleware | - |
 | [compression-next](./c/compression-next) | Node.js compression middleware | - |
+| [compression-webpack-plugi](./c/compression-webpack-plugin) | Prepare compressed versions of assets to serve the | webpack |
 | [compute-argmax](./c/compute-argmax) | Computes the maximum value of a numeric array and  | compute.io, compute, computation, mathematics, math, statistics, stats, array, max, maximum |
 | [compute-gcd](./c/compute-gcd) | Computes the greatest common divisor (gcd). | compute.io, compute, computation, mathematics, math, euclid, stein, binary gcd, greatest common divisor, greatest common factor, highest common factor, greatest common measure, highest common divisor, gcd, gcf, hcf, gcm, arithmetic, array, integer |
 | [compute-lcm](./c/compute-lcm) | Computes the least common multiple (lcm). | compute.io, compute, computation, mathematics, math, least common multiple, lowest common multiple, smallest common multiple, lowest common denominator, lcm, lcd, discrete, arithmetic, array, integer, gcd, euclid |
@@ -1707,6 +1646,7 @@
 | [copy-paste](./c/copy-paste) | A command line utility that allows read/write (i.e | copy, paste, copy and paste, clipboard |
 | [copy-text-to-clipboard](./c/copy-text-to-clipboard) | Copy text to the clipboard in modern browsers (0.2 | copy, text, clipboard, browser, clipboard.js, modern |
 | [copy-to-clipboard](./c/copy-to-clipboard) | Copy stuff into clipboard using JS with fallbacks | clipboard, copy, browser |
+| [copy-webpack-plugin](./c/copy-webpack-plugin) | Copy files && directories with webpack | webpack, plugin, transfer, move, copy |
 | [copyfiles](./c/copyfiles) | copy some files | - |
 | [cordova](./c/cordova) | Cordova command line interface tool | cordova, client, cli |
 | [cordova-ionic](./c/cordova-ionic) | - | - |
@@ -1856,6 +1796,7 @@
 | [css-jss](./c/css-jss) | Implements css() interface on top of JSS | jss, style, sheet, stylesheet, css, components, composable, css in js, css-in-js |
 | [css-line-break](./c/css-line-break) | css-line-break ============== | white-space, line-break, word-break, word-wrap, overflow-wrap |
 | [css-mediaquery](./c/css-mediaquery) | Parses and determines if a given CSS Media Query m | css, media, query, mediaquery, mobile, parse, match |
+| [css-minimizer-webpack-plu](./c/css-minimizer-webpack-plugin) | cssnano plugin for Webpack | cssnano, css, csso, clean-css, esbuild, webpack, webpack-plugin, minimize, minimizer, minify, minifier, optimize, optimizer |
 | [css-modules](./c/css-modules) | - | - |
 | [css-modules-loader-core](./c/css-modules-loader-core) | A loader-agnostic CSS Modules implementation, base | css-modules, postcss, loader |
 | [css-modules-require-hook](./c/css-modules-require-hook) | A require hook to compile CSS Modules on the fly | css-modules, require, hook |
@@ -2711,6 +2652,7 @@
 | [expo-constants](./e/expo-constants) | - | - |
 | [expo-error-recovery](./e/expo-error-recovery) | Utilities for helping you gracefully handle crashe | react-native, expo, expo-error-recovery, error-recovery |
 | [expo-file-system](./e/expo-file-system) | Provides access to the local file system on the de | react-native, expo, file-system, file |
+| [expo-font](./e/expo-font) | Load fonts at runtime and use them in React Native | react-native, expo, font |
 | [expo-gl](./e/expo-gl) | - | - |
 | [expo-keep-awake](./e/expo-keep-awake) | - | - |
 | [expo-linear-gradient](./e/expo-linear-gradient) | Provides a React component that renders a gradient | react-native, expo, gradient |
@@ -3167,6 +3109,7 @@
 | [forge-apis](./f/forge-apis) | The Forge Platform contains an expanding collectio | autodesk, autodesk-forge, rest, restful, api |
 | [forge-di](./f/forge-di) | a dependency injector for node.js | - |
 | [forge-viewer](./f/forge-viewer) | - | - |
+| [fork-ts-checker-webpack-p](./f/fork-ts-checker-webpack-plugin) | Runs typescript type checker and linter on separat | webpack, plugin, typescript, typecheck, ts-loader, webpack, fork, fast |
 | [form-data](./f/form-data) | A library to create readable "multipart/form-data" | - |
 | [form-data-encoder](./f/form-data-encoder) | Encode FormData content into the multipart/form-da | form-data, encoder, multipart, files-upload, async-iterator, spec-compatible, form |
 | [form-serialize](./f/form-serialize) | serialize html forms | form, serialize |
@@ -6771,6 +6714,7 @@
 | [mem-fs-editor](./m/mem-fs-editor) | File edition helpers working on top of mem-fs | - |
 | [memcached](./m/memcached) | A fully featured Memcached API client, supporting  | InnoDB memcached API, cache, client, cluster, failover, hashing, membase, memcache, memcached, nMemcached, nosql |
 | [memdown](./m/memdown) | An drop-in replacement for LevelDOWN that works in | level, leveldb, leveldown, levelup, memory |
+| [memfs](./m/memfs) | In-memory file-system with Node's fs API. | fs, filesystem, fs.js, memory-fs, memfs, file, file system, mount, memory, in-memory, virtual, test, testing, mock |
 | [memize](./m/memize) | Unabashedly-barebones memoization library with an  | memoize, memoization, memoisation, cache |
 | [memjs](./m/memjs) | A memcache client for node using the binary protoc | cache, memcache, memcached, MemCachier |
 | [memmonit](./m/memmonit) | Library to help monitor operating system memory | memory, monitoring, lib |
@@ -9859,6 +9803,7 @@
 | [safe-regex](./s/safe-regex) | detect possibly catastrophic, exponential-time reg | catastrophic, exponential, regex, safe, sandbox |
 | [safe-stable-stringify](./s/safe-stable-stringify) | Deterministic and safely JSON.stringify to quickly | stable, stringify, JSON, JSON.stringify, safe, serialize, deterministic, circular, object, predicable, repeatable, fast, bigint |
 | [safe-timers](./s/safe-timers) | Timers with near-infinite duration support | setTimeout, setInterval, timer, timeout, interval, timers, timeouts, intervals |
+| [safer-buffer](./s/safer-buffer) | Modern Buffer API polyfill without footguns | - |
 | [sails_dot_io_dot_js](./s/sails_dot_io_dot_js) | Javascript SDK for communicating w/ a Sails server | sails, sdk, sails.io.js, socket.io, browser, javascript |
 | [sailthru-client](./s/sailthru-client) | Node.js client for Sailthru API | - |
 | [sales-tax](./s/sales-tax) | International sales tax calculator for Node (offli | sales, tax, salestax, money, billing, invoice, vat, gst, vatmoss |
@@ -10711,6 +10656,7 @@
 | [swagger-restify-mw](./s/swagger-restify-mw) | Swagger loader and middleware for Restify | swagger, api, apis, restify |
 | [swagger-sails-hook](./s/swagger-sails-hook) | Sails.js hook for Swagger projects | swagger, api, apis, sails |
 | [swagger-schema-official](./s/swagger-schema-official) | Swagger JSON Schema | swagger, schema, api |
+| [swagger-stats](./s/swagger-stats) | API Telemetry and APM. Trace API calls and Monitor | api, observability, telemetry, node, express, koa, hapi, fastify, rest, statistics, monitoring, alerting, swagger, openapi, schema, prometheus, metrics, elasticsearch, kibana, grafana |
 | [swagger-tools](./s/swagger-tools) | Various tools for using and integrating with Swagg | api, connect, middleware, swagger |
 | [swagger-ui](./s/swagger-ui) | - | - |
 | [swagger-ui-dist](./s/swagger-ui-dist) | - | - |

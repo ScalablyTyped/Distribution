@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__priority-queue
 
-Typings are for version 2.17.0
+Typings are for version 2.18.0
 
 ## Library description:
 Generic browser priority queue.

@@ -26,12 +26,12 @@ trait Comprehend extends Service {
   ): Request[BatchDetectDominantLanguageResponse, AWSError] = js.native
   
   /**
-    * Inspects the text of a batch of documents for named entities and returns information about them. For more information about named entities, see how-entities 
+    * Inspects the text of a batch of documents for named entities and returns information about them. For more information about named entities, see Entities in the Comprehend Developer Guide. 
     */
   def batchDetectEntities(): Request[BatchDetectEntitiesResponse, AWSError] = js.native
   def batchDetectEntities(callback: js.Function2[/* err */ AWSError, /* data */ BatchDetectEntitiesResponse, Unit]): Request[BatchDetectEntitiesResponse, AWSError] = js.native
   /**
-    * Inspects the text of a batch of documents for named entities and returns information about them. For more information about named entities, see how-entities 
+    * Inspects the text of a batch of documents for named entities and returns information about them. For more information about named entities, see Entities in the Comprehend Developer Guide. 
     */
   def batchDetectEntities(params: BatchDetectEntitiesRequest): Request[BatchDetectEntitiesResponse, AWSError] = js.native
   def batchDetectEntities(
@@ -68,18 +68,32 @@ trait Comprehend extends Service {
   ): Request[BatchDetectSentimentResponse, AWSError] = js.native
   
   /**
-    * Inspects the text of a batch of documents for the syntax and part of speech of the words in the document and returns information about them. For more information, see how-syntax.
+    * Inspects the text of a batch of documents for the syntax and part of speech of the words in the document and returns information about them. For more information, see Syntax in the Comprehend Developer Guide. 
     */
   def batchDetectSyntax(): Request[BatchDetectSyntaxResponse, AWSError] = js.native
   def batchDetectSyntax(callback: js.Function2[/* err */ AWSError, /* data */ BatchDetectSyntaxResponse, Unit]): Request[BatchDetectSyntaxResponse, AWSError] = js.native
   /**
-    * Inspects the text of a batch of documents for the syntax and part of speech of the words in the document and returns information about them. For more information, see how-syntax.
+    * Inspects the text of a batch of documents for the syntax and part of speech of the words in the document and returns information about them. For more information, see Syntax in the Comprehend Developer Guide. 
     */
   def batchDetectSyntax(params: BatchDetectSyntaxRequest): Request[BatchDetectSyntaxResponse, AWSError] = js.native
   def batchDetectSyntax(
     params: BatchDetectSyntaxRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchDetectSyntaxResponse, Unit]
   ): Request[BatchDetectSyntaxResponse, AWSError] = js.native
+  
+  /**
+    * Inspects a batch of documents and returns a sentiment analysis for each entity identified in the documents. For more information about targeted sentiment, see Targeted sentiment.
+    */
+  def batchDetectTargetedSentiment(): Request[BatchDetectTargetedSentimentResponse, AWSError] = js.native
+  def batchDetectTargetedSentiment(callback: js.Function2[/* err */ AWSError, /* data */ BatchDetectTargetedSentimentResponse, Unit]): Request[BatchDetectTargetedSentimentResponse, AWSError] = js.native
+  /**
+    * Inspects a batch of documents and returns a sentiment analysis for each entity identified in the documents. For more information about targeted sentiment, see Targeted sentiment.
+    */
+  def batchDetectTargetedSentiment(params: BatchDetectTargetedSentimentRequest): Request[BatchDetectTargetedSentimentResponse, AWSError] = js.native
+  def batchDetectTargetedSentiment(
+    params: BatchDetectTargetedSentimentRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchDetectTargetedSentimentResponse, Unit]
+  ): Request[BatchDetectTargetedSentimentResponse, AWSError] = js.native
   
   /**
     * Creates a new document classification request to analyze a single document in real-time, using a previously created and trained custom model and an endpoint.
@@ -113,12 +127,12 @@ trait Comprehend extends Service {
   ): Request[ContainsPiiEntitiesResponse, AWSError] = js.native
   
   /**
-    * Creates a new document classifier that you can use to categorize documents. To create a classifier, you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. For more information, see how-document-classification.
+    * Creates a new document classifier that you can use to categorize documents. To create a classifier, you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. For more information, see Document Classification in the Comprehend Developer Guide. 
     */
   def createDocumentClassifier(): Request[CreateDocumentClassifierResponse, AWSError] = js.native
   def createDocumentClassifier(callback: js.Function2[/* err */ AWSError, /* data */ CreateDocumentClassifierResponse, Unit]): Request[CreateDocumentClassifierResponse, AWSError] = js.native
   /**
-    * Creates a new document classifier that you can use to categorize documents. To create a classifier, you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. For more information, see how-document-classification.
+    * Creates a new document classifier that you can use to categorize documents. To create a classifier, you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. For more information, see Document Classification in the Comprehend Developer Guide. 
     */
   def createDocumentClassifier(params: CreateDocumentClassifierRequest): Request[CreateDocumentClassifierResponse, AWSError] = js.native
   def createDocumentClassifier(
@@ -417,12 +431,12 @@ trait Comprehend extends Service {
   ): Request[DetectDominantLanguageResponse, AWSError] = js.native
   
   /**
-    * Inspects text for named entities, and returns information about them. For more information, about named entities, see how-entities. 
+    * Inspects text for named entities, and returns information about them. For more information, about named entities, see Entities in the Comprehend Developer Guide.
     */
   def detectEntities(): Request[DetectEntitiesResponse, AWSError] = js.native
   def detectEntities(callback: js.Function2[/* err */ AWSError, /* data */ DetectEntitiesResponse, Unit]): Request[DetectEntitiesResponse, AWSError] = js.native
   /**
-    * Inspects text for named entities, and returns information about them. For more information, about named entities, see how-entities. 
+    * Inspects text for named entities, and returns information about them. For more information, about named entities, see Entities in the Comprehend Developer Guide.
     */
   def detectEntities(params: DetectEntitiesRequest): Request[DetectEntitiesResponse, AWSError] = js.native
   def detectEntities(
@@ -473,18 +487,32 @@ trait Comprehend extends Service {
   ): Request[DetectSentimentResponse, AWSError] = js.native
   
   /**
-    * Inspects text for syntax and the part of speech of words in the document. For more information, how-syntax.
+    * Inspects text for syntax and the part of speech of words in the document. For more information, see Syntax in the Comprehend Developer Guide. 
     */
   def detectSyntax(): Request[DetectSyntaxResponse, AWSError] = js.native
   def detectSyntax(callback: js.Function2[/* err */ AWSError, /* data */ DetectSyntaxResponse, Unit]): Request[DetectSyntaxResponse, AWSError] = js.native
   /**
-    * Inspects text for syntax and the part of speech of words in the document. For more information, how-syntax.
+    * Inspects text for syntax and the part of speech of words in the document. For more information, see Syntax in the Comprehend Developer Guide. 
     */
   def detectSyntax(params: DetectSyntaxRequest): Request[DetectSyntaxResponse, AWSError] = js.native
   def detectSyntax(
     params: DetectSyntaxRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DetectSyntaxResponse, Unit]
   ): Request[DetectSyntaxResponse, AWSError] = js.native
+  
+  /**
+    * Inspects the input text and returns a sentiment analysis for each entity identified in the text. For more information about targeted sentiment, see Targeted sentiment.
+    */
+  def detectTargetedSentiment(): Request[DetectTargetedSentimentResponse, AWSError] = js.native
+  def detectTargetedSentiment(callback: js.Function2[/* err */ AWSError, /* data */ DetectTargetedSentimentResponse, Unit]): Request[DetectTargetedSentimentResponse, AWSError] = js.native
+  /**
+    * Inspects the input text and returns a sentiment analysis for each entity identified in the text. For more information about targeted sentiment, see Targeted sentiment.
+    */
+  def detectTargetedSentiment(params: DetectTargetedSentimentRequest): Request[DetectTargetedSentimentResponse, AWSError] = js.native
+  def detectTargetedSentiment(
+    params: DetectTargetedSentimentRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DetectTargetedSentimentResponse, Unit]
+  ): Request[DetectTargetedSentimentResponse, AWSError] = js.native
   
   /**
     * Creates a new custom model that replicates a source custom model that you import. The source model can be in your AWS account or another one. If the source model is in another AWS account, then it must have a resource-based policy that authorizes you to import it. The source model must be in the same AWS region that you're using when you import. You can't import a model that's in a different region.

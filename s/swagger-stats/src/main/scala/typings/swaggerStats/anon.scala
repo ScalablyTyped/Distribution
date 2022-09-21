@@ -23,15 +23,15 @@ object anon {
   
   trait Body extends StObject {
     
-    var body: js.UndefOr[js.Any] = js.undefined
+    var body: js.UndefOr[Any] = js.undefined
     
     var clength: js.UndefOr[Double] = js.undefined
     
     var headers: js.UndefOr[IncomingHttpHeaders] = js.undefined
     
-    var params: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var params: js.UndefOr[Record[String, Any]] = js.undefined
     
-    var query: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var query: js.UndefOr[Record[String, Any]] = js.undefined
     
     var route_path: js.UndefOr[String] = js.undefined
     
@@ -46,7 +46,7 @@ object anon {
     
     extension [Self <: Body](x: Self) {
       
-      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
@@ -58,11 +58,11 @@ object anon {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setParams(value: Record[String, js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Record[String, Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      inline def setQuery(value: Record[String, js.Any]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Record[String, Any]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
@@ -449,6 +449,7 @@ object anon {
     	 */
     def aggregate(metricsArr: js.Array[js.Object]): Registry = js.native
     
+    // TODO Promise?
     /**
     	 * Sets the registry or registries to be aggregated. Call from workers to
     	 * use a registry/registries other than the default global registry.
@@ -466,17 +467,17 @@ object anon {
     var AggregatorRegistry: TypeofAggregatorRegistry = js.native
     
     var Counter: Instantiable1[
-        /* configuration */ CounterConfiguration[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
+        /* configuration */ CounterConfiguration[/* import warning: RewrittenClass.unapply cls was tparam T */ Any], 
         typings.promClient.mod.Counter[String]
       ] = js.native
     
     var Gauge: Instantiable1[
-        /* configuration */ GaugeConfiguration[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
+        /* configuration */ GaugeConfiguration[/* import warning: RewrittenClass.unapply cls was tparam T */ Any], 
         typings.promClient.mod.Gauge[String]
       ] = js.native
     
     var Histogram: Instantiable1[
-        /* configuration */ HistogramConfiguration[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
+        /* configuration */ HistogramConfiguration[/* import warning: RewrittenClass.unapply cls was tparam T */ Any], 
         typings.promClient.mod.Histogram[String]
       ] = js.native
     
@@ -485,12 +486,14 @@ object anon {
     var Registry: TypeofRegistry = js.native
     
     var Summary: Instantiable1[
-        /* configuration */ SummaryConfiguration[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
+        /* configuration */ SummaryConfiguration[/* import warning: RewrittenClass.unapply cls was tparam T */ Any], 
         typings.promClient.mod.Summary[String]
       ] = js.native
     
     def collectDefaultMetrics(): Unit = js.native
     def collectDefaultMetrics(config: DefaultMetricsCollectorConfiguration): Unit = js.native
+    
+    val contentType: String = js.native
     
     def exponentialBuckets(start: Double, factor: Double, count: Double): js.Array[Double] = js.native
     

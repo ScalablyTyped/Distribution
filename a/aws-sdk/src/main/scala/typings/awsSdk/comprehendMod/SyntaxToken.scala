@@ -17,7 +17,7 @@ trait SyntaxToken extends StObject {
   var EndOffset: js.UndefOr[Integer] = js.undefined
   
   /**
-    * Provides the part of speech label and the confidence level that Amazon Comprehend has that the part of speech was correctly identified. For more information, see how-syntax.
+    * Provides the part of speech label and the confidence level that Amazon Comprehend has that the part of speech was correctly identified. For more information, see Syntax in the Comprehend Developer Guide. 
     */
   var PartOfSpeech: js.UndefOr[PartOfSpeechTag] = js.undefined
   

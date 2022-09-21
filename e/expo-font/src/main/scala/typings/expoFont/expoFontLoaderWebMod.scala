@@ -1,7 +1,7 @@
 package typings.expoFont
 
-import typings.expoFont.anon.PickFontResourcedisplay
 import typings.expoFont.fontTypesMod.FontResource
+import typings.expoFont.fontTypesMod.UnloadFontOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,6 +23,6 @@ object expoFontLoaderWebMod {
     inline def unloadAllAsync(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unloadAllAsync")().asInstanceOf[js.Promise[Unit]]
     
     inline def unloadAsync(fontFamilyName: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unloadAsync")(fontFamilyName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-    inline def unloadAsync(fontFamilyName: String, options: PickFontResourcedisplay): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("unloadAsync")(fontFamilyName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def unloadAsync(fontFamilyName: String, options: UnloadFontOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("unloadAsync")(fontFamilyName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   }
 }

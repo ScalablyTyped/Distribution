@@ -10,10 +10,10 @@ Modern Buffer API polyfill without footguns
 | ------------------ | :-------------: |
 | Full name          | safer-buffer |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 155 |
-| # downloads        | 957200488 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2623748966666667E8 |
+| # stars            | 23.0 |
 
 ## Links
 - [Homepage](https://github.com/ChALkeR/safer-buffer#readme)

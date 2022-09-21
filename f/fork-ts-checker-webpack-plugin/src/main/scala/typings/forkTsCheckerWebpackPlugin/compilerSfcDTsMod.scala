@@ -124,7 +124,7 @@ object compilerSfcDTsMod {
       
       inline def setCustomBlocks(value: js.Array[SFCBlock]): Self = StObject.set(x, "customBlocks", value.asInstanceOf[js.Any])
       
-      inline def setCustomBlocksVarargs(value: SFCBlock*): Self = StObject.set(x, "customBlocks", js.Array(value :_*))
+      inline def setCustomBlocksVarargs(value: SFCBlock*): Self = StObject.set(x, "customBlocks", js.Array(value*))
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -134,7 +134,7 @@ object compilerSfcDTsMod {
       
       inline def setStyles(value: js.Array[SFCBlock]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      inline def setStylesVarargs(value: SFCBlock*): Self = StObject.set(x, "styles", js.Array(value :_*))
+      inline def setStylesVarargs(value: SFCBlock*): Self = StObject.set(x, "styles", js.Array(value*))
       
       inline def setTemplate(value: SFCBlock): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
@@ -161,7 +161,7 @@ object compilerSfcDTsMod {
       
       inline def setErrors(value: js.Array[CompilerError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      inline def setErrorsVarargs(value: CompilerError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: CompilerError*): Self = StObject.set(x, "errors", js.Array(value*))
     }
   }
   
@@ -194,6 +194,6 @@ object compilerSfcDTsMod {
   trait VueTemplateCompilerV3 extends StObject {
     
     def parse(template: String): SFCParseResult = js.native
-    def parse(template: String, options: js.Any): SFCParseResult = js.native
+    def parse(template: String, options: Any): SFCParseResult = js.native
   }
 }

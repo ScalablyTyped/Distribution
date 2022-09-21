@@ -1,7 +1,7 @@
 
 # Scala.js typings for clean-webpack-plugin
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 A webpack plugin to remove/clean your build folder(s).
@@ -10,15 +10,12 @@ A webpack plugin to remove/clean your build folder(s).
 | ------------------ | :-------------: |
 | Full name          | clean-webpack-plugin |
 | Keywords           | webpack, plugin, clean, node |
-| # releases         | 7 |
-| # dependents       | 1738 |
-| # downloads        | 55107984 |
-| # stars            | 40 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 7751083.333333333 |
+| # stars            | 1930.0 |
 
 ## Links
-- [Homepage](https://github.com/johnagan/clean-webpack-plugin)
-- [Bugs](https://github.com/johnagan/clean-webpack-plugin/issues)
-- [Repository](https://github.com/johnagan/clean-webpack-plugin)
 - [Npm](https://www.npmjs.com/package/clean-webpack-plugin)
     
 

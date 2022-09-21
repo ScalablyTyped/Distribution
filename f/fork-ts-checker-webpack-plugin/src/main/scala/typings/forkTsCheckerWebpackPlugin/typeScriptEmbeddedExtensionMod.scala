@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object typeScriptEmbeddedExtensionMod {
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/extension/TypeScriptEmbeddedExtension", JSImport.Namespace)
+  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript/extension/type-script-embedded-extension", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -44,7 +44,7 @@ object typeScriptEmbeddedExtensionMod {
       
       inline def setEmbeddedExtensions(value: js.Array[String]): Self = StObject.set(x, "embeddedExtensions", value.asInstanceOf[js.Any])
       
-      inline def setEmbeddedExtensionsVarargs(value: String*): Self = StObject.set(x, "embeddedExtensions", js.Array(value :_*))
+      inline def setEmbeddedExtensionsVarargs(value: String*): Self = StObject.set(x, "embeddedExtensions", js.Array(value*))
       
       inline def setGetEmbeddedSource(value: String => js.UndefOr[TypeScriptEmbeddedSource]): Self = StObject.set(x, "getEmbeddedSource", js.Any.fromFunction1(value))
     }

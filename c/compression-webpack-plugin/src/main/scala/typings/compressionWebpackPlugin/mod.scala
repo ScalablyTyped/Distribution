@@ -1,97 +1,175 @@
 package typings.compressionWebpackPlugin
 
-import typings.std.Error
-import typings.std.Plugin
-import typings.std.RegExp
-import typings.std.Uint8Array
+import org.scalablytyped.runtime.StringDictionary
+import typings.compressionWebpackPlugin.anon.ToPrimitive
+import typings.compressionWebpackPlugin.anon.ValueOf
+import typings.compressionWebpackPlugin.anon.`0`
+import typings.compressionWebpackPlugin.anon.`1`
+import typings.compressionWebpackPlugin.anon.`2`
+import typings.compressionWebpackPlugin.compressionWebpackPluginStrings.`keep-source-map`
+import typings.node.bufferMod.global.Buffer
+import typings.std.SharedArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  /** @typedef {import("schema-utils/declarations/validate").Schema} Schema */
+  /** @typedef {import("webpack").Compiler} Compiler */
+  /** @typedef {import("webpack").WebpackPluginInstance} WebpackPluginInstance */
+  /** @typedef {import("webpack").Compilation} Compilation */
+  /** @typedef {import("webpack").sources.Source} Source */
+  /** @typedef {import("webpack").Asset} Asset */
+  /** @typedef {import("webpack").WebpackError} WebpackError */
   /**
-    * Prepare compressed versions of assets to serve them with Content-Encoding.
+    * @template T
+    * @typedef {T | { valueOf(): T }} WithImplicitCoercion
+    */
+  /** @typedef {RegExp | string} Rule */
+  /** @typedef {Rule[] | Rule} Rules */
+  /**
+    * @typedef {{ [key: string]: any }} CustomOptions
+    */
+  /**
+    * @template T
+    * @typedef {T extends infer U ? U : CustomOptions} InferDefaultType
+    */
+  /**
+    * @template T
+    * @typedef {InferDefaultType<T>} CompressionOptions
+    */
+  /**
+    * @template T
+    * @callback AlgorithmFunction
+    * @param {Buffer} input
+    * @param {CompressionOptions<T>} options
+    * @param {(error: Error | null | undefined, result: WithImplicitCoercion<ArrayBuffer | SharedArrayBuffer> | Uint8Array | ReadonlyArray<number> | WithImplicitCoercion<Uint8Array | ReadonlyArray<number> | string> | WithImplicitCoercion<string> | { [Symbol.toPrimitive](hint: 'string'): string }) => void} callback
+    */
+  /**
+    * @typedef {{[key: string]: any}} PathData
+    */
+  /**
+    * @typedef {string | ((fileData: PathData) => string)} Filename
+    */
+  /**
+    * @typedef {boolean | "keep-source-map"} DeleteOriginalAssets
+    */
+  /**
+    * @template T
+    * @typedef {Object} BasePluginOptions
+    * @property {Rules} [test]
+    * @property {Rules} [include]
+    * @property {Rules} [exclude]
+    * @property {number} [threshold]
+    * @property {number} [minRatio]
+    * @property {DeleteOriginalAssets} [deleteOriginalAssets]
+    * @property {Filename} [filename]
+    */
+  /**
+    * @typedef {import("zlib").ZlibOptions} ZlibOptions
+    */
+  /**
+    * @template T
+    * @typedef {T extends ZlibOptions ? { algorithm?: string | AlgorithmFunction<T> | undefined, compressionOptions?: CompressionOptions<T> | undefined } : { algorithm: string | AlgorithmFunction<T>, compressionOptions?: CompressionOptions<T> | undefined }} DefinedDefaultAlgorithmAndOptions
+    */
+  /**
+    * @template T
+    * @typedef {BasePluginOptions<T> & { algorithm: string | AlgorithmFunction<T>, compressionOptions: CompressionOptions<T>, threshold: number, minRatio: number, deleteOriginalAssets: DeleteOriginalAssets, filename: Filename }} InternalPluginOptions
+    */
+  /**
+    * @template [T=ZlibOptions]
+    * @implements WebpackPluginInstance
     */
   @JSImport("compression-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^[O] ()
+  /**
+    * @param {BasePluginOptions<T> & DefinedDefaultAlgorithmAndOptions<T>} [options]
+    */
+  open class ^[T] ()
     extends StObject
-       with CompressionPlugin[O] {
-    def this(options: Options[O]) = this()
+       with CompressionPlugin[T] {
+    def this(options: BasePluginOptions[T] & DefinedDefaultAlgorithmAndOptions[T]) = this()
+    
+    /**
+      * @private
+      * @type {AlgorithmFunction<T>}
+      */
+    /* private */ /* CompleteClass */
+    var algorithm: Any = js.native
+    
+    /**
+    	 * The run point of the plugin, required method.
+    	 */
+    /* CompleteClass */
+    @JSName("apply")
+    override def apply(compiler: typings.webpack.mod.Compiler): Unit = js.native
+    
+    /**
+      * @private
+      * @param {Compiler} compiler
+      * @param {Compilation} compilation
+      * @param {Record<string, Source>} assets
+      * @returns {Promise<void>}
+      */
+    /* private */ /* CompleteClass */
+    var compress: Any = js.native
+    
+    /**
+      * @private
+      * @type {InternalPluginOptions<T>}
+      */
+    /* private */ /* CompleteClass */
+    var options: Any = js.native
+    
+    /**
+      * @private
+      * @param {Buffer} input
+      * @returns {Promise<Buffer>}
+      */
+    /* private */ /* CompleteClass */
+    var runCompressionAlgorithm: Any = js.native
   }
-  @JSImport("compression-webpack-plugin", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
   
-  /* static member */
-  inline def isWebpack4(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebpack4")().asInstanceOf[Boolean]
+  type AlgorithmFunction[T] = js.Function3[
+    /* input */ Buffer, 
+    /* options */ CompressionOptions[T], 
+    /* callback */ js.Function2[
+      /* error */ js.UndefOr[js.Error | Null], 
+      /* result */ String | js.typedarray.ArrayBuffer | SharedArrayBuffer | js.typedarray.Uint8Array | js.Array[Double] | `0` | `1` | `2` | ToPrimitive, 
+      Unit
+    ], 
+    Any
+  ]
   
-  type Algorithm[O] = js.Function3[/* source */ String, /* options */ O, /* callback */ AlgorithmCallback, Unit]
+  type Asset = typings.webpack.mod.Asset
   
-  type AlgorithmCallback = js.Function2[/* error */ Error | Null, /* result */ Uint8Array, Unit]
-  
-  trait BaseOptions extends StObject {
+  trait BasePluginOptions[T] extends StObject {
     
-    /**
-      * Enable file caching
-      * ⚠ Ignored in webpack 5! Please use webpack.js.org/configuration/other-options/#cache.
-      * @default true
-      */
-    var cache: js.UndefOr[Boolean | String] = js.undefined
+    var deleteOriginalAssets: js.UndefOr[DeleteOriginalAssets] = js.undefined
     
-    /**
-      * @default false
-      */
-    var deleteOriginalAssets: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Exclude all assets matching any of these conditions
-      */
     var exclude: js.UndefOr[Rules] = js.undefined
     
-    /**
-      * The target asset filename.
-      * @default '[path].gz[query]'
-      */
-    var filename: js.UndefOr[String | FilenameFunction] = js.undefined
+    var filename: js.UndefOr[Filename] = js.undefined
     
-    /**
-      * Include all assets matching any of these conditions
-      */
     var include: js.UndefOr[Rules] = js.undefined
     
-    /**
-      * Only assets that compress better than this ratio are processed (minRatio = Compressed Size / Original Size)
-      * @default 0.8
-      */
     var minRatio: js.UndefOr[Double] = js.undefined
     
-    /**
-      * Include all assets that pass test assertion
-      */
     var test: js.UndefOr[Rules] = js.undefined
     
-    /**
-      * Only assets bigger than this size are processed (in bytes)
-      * @default 0
-      */
     var threshold: js.UndefOr[Double] = js.undefined
   }
-  object BaseOptions {
+  object BasePluginOptions {
     
-    inline def apply(): BaseOptions = {
+    inline def apply[T](): BasePluginOptions[T] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[BaseOptions]
+      __obj.asInstanceOf[BasePluginOptions[T]]
     }
     
-    extension [Self <: BaseOptions](x: Self) {
+    extension [Self <: BasePluginOptions[?], T](x: Self & BasePluginOptions[T]) {
       
-      inline def setCache(value: Boolean | String): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
-      
-      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
-      
-      inline def setDeleteOriginalAssets(value: Boolean): Self = StObject.set(x, "deleteOriginalAssets", value.asInstanceOf[js.Any])
+      inline def setDeleteOriginalAssets(value: DeleteOriginalAssets): Self = StObject.set(x, "deleteOriginalAssets", value.asInstanceOf[js.Any])
       
       inline def setDeleteOriginalAssetsUndefined: Self = StObject.set(x, "deleteOriginalAssets", js.undefined)
       
@@ -99,11 +177,11 @@ object mod {
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: Rule*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: Rule*): Self = StObject.set(x, "exclude", js.Array(value*))
       
-      inline def setFilename(value: String | FilenameFunction): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: Filename): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      inline def setFilenameFunction1(value: /* info */ FileInfo => String): Self = StObject.set(x, "filename", js.Any.fromFunction1(value))
+      inline def setFilenameFunction1(value: /* fileData */ PathData => String): Self = StObject.set(x, "filename", js.Any.fromFunction1(value))
       
       inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
@@ -111,7 +189,7 @@ object mod {
       
       inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      inline def setIncludeVarargs(value: Rule*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: Rule*): Self = StObject.set(x, "include", js.Array(value*))
       
       inline def setMinRatio(value: Double): Self = StObject.set(x, "minRatio", value.asInstanceOf[js.Any])
       
@@ -121,7 +199,7 @@ object mod {
       
       inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
       
-      inline def setTestVarargs(value: Rule*): Self = StObject.set(x, "test", js.Array(value :_*))
+      inline def setTestVarargs(value: Rule*): Self = StObject.set(x, "test", js.Array(value*))
       
       inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
@@ -129,154 +207,236 @@ object mod {
     }
   }
   
+  type Compilation = typings.webpack.mod.Compilation
+  
+  type Compiler = typings.webpack.mod.Compiler
+  
+  type CompressionOptions[T] = InferDefaultType[T]
+  
+  /** @typedef {import("schema-utils/declarations/validate").Schema} Schema */
+  /** @typedef {import("webpack").Compiler} Compiler */
+  /** @typedef {import("webpack").WebpackPluginInstance} WebpackPluginInstance */
+  /** @typedef {import("webpack").Compilation} Compilation */
+  /** @typedef {import("webpack").sources.Source} Source */
+  /** @typedef {import("webpack").Asset} Asset */
+  /** @typedef {import("webpack").WebpackError} WebpackError */
   /**
-    * Prepare compressed versions of assets to serve them with Content-Encoding.
+    * @template T
+    * @typedef {T | { valueOf(): T }} WithImplicitCoercion
     */
-  @js.native
-  trait CompressionPlugin[O]
+  /** @typedef {RegExp | string} Rule */
+  /** @typedef {Rule[] | Rule} Rules */
+  /**
+    * @typedef {{ [key: string]: any }} CustomOptions
+    */
+  /**
+    * @template T
+    * @typedef {T extends infer U ? U : CustomOptions} InferDefaultType
+    */
+  /**
+    * @template T
+    * @typedef {InferDefaultType<T>} CompressionOptions
+    */
+  /**
+    * @template T
+    * @callback AlgorithmFunction
+    * @param {Buffer} input
+    * @param {CompressionOptions<T>} options
+    * @param {(error: Error | null | undefined, result: WithImplicitCoercion<ArrayBuffer | SharedArrayBuffer> | Uint8Array | ReadonlyArray<number> | WithImplicitCoercion<Uint8Array | ReadonlyArray<number> | string> | WithImplicitCoercion<string> | { [Symbol.toPrimitive](hint: 'string'): string }) => void} callback
+    */
+  /**
+    * @typedef {{[key: string]: any}} PathData
+    */
+  /**
+    * @typedef {string | ((fileData: PathData) => string)} Filename
+    */
+  /**
+    * @typedef {boolean | "keep-source-map"} DeleteOriginalAssets
+    */
+  /**
+    * @template T
+    * @typedef {Object} BasePluginOptions
+    * @property {Rules} [test]
+    * @property {Rules} [include]
+    * @property {Rules} [exclude]
+    * @property {number} [threshold]
+    * @property {number} [minRatio]
+    * @property {DeleteOriginalAssets} [deleteOriginalAssets]
+    * @property {Filename} [filename]
+    */
+  /**
+    * @typedef {import("zlib").ZlibOptions} ZlibOptions
+    */
+  /**
+    * @template T
+    * @typedef {T extends ZlibOptions ? { algorithm?: string | AlgorithmFunction<T> | undefined, compressionOptions?: CompressionOptions<T> | undefined } : { algorithm: string | AlgorithmFunction<T>, compressionOptions?: CompressionOptions<T> | undefined }} DefinedDefaultAlgorithmAndOptions
+    */
+  /**
+    * @template T
+    * @typedef {BasePluginOptions<T> & { algorithm: string | AlgorithmFunction<T>, compressionOptions: CompressionOptions<T>, threshold: number, minRatio: number, deleteOriginalAssets: DeleteOriginalAssets, filename: Filename }} InternalPluginOptions
+    */
+  /**
+    * @template [T=ZlibOptions]
+    * @implements WebpackPluginInstance
+    */
+  trait CompressionPlugin[T]
     extends StObject
-       with Plugin {
-    
-    @JSName("apply")
-    def apply(
-      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
-    ): Unit = js.native
-  }
-  
-  trait CustomOptions[O]
-    extends StObject
-       with BaseOptions
-       with Options[O] {
-    
-    def algorithm(source: String, options: O, callback: AlgorithmCallback): Unit
-    @JSName("algorithm")
-    var algorithm_Original: Algorithm[O]
-    
-    var compressionOptions: js.UndefOr[O] = js.undefined
-  }
-  object CustomOptions {
-    
-    inline def apply[O](algorithm: (/* source */ String, O, /* callback */ AlgorithmCallback) => Unit): CustomOptions[O] = {
-      val __obj = js.Dynamic.literal(algorithm = js.Any.fromFunction3(algorithm))
-      __obj.asInstanceOf[CustomOptions[O]]
-    }
-    
-    extension [Self <: CustomOptions[?], O](x: Self & CustomOptions[O]) {
-      
-      inline def setAlgorithm(value: (/* source */ String, O, /* callback */ AlgorithmCallback) => Unit): Self = StObject.set(x, "algorithm", js.Any.fromFunction3(value))
-      
-      inline def setCompressionOptions(value: O): Self = StObject.set(x, "compressionOptions", value.asInstanceOf[js.Any])
-      
-      inline def setCompressionOptionsUndefined: Self = StObject.set(x, "compressionOptions", js.undefined)
-    }
-  }
-  
-  trait FileInfo extends StObject {
-    
-    /** original asset filename */
-    var file: String
-    
-    /** path of the original asset */
-    var path: String
-    
-    /** query */
-    var query: String
-  }
-  object FileInfo {
-    
-    inline def apply(file: String, path: String, query: String): FileInfo = {
-      val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
-      __obj.asInstanceOf[FileInfo]
-    }
-    
-    extension [Self <: FileInfo](x: Self) {
-      
-      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
-      
-      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
-      
-      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  type FilenameFunction = js.Function1[/* info */ FileInfo, String]
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.compressionWebpackPlugin.mod.ZlibOptions
-    - typings.compressionWebpackPlugin.mod.CustomOptions[O]
-  */
-  trait Options[O] extends StObject
-  object Options {
-    
-    inline def CustomOptions[O](algorithm: (/* source */ String, O, /* callback */ AlgorithmCallback) => Unit): typings.compressionWebpackPlugin.mod.CustomOptions[O] = {
-      val __obj = js.Dynamic.literal(algorithm = js.Any.fromFunction3(algorithm))
-      __obj.asInstanceOf[typings.compressionWebpackPlugin.mod.CustomOptions[O]]
-    }
-    
-    inline def ZlibOptions(): typings.compressionWebpackPlugin.mod.ZlibOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[typings.compressionWebpackPlugin.mod.ZlibOptions]
-    }
-  }
-  
-  /** Filtering rule as regex or string */
-  type Rule = String | RegExp
-  
-  /** Filtering rules. */
-  type Rules = Rule | js.Array[Rule]
-  
-  // NOTE: These are the async compression algorithms on the zlib object.
-  /* Rewritten from type alias, can be one of: 
-    - typings.compressionWebpackPlugin.compressionWebpackPluginStrings.deflate
-    - typings.compressionWebpackPlugin.compressionWebpackPluginStrings.deflateRaw
-    - typings.compressionWebpackPlugin.compressionWebpackPluginStrings.gzip
-    - typings.compressionWebpackPlugin.compressionWebpackPluginStrings.brotliCompress
-  */
-  trait ZlibAlgorithm extends StObject
-  object ZlibAlgorithm {
-    
-    inline def brotliCompress: typings.compressionWebpackPlugin.compressionWebpackPluginStrings.brotliCompress = "brotliCompress".asInstanceOf[typings.compressionWebpackPlugin.compressionWebpackPluginStrings.brotliCompress]
-    
-    inline def deflate: typings.compressionWebpackPlugin.compressionWebpackPluginStrings.deflate = "deflate".asInstanceOf[typings.compressionWebpackPlugin.compressionWebpackPluginStrings.deflate]
-    
-    inline def deflateRaw: typings.compressionWebpackPlugin.compressionWebpackPluginStrings.deflateRaw = "deflateRaw".asInstanceOf[typings.compressionWebpackPlugin.compressionWebpackPluginStrings.deflateRaw]
-    
-    inline def gzip: typings.compressionWebpackPlugin.compressionWebpackPluginStrings.gzip = "gzip".asInstanceOf[typings.compressionWebpackPlugin.compressionWebpackPluginStrings.gzip]
-  }
-  
-  trait ZlibOptions
-    extends StObject
-       with BaseOptions
-       with Options[js.Any] {
+       with typings.webpack.mod.WebpackPluginInstance {
     
     /**
-      * The compression algorithm/function
-      * @default 'gzip'
+      * @private
+      * @type {AlgorithmFunction<T>}
       */
-    var algorithm: js.UndefOr[ZlibAlgorithm] = js.undefined
+    /* private */ var algorithm: Any
     
     /**
-      * Compression options for algorithm
-      * @default { level: 9 }
+      * @private
+      * @param {Compiler} compiler
+      * @param {Compilation} compilation
+      * @param {Record<string, Source>} assets
+      * @returns {Promise<void>}
       */
-    var compressionOptions: js.UndefOr[typings.node.zlibMod.ZlibOptions] = js.undefined
-  }
-  object ZlibOptions {
+    /* private */ var compress: Any
     
-    inline def apply(): ZlibOptions = {
+    /**
+      * @private
+      * @type {InternalPluginOptions<T>}
+      */
+    /* private */ var options: Any
+    
+    /**
+      * @private
+      * @param {Buffer} input
+      * @returns {Promise<Buffer>}
+      */
+    /* private */ var runCompressionAlgorithm: Any
+  }
+  object CompressionPlugin {
+    
+    inline def apply[T](
+      algorithm: Any,
+      apply: typings.webpack.mod.Compiler => Unit,
+      compress: Any,
+      options: Any,
+      runCompressionAlgorithm: Any
+    ): CompressionPlugin[T] = {
+      val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any], apply = js.Any.fromFunction1(apply), compress = compress.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], runCompressionAlgorithm = runCompressionAlgorithm.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CompressionPlugin[T]]
+    }
+    
+    extension [Self <: CompressionPlugin[?], T](x: Self & CompressionPlugin[T]) {
+      
+      inline def setAlgorithm(value: Any): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+      
+      inline def setCompress(value: Any): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
+      
+      inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      
+      inline def setRunCompressionAlgorithm(value: Any): Self = StObject.set(x, "runCompressionAlgorithm", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type CustomOptions = StringDictionary[Any]
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.compressionWebpackPlugin.anon.CompressionOptions[T]
+    - typings.compressionWebpackPlugin.anon.Algorithm[T]
+  */
+  trait DefinedDefaultAlgorithmAndOptions[T] extends StObject
+  object DefinedDefaultAlgorithmAndOptions {
+    
+    inline def Algorithm[T](): typings.compressionWebpackPlugin.anon.Algorithm[T] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ZlibOptions]
+      __obj.asInstanceOf[typings.compressionWebpackPlugin.anon.Algorithm[T]]
     }
     
-    extension [Self <: ZlibOptions](x: Self) {
-      
-      inline def setAlgorithm(value: ZlibAlgorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
-      
-      inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
-      
-      inline def setCompressionOptions(value: typings.node.zlibMod.ZlibOptions): Self = StObject.set(x, "compressionOptions", value.asInstanceOf[js.Any])
-      
-      inline def setCompressionOptionsUndefined: Self = StObject.set(x, "compressionOptions", js.undefined)
+    inline def CompressionOptions[T](algorithm: String | AlgorithmFunction[T]): typings.compressionWebpackPlugin.anon.CompressionOptions[T] = {
+      val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.compressionWebpackPlugin.anon.CompressionOptions[T]]
     }
   }
+  
+  type DeleteOriginalAssets = Boolean | `keep-source-map`
+  
+  type Filename = String | (js.Function1[/* fileData */ PathData, String])
+  
+  type InferDefaultType[T] = CustomOptions
+  
+  trait InternalPluginOptions[T]
+    extends StObject
+       with BasePluginOptions[T] {
+    
+    var algorithm: String | AlgorithmFunction[T]
+    
+    var compressionOptions: CompressionOptions[T]
+    
+    @JSName("deleteOriginalAssets")
+    var deleteOriginalAssets_InternalPluginOptions: DeleteOriginalAssets
+    
+    @JSName("filename")
+    var filename_InternalPluginOptions: Filename
+    
+    @JSName("minRatio")
+    var minRatio_InternalPluginOptions: Double
+    
+    @JSName("threshold")
+    var threshold_InternalPluginOptions: Double
+  }
+  object InternalPluginOptions {
+    
+    inline def apply[T](
+      algorithm: String | AlgorithmFunction[T],
+      compressionOptions: CompressionOptions[T],
+      deleteOriginalAssets: DeleteOriginalAssets,
+      filename: Filename,
+      minRatio: Double,
+      threshold: Double
+    ): InternalPluginOptions[T] = {
+      val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any], compressionOptions = compressionOptions.asInstanceOf[js.Any], deleteOriginalAssets = deleteOriginalAssets.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], minRatio = minRatio.asInstanceOf[js.Any], threshold = threshold.asInstanceOf[js.Any])
+      __obj.asInstanceOf[InternalPluginOptions[T]]
+    }
+    
+    extension [Self <: InternalPluginOptions[?], T](x: Self & InternalPluginOptions[T]) {
+      
+      inline def setAlgorithm(value: String | AlgorithmFunction[T]): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+      
+      inline def setAlgorithmFunction3(
+        value: (/* input */ Buffer, /* options */ CompressionOptions[T], /* callback */ js.Function2[
+              /* error */ js.UndefOr[js.Error | Null], 
+              /* result */ String | js.typedarray.ArrayBuffer | SharedArrayBuffer | js.typedarray.Uint8Array | js.Array[Double] | `0` | `1` | `2` | ToPrimitive, 
+              Unit
+            ]) => Any
+      ): Self = StObject.set(x, "algorithm", js.Any.fromFunction3(value))
+      
+      inline def setCompressionOptions(value: CompressionOptions[T]): Self = StObject.set(x, "compressionOptions", value.asInstanceOf[js.Any])
+      
+      inline def setDeleteOriginalAssets(value: DeleteOriginalAssets): Self = StObject.set(x, "deleteOriginalAssets", value.asInstanceOf[js.Any])
+      
+      inline def setFilename(value: Filename): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      
+      inline def setFilenameFunction1(value: /* fileData */ PathData => String): Self = StObject.set(x, "filename", js.Any.fromFunction1(value))
+      
+      inline def setMinRatio(value: Double): Self = StObject.set(x, "minRatio", value.asInstanceOf[js.Any])
+      
+      inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type PathData = StringDictionary[Any]
+  
+  type Rule = js.RegExp | String
+  
+  type Rules = js.Array[Rule] | Rule
+  
+  type Schema = typings.schemaUtils.validateMod.Schema
+  
+  type Source = typings.webpack.mod.Source
+  
+  type WebpackError = typings.webpack.mod.WebpackError
+  
+  type WebpackPluginInstance = typings.webpack.mod.WebpackPluginInstance
+  
+  type WithImplicitCoercion[T] = T | ValueOf[T]
+  
+  type ZlibOptions = typings.node.zlibMod.ZlibOptions
 }

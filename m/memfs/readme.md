@@ -1,7 +1,7 @@
 
 # Scala.js typings for memfs
 
-Typings are for version 3.2.0
+Typings are for version 3.4.7
 
 ## Library description:
 In-memory file-system with Node's fs API.
@@ -10,10 +10,10 @@ In-memory file-system with Node's fs API.
 | ------------------ | :-------------: |
 | Full name          | memfs |
 | Keywords           | fs, filesystem, fs.js, memory-fs, memfs, file, file system, mount, memory, in-memory, virtual, test, testing, mock |
-| # releases         | 22 |
-| # dependents       | 118 |
-| # downloads        | 16115142 |
-| # stars            | 6 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 3.8238846666666664E7 |
+| # stars            | 1244.0 |
 
 ## Links
 - [Homepage](https://github.com/streamich/memfs#readme)

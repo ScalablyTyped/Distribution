@@ -12,7 +12,7 @@ trait DetectKeyPhrasesRequest extends StObject {
   var LanguageCode: typings.awsSdk.comprehendMod.LanguageCode
   
   /**
-    * A UTF-8 text string. Each string must contain fewer that 5,000 bytes of UTF-8 encoded characters.
+    * A UTF-8 text string. The string must contain less than 100 KB of UTF-8 encoded characters.
     */
   var Text: CustomerInputString
 }

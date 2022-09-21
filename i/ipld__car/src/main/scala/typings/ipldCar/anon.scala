@@ -63,7 +63,7 @@ object anon {
     
     var blockOffset: Double
     
-    var cid: CID
+    var cid: CID[Any, Double, Double, typings.multiformats.linkInterfaceMod.Version]
     
     var length: Double
     
@@ -71,7 +71,13 @@ object anon {
   }
   object BlockLength {
     
-    inline def apply(blockLength: Double, blockOffset: Double, cid: CID, length: Double, offset: Double): BlockLength = {
+    inline def apply(
+      blockLength: Double,
+      blockOffset: Double,
+      cid: CID[Any, Double, Double, typings.multiformats.linkInterfaceMod.Version],
+      length: Double,
+      offset: Double
+    ): BlockLength = {
       val __obj = js.Dynamic.literal(blockLength = blockLength.asInstanceOf[js.Any], blockOffset = blockOffset.asInstanceOf[js.Any], cid = cid.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
       __obj.asInstanceOf[BlockLength]
     }
@@ -82,7 +88,7 @@ object anon {
       
       inline def setBlockOffset(value: Double): Self = StObject.set(x, "blockOffset", value.asInstanceOf[js.Any])
       
-      inline def setCid(value: CID): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
+      inline def setCid(value: CID[Any, Double, Double, typings.multiformats.linkInterfaceMod.Version]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
@@ -96,7 +102,7 @@ object anon {
     
     var blockOffset: Double
     
-    var cid: CID
+    var cid: CID[Any, Double, Double, typings.multiformats.linkInterfaceMod.Version]
     
     var length: Double
     
@@ -104,7 +110,13 @@ object anon {
   }
   object BlockOffset {
     
-    inline def apply(blockLength: Double, blockOffset: Double, cid: CID, length: Double, offset: Double): BlockOffset = {
+    inline def apply(
+      blockLength: Double,
+      blockOffset: Double,
+      cid: CID[Any, Double, Double, typings.multiformats.linkInterfaceMod.Version],
+      length: Double,
+      offset: Double
+    ): BlockOffset = {
       val __obj = js.Dynamic.literal(blockLength = blockLength.asInstanceOf[js.Any], blockOffset = blockOffset.asInstanceOf[js.Any], cid = cid.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
       __obj.asInstanceOf[BlockOffset]
     }
@@ -115,7 +127,7 @@ object anon {
       
       inline def setBlockOffset(value: Double): Self = StObject.set(x, "blockOffset", value.asInstanceOf[js.Any])
       
-      inline def setCid(value: CID): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
+      inline def setCid(value: CID[Any, Double, Double, typings.multiformats.linkInterfaceMod.Version]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
@@ -313,13 +325,17 @@ object anon {
     
     var bytes: js.typedarray.Uint8Array
     
-    var cid: CID
+    var cid: CID[Any, Double, Double, typings.multiformats.linkInterfaceMod.Version]
     
     var `object`: Any
   }
   object TestBlockobjectany {
     
-    inline def apply(bytes: js.typedarray.Uint8Array, cid: CID, `object`: Any): TestBlockobjectany = {
+    inline def apply(
+      bytes: js.typedarray.Uint8Array,
+      cid: CID[Any, Double, Double, typings.multiformats.linkInterfaceMod.Version],
+      `object`: Any
+    ): TestBlockobjectany = {
       val __obj = js.Dynamic.literal(bytes = bytes.asInstanceOf[js.Any], cid = cid.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TestBlockobjectany]
@@ -329,7 +345,7 @@ object anon {
       
       inline def setBytes(value: js.typedarray.Uint8Array): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
       
-      inline def setCid(value: CID): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
+      inline def setCid(value: CID[Any, Double, Double, typings.multiformats.linkInterfaceMod.Version]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
       inline def setObject(value: Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     }

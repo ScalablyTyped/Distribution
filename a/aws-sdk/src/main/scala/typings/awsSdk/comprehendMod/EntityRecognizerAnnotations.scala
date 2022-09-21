@@ -12,7 +12,7 @@ trait EntityRecognizerAnnotations extends StObject {
   var S3Uri: typings.awsSdk.comprehendMod.S3Uri
   
   /**
-    * This specifies the Amazon S3 location where the test annotations for an entity recognizer are located. The URI must be in the same AWS Region as the API endpoint that you are calling.
+    *  Specifies the Amazon S3 location where the test annotations for an entity recognizer are located. The URI must be in the same region as the API endpoint that you are calling.
     */
   var TestS3Uri: js.UndefOr[S3Uri] = js.undefined
 }

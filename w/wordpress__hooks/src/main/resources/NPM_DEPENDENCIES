@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@wordpress/hooks" : "3.17.0"
+      "@wordpress/hooks" : "3.18.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@wordpress/hooks" : "3.17.0"
+      "@wordpress/hooks" : "3.18.0"
     }
   ],
   "compile-devDependencies" : [

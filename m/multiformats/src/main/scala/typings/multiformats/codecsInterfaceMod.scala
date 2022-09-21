@@ -1,6 +1,6 @@
 package typings.multiformats
 
-import typings.multiformats.anon.Data
+import typings.multiformats.blockInterfaceMod.ByteView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,6 +72,4 @@ object codecsInterfaceMod {
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
-  
-  type ByteView[T] = js.typedarray.Uint8Array | (js.typedarray.Uint8Array & Data[T])
 }

@@ -12,8 +12,8 @@ object setImmediateMod extends Shortcut {
   val default: TSetImmediate = js.native
   
   type TSetImmediate = js.Function2[
-    /* callback */ js.Function1[/* repeated */ js.Any, Unit], 
-    /* args */ js.UndefOr[js.Any], 
+    /* callback */ js.Function1[/* repeated */ Any, Unit], 
+    /* args */ js.UndefOr[Any], 
     Unit
   ]
   

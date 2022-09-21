@@ -11,26 +11,26 @@ object errorsMod {
   val ^ : js.Any = js.native
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Error * / any
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Error * / any */ @JSImport("memfs/lib/internal/errors", "AssertionError")
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify g.Error * / any
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify g.Error * / any */ @JSImport("memfs/lib/internal/errors", "AssertionError")
   @js.native
-  class AssertionError protected () extends StObject {
-    def this(options: js.Any) = this()
+  open class AssertionError protected () extends StObject {
+    def this(options: Any) = this()
     
-    var actual: js.Any = js.native
+    var actual: Any = js.native
     
-    var code: js.Any = js.native
+    var code: Any = js.native
     
-    var expected: js.Any = js.native
+    var expected: Any = js.native
     
-    var generatedMessage: js.Any = js.native
+    var generatedMessage: Any = js.native
     
-    var name: js.Any = js.native
+    var name: Any = js.native
     
-    var operator: js.Any = js.native
+    var operator: Any = js.native
   }
   
-  inline def E(sym: js.Any, `val`: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("E")(sym.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def E(sym: Any, `val`: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("E")(sym.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def message(key: js.Any, args: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("message")(key.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def message(key: Any, args: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("message")(key.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

@@ -93,7 +93,7 @@ object vueTemplateCompilerMod {
       
       inline def setCustomBlocks(value: js.Array[SFCBlockV2]): Self = StObject.set(x, "customBlocks", value.asInstanceOf[js.Any])
       
-      inline def setCustomBlocksVarargs(value: SFCBlockV2*): Self = StObject.set(x, "customBlocks", js.Array(value :_*))
+      inline def setCustomBlocksVarargs(value: SFCBlockV2*): Self = StObject.set(x, "customBlocks", js.Array(value*))
       
       inline def setScript(value: SFCBlockV2): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       
@@ -101,7 +101,7 @@ object vueTemplateCompilerMod {
       
       inline def setStyles(value: js.Array[SFCBlockV2]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      inline def setStylesVarargs(value: SFCBlockV2*): Self = StObject.set(x, "styles", js.Array(value :_*))
+      inline def setStylesVarargs(value: SFCBlockV2*): Self = StObject.set(x, "styles", js.Array(value*))
       
       inline def setTemplate(value: SFCBlockV2): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       

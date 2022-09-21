@@ -197,6 +197,8 @@ type LanguageCode = _LanguageCode | java.lang.String
 
 type ListOfClasses = js.Array[DocumentClass]
 
+type ListOfDescriptiveMentionIndices = js.Array[Integer]
+
 type ListOfDetectDominantLanguageResult = js.Array[BatchDetectDominantLanguageItemResult]
 
 type ListOfDetectEntitiesResult = js.Array[BatchDetectEntitiesItemResult]
@@ -206,6 +208,8 @@ type ListOfDetectKeyPhrasesResult = js.Array[BatchDetectKeyPhrasesItemResult]
 type ListOfDetectSentimentResult = js.Array[BatchDetectSentimentItemResult]
 
 type ListOfDetectSyntaxResult = js.Array[BatchDetectSyntaxItemResult]
+
+type ListOfDetectTargetedSentimentResult = js.Array[BatchDetectTargetedSentimentItemResult]
 
 type ListOfDocumentReadFeatureTypes = js.Array[DocumentReadFeatureTypes]
 
@@ -219,11 +223,15 @@ type ListOfKeyPhrases = js.Array[KeyPhrase]
 
 type ListOfLabels = js.Array[DocumentLabel]
 
+type ListOfMentions = js.Array[TargetedSentimentMention]
+
 type ListOfPiiEntities = js.Array[PiiEntity]
 
 type ListOfPiiEntityTypes = js.Array[PiiEntityType]
 
 type ListOfSyntaxTokens = js.Array[SyntaxToken]
+
+type ListOfTargetedSentimentEntities = js.Array[TargetedSentimentEntity]
 
 type MaskCharacter = java.lang.String
 
@@ -380,6 +388,28 @@ type TagValue = java.lang.String
 type TargetEventTypes = js.Array[EventTypeString]
 
 type TargetedSentimentDetectionJobPropertiesList = js.Array[TargetedSentimentDetectionJobProperties]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PERSON
+  - typings.awsSdk.awsSdkStrings.LOCATION
+  - typings.awsSdk.awsSdkStrings.ORGANIZATION
+  - typings.awsSdk.awsSdkStrings.FACILITY
+  - typings.awsSdk.awsSdkStrings.BRAND
+  - typings.awsSdk.awsSdkStrings.COMMERCIAL_ITEM
+  - typings.awsSdk.awsSdkStrings.MOVIE
+  - typings.awsSdk.awsSdkStrings.MUSIC
+  - typings.awsSdk.awsSdkStrings.BOOK
+  - typings.awsSdk.awsSdkStrings.SOFTWARE
+  - typings.awsSdk.awsSdkStrings.GAME
+  - typings.awsSdk.awsSdkStrings.PERSONAL_TITLE
+  - typings.awsSdk.awsSdkStrings.EVENT
+  - typings.awsSdk.awsSdkStrings.DATE
+  - typings.awsSdk.awsSdkStrings.QUANTITY
+  - typings.awsSdk.awsSdkStrings.ATTRIBUTE
+  - typings.awsSdk.awsSdkStrings.OTHER
+  - java.lang.String
+*/
+type TargetedSentimentEntityType = _TargetedSentimentEntityType | java.lang.String
 
 type Timestamp = js.Date
 

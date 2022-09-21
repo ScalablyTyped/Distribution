@@ -11,7 +11,7 @@ object direntMod {
   
   @JSImport("memfs/lib/Dirent", JSImport.Default)
   @js.native
-  class default () extends Dirent
+  open class default () extends Dirent
   /* static members */
   object default {
     
@@ -25,9 +25,9 @@ object direntMod {
   
   @JSImport("memfs/lib/Dirent", "Dirent")
   @js.native
-  class Dirent () extends StObject {
+  open class Dirent () extends StObject {
     
-    /* private */ var _checkModeProperty: js.Any = js.native
+    /* private */ var _checkModeProperty: Any = js.native
     
     def isBlockDevice(): Boolean = js.native
     
@@ -43,7 +43,7 @@ object direntMod {
     
     def isSymbolicLink(): Boolean = js.native
     
-    /* private */ var mode: js.Any = js.native
+    /* private */ var mode: Any = js.native
     
     var name: TDataOut = js.native
   }

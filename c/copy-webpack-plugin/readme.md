@@ -1,7 +1,7 @@
 
 # Scala.js typings for copy-webpack-plugin
 
-Typings are for version 6.3
+Typings are for version 11.0.0
 
 ## Library description:
 Copy files && directories with webpack
@@ -10,10 +10,10 @@ Copy files && directories with webpack
 | ------------------ | :-------------: |
 | Full name          | copy-webpack-plugin |
 | Keywords           | webpack, plugin, transfer, move, copy |
-| # releases         | 25 |
-| # dependents       | 2078 |
-| # downloads        | 183332475 |
-| # stars            | 50 |
+| # releases         | 27 |
+| # dependents       | 0.0 |
+| # downloads        | 2.6982253666666668E7 |
+| # stars            | 2724.0 |
 
 ## Links
 - [Homepage](https://github.com/webpack-contrib/copy-webpack-plugin)
@@ -24,7 +24,7 @@ Copy files && directories with webpack
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

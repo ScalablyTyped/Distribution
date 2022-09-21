@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object base8Mod {
   
-  @JSImport("multiformats/types/src/bases/base8", "base8")
+  @JSImport("multiformats/dist/types/src/bases/base8", "base8")
   @js.native
   val base8: Codec[typings.multiformats.multiformatsStrings.base8, `7`] = js.native
 }

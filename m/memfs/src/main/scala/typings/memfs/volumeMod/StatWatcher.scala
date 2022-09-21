@@ -10,25 +10,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("memfs/lib/volume", "StatWatcher")
 @js.native
-class StatWatcher protected () extends EventEmitter {
+open class StatWatcher protected () extends EventEmitter {
   def this(vol: Volume) = this()
   
   var filename: String = js.native
   
-  /* private */ var hasChanged: js.Any = js.native
+  /* private */ var hasChanged: Any = js.native
   
   var interval: Double = js.native
   
-  /* private */ var loop: js.Any = js.native
+  /* private */ var loop: Any = js.native
   
-  /* private */ var onInterval: js.Any = js.native
+  /* private */ var onInterval: Any = js.native
   
   var prev: default[TStatNumber] = js.native
   
-  def setTimeout(callback: js.Function1[/* repeated */ js.Any, Unit]): js.Any = js.native
-  def setTimeout(callback: js.Function1[/* repeated */ js.Any, Unit], time: Double): js.Any = js.native
-  def setTimeout(callback: js.Function1[/* repeated */ js.Any, Unit], time: Double, args: js.Array[js.Any]): js.Any = js.native
-  def setTimeout(callback: js.Function1[/* repeated */ js.Any, Unit], time: Unit, args: js.Array[js.Any]): js.Any = js.native
+  def setTimeout(callback: js.Function1[/* repeated */ Any, Unit]): Any = js.native
+  def setTimeout(callback: js.Function1[/* repeated */ Any, Unit], time: Double): Any = js.native
+  def setTimeout(callback: js.Function1[/* repeated */ Any, Unit], time: Double, args: js.Array[Any]): Any = js.native
+  def setTimeout(callback: js.Function1[/* repeated */ Any, Unit], time: Unit, args: js.Array[Any]): Any = js.native
   @JSName("setTimeout")
   var setTimeout_Original: TSetTimeout = js.native
   
@@ -39,7 +39,7 @@ class StatWatcher protected () extends EventEmitter {
   
   def stop(): Unit = js.native
   
-  var timeoutRef: js.UndefOr[js.Any] = js.native
+  var timeoutRef: js.UndefOr[Any] = js.native
   
   var vol: Volume = js.native
 }

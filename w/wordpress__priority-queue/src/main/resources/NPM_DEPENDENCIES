@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@wordpress/priority-queue" : "2.17.0"
+      "@wordpress/priority-queue" : "2.18.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@wordpress/priority-queue" : "2.17.0"
+      "@wordpress/priority-queue" : "2.18.0"
     }
   ],
   "compile-devDependencies" : [

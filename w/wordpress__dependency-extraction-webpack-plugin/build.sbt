@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wordpress__dependency-extraction-webpack-plugin"
-version := "4.0.0-e42a84"
+version := "4.1.0-aa9884"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

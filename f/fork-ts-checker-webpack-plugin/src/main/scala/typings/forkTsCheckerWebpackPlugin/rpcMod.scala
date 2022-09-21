@@ -1,17 +1,9 @@
 package typings.forkTsCheckerWebpackPlugin
 
-import typings.forkTsCheckerWebpackPlugin.rpcClientMod.RpcClient
-import typings.forkTsCheckerWebpackPlugin.rpcMessageChannelMod.RpcMessageChannel
-import typings.forkTsCheckerWebpackPlugin.rpcMessageMod.RpcCall
-import typings.forkTsCheckerWebpackPlugin.rpcMessageMod.RpcMessage
-import typings.forkTsCheckerWebpackPlugin.rpcMessageMod.RpcRemoteError
-import typings.forkTsCheckerWebpackPlugin.rpcMessageMod.RpcReturn
-import typings.forkTsCheckerWebpackPlugin.rpcMessageMod.RpcThrow
-import typings.forkTsCheckerWebpackPlugin.rpcMessagePortMod.RpcMessagePort
-import typings.forkTsCheckerWebpackPlugin.rpcProcedureMod.RpcProcedure
-import typings.forkTsCheckerWebpackPlugin.rpcProcedureMod.RpcProcedurePayload
-import typings.forkTsCheckerWebpackPlugin.rpcProcedureMod.RpcProcedureResult
-import typings.forkTsCheckerWebpackPlugin.rpcServiceMod.RpcService
+import typings.forkTsCheckerWebpackPlugin.rpcWorkerMod.RpcWorker
+import typings.forkTsCheckerWebpackPlugin.typesMod.RpcMethod
+import typings.forkTsCheckerWebpackPlugin.typesMod.RpcRemoteMethod
+import typings.node.childProcessMod.ChildProcess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,41 +14,25 @@ object rpcMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createRpcCall[TProcedure /* <: RpcProcedure[js.Any, js.Any] */](procedure: TProcedure, index: Double, payload: RpcProcedurePayload[TProcedure]): RpcCall[TProcedure] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcCall")(procedure.asInstanceOf[js.Any], index.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[RpcCall[TProcedure]]
+  @JSImport("fork-ts-checker-webpack-plugin/lib/rpc", "RpcExitError")
+  @js.native
+  open class RpcExitError protected ()
+    extends typings.forkTsCheckerWebpackPlugin.rpcErrorMod.RpcExitError {
+    def this(message: String) = this()
+    def this(message: String, code: String) = this()
+    def this(message: String, code: Double) = this()
+    def this(message: String, code: String, signal: String) = this()
+    def this(message: String, code: Double, signal: String) = this()
+    def this(message: String, code: Null, signal: String) = this()
+    def this(message: String, code: Unit, signal: String) = this()
+  }
   
-  inline def createRpcClient(port: RpcMessagePort): RpcClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createRpcClient")(port.asInstanceOf[js.Any]).asInstanceOf[RpcClient]
+  inline def createRpcWorker[T /* <: RpcMethod */](modulePath: String, data: Any): RpcWorker[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcWorker")(modulePath.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[RpcWorker[T]]
+  inline def createRpcWorker[T /* <: RpcMethod */](modulePath: String, data: Any, memoryLimit: Double): RpcWorker[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcWorker")(modulePath.asInstanceOf[js.Any], data.asInstanceOf[js.Any], memoryLimit.asInstanceOf[js.Any])).asInstanceOf[RpcWorker[T]]
   
-  inline def createRpcMessage[TType /* <: String */, TProcedure /* <: RpcProcedure[js.Any, js.Any] */, TPayload](procedure: TProcedure, id: Double, `type`: TType, payload: TPayload): RpcMessage[TType, TProcedure, TPayload] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcMessage")(procedure.asInstanceOf[js.Any], id.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[RpcMessage[TType, TProcedure, TPayload]]
-  inline def createRpcMessage[TType /* <: String */, TProcedure /* <: RpcProcedure[js.Any, js.Any] */, TPayload](procedure: TProcedure, id: Double, `type`: TType, payload: TPayload, source: String): RpcMessage[TType, TProcedure, TPayload] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcMessage")(procedure.asInstanceOf[js.Any], id.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[RpcMessage[TType, TProcedure, TPayload]]
+  inline def exposeRpc(fn: js.Function1[/* repeated */ Any, Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exposeRpc")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def createRpcMessageChannel(servicePort: RpcMessagePort, clientPort: RpcMessagePort): RpcMessageChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcMessageChannel")(servicePort.asInstanceOf[js.Any], clientPort.asInstanceOf[js.Any])).asInstanceOf[RpcMessageChannel]
-  inline def createRpcMessageChannel(servicePort: RpcMessagePort, clientPort: RpcMessagePort, linkPorts: js.Function0[js.Promise[Unit]]): RpcMessageChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcMessageChannel")(servicePort.asInstanceOf[js.Any], clientPort.asInstanceOf[js.Any], linkPorts.asInstanceOf[js.Any])).asInstanceOf[RpcMessageChannel]
-  inline def createRpcMessageChannel(
-    servicePort: RpcMessagePort,
-    clientPort: RpcMessagePort,
-    linkPorts: js.Function0[js.Promise[Unit]],
-    unlinkPorts: js.Function0[js.Promise[Unit]]
-  ): RpcMessageChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcMessageChannel")(servicePort.asInstanceOf[js.Any], clientPort.asInstanceOf[js.Any], linkPorts.asInstanceOf[js.Any], unlinkPorts.asInstanceOf[js.Any])).asInstanceOf[RpcMessageChannel]
-  inline def createRpcMessageChannel(
-    servicePort: RpcMessagePort,
-    clientPort: RpcMessagePort,
-    linkPorts: Unit,
-    unlinkPorts: js.Function0[js.Promise[Unit]]
-  ): RpcMessageChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcMessageChannel")(servicePort.asInstanceOf[js.Any], clientPort.asInstanceOf[js.Any], linkPorts.asInstanceOf[js.Any], unlinkPorts.asInstanceOf[js.Any])).asInstanceOf[RpcMessageChannel]
+  inline def getRpcWorkerData(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getRpcWorkerData")().asInstanceOf[Any]
   
-  inline def createRpcReturn[TProcedure /* <: RpcProcedure[js.Any, js.Any] */](procedure: TProcedure, index: Double, payload: RpcProcedureResult[TProcedure]): RpcReturn[TProcedure] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcReturn")(procedure.asInstanceOf[js.Any], index.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[RpcReturn[TProcedure]]
-  
-  inline def createRpcService(port: RpcMessagePort): RpcService = ^.asInstanceOf[js.Dynamic].applyDynamic("createRpcService")(port.asInstanceOf[js.Any]).asInstanceOf[RpcService]
-  
-  inline def createRpcThrow[TProcedure /* <: RpcProcedure[js.Any, js.Any] */, TError](procedure: TProcedure, index: Double, payload: RpcRemoteError): RpcThrow[TProcedure] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcThrow")(procedure.asInstanceOf[js.Any], index.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[RpcThrow[TProcedure]]
-  
-  inline def getRpcMessageKey(message: RpcMessage[String, RpcProcedure[js.Any, js.Any], js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRpcMessageKey")(message.asInstanceOf[js.Any]).asInstanceOf[String]
-  
-  inline def isRpcCallMessage[TType /* <: String */, TProcedure /* <: RpcProcedure[js.Any, js.Any] */](candidate: js.Any): /* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/rpc/RpcMessage.RpcCall<TProcedure> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRpcCallMessage")(candidate.asInstanceOf[js.Any]).asInstanceOf[/* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/rpc/RpcMessage.RpcCall<TProcedure> */ Boolean]
-  
-  inline def isRpcMessage[TType /* <: String */, TProcedure /* <: RpcProcedure[js.Any, js.Any] */](candidate: js.Any): /* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/rpc/RpcMessage.RpcMessage<TType, TProcedure, unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRpcMessage")(candidate.asInstanceOf[js.Any]).asInstanceOf[/* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/rpc/RpcMessage.RpcMessage<TType, TProcedure, unknown> */ Boolean]
-  
-  inline def isRpcReturnMessage[TType /* <: String */, TProcedure /* <: RpcProcedure[js.Any, js.Any] */](candidate: js.Any): /* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/rpc/RpcMessage.RpcReturn<TProcedure> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRpcReturnMessage")(candidate.asInstanceOf[js.Any]).asInstanceOf[/* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/rpc/RpcMessage.RpcReturn<TProcedure> */ Boolean]
-  
-  inline def isRpcThrowMessage[TType /* <: String */, TProcedure /* <: RpcProcedure[js.Any, js.Any] */](candidate: js.Any): /* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/rpc/RpcMessage.RpcThrow<TProcedure> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRpcThrowMessage")(candidate.asInstanceOf[js.Any]).asInstanceOf[/* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/rpc/RpcMessage.RpcThrow<TProcedure> */ Boolean]
+  inline def wrapRpc[T /* <: js.Function1[/* repeated */ Any, Any] */](childProcess: ChildProcess): RpcRemoteMethod[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapRpc")(childProcess.asInstanceOf[js.Any]).asInstanceOf[RpcRemoteMethod[T]]
 }

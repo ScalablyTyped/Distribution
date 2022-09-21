@@ -1,6 +1,6 @@
 package typings.forkTsCheckerWebpackPlugin
 
-import typings.forkTsCheckerWebpackPlugin.dependenciesMod.Dependencies
+import typings.forkTsCheckerWebpackPlugin.filesMatchMod.FilesMatch
 import typings.forkTsCheckerWebpackPlugin.issueIssueMod.Issue
 import typings.typescript.mod.BuilderProgram
 import typings.typescript.mod.CompilerHost
@@ -89,7 +89,7 @@ object typeScriptExtensionMod {
   
   trait TypeScriptReporterExtension extends StObject {
     
-    var extendDependencies: js.UndefOr[js.Function1[/* dependencies */ Dependencies, Dependencies]] = js.undefined
+    var extendDependencies: js.UndefOr[js.Function1[/* dependencies */ FilesMatch, FilesMatch]] = js.undefined
     
     var extendIssues: js.UndefOr[js.Function1[/* issues */ js.Array[Issue], js.Array[Issue]]] = js.undefined
   }
@@ -102,7 +102,7 @@ object typeScriptExtensionMod {
     
     extension [Self <: TypeScriptReporterExtension](x: Self) {
       
-      inline def setExtendDependencies(value: /* dependencies */ Dependencies => Dependencies): Self = StObject.set(x, "extendDependencies", js.Any.fromFunction1(value))
+      inline def setExtendDependencies(value: /* dependencies */ FilesMatch => FilesMatch): Self = StObject.set(x, "extendDependencies", js.Any.fromFunction1(value))
       
       inline def setExtendDependenciesUndefined: Self = StObject.set(x, "extendDependencies", js.undefined)
       

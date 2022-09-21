@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object webpackFormatterMod {
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/formatter/WebpackFormatter", JSImport.Namespace)
+  @JSImport("fork-ts-checker-webpack-plugin/lib/formatter/webpack-formatter", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

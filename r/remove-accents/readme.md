@@ -1,7 +1,7 @@
 
 # Scala.js typings for remove-accents
 
-Typings are for version 0.4.2
+Typings are for version 0.4.3
 
 ## Library description:
 Converting the accented characters to their corresponding non-accented ASCII characters.

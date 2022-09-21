@@ -1,6 +1,5 @@
 package typings.compressionWebpackPlugin
 
-import typings.compressionWebpackPlugin.mod.ZlibAlgorithm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,26 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object compressionWebpackPluginStrings {
   
   @js.native
-  sealed trait brotliCompress
-    extends StObject
-       with ZlibAlgorithm
-  inline def brotliCompress: brotliCompress = "brotliCompress".asInstanceOf[brotliCompress]
+  sealed trait `keep-source-map` extends StObject
+  inline def `keep-source-map`: `keep-source-map` = "keep-source-map".asInstanceOf[`keep-source-map`]
   
   @js.native
-  sealed trait deflate
-    extends StObject
-       with ZlibAlgorithm
-  inline def deflate: deflate = "deflate".asInstanceOf[deflate]
-  
-  @js.native
-  sealed trait deflateRaw
-    extends StObject
-       with ZlibAlgorithm
-  inline def deflateRaw: deflateRaw = "deflateRaw".asInstanceOf[deflateRaw]
-  
-  @js.native
-  sealed trait gzip
-    extends StObject
-       with ZlibAlgorithm
-  inline def gzip: gzip = "gzip".asInstanceOf[gzip]
+  sealed trait string extends StObject
+  inline def string: string = "string".asInstanceOf[string]
 }

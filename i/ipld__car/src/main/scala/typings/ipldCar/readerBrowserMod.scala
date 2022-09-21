@@ -3,6 +3,7 @@ package typings.ipldCar
 import typings.ipldCar.apiMod.BlockIterator
 import typings.ipldCar.apiMod.CIDIterator
 import typings.ipldCar.ipldCarBooleans.`true`
+import typings.multiformats.linkInterfaceMod.Version
 import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -134,7 +135,7 @@ object readerBrowserMod {
   
   type BytesReader = typings.ipldCar.codingMod.BytesReader
   
-  type CID = typings.multiformats.mod.CID
+  type CID = typings.multiformats.mod.CID[Any, Double, Double, Version]
   
   type CarHeader = typings.ipldCar.codingMod.CarHeader
   

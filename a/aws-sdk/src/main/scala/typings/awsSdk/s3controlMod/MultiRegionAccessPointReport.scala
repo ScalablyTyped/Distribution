@@ -29,7 +29,7 @@ trait MultiRegionAccessPointReport extends StObject {
   var Regions: js.UndefOr[RegionReportList] = js.undefined
   
   /**
-    * The current status of the Multi-Region Access Point.  CREATING and DELETING are temporary states that exist while the request is propogating and being completed. If a Multi-Region Access Point has a status of PARTIALLY_CREATED, you can retry creation or send a request to delete the Multi-Region Access Point. If a Multi-Region Access Point has a status of PARTIALLY_DELETED, you can retry a delete request to finish the deletion of the Multi-Region Access Point.
+    * The current status of the Multi-Region Access Point.  CREATING and DELETING are temporary states that exist while the request is propagating and being completed. If a Multi-Region Access Point has a status of PARTIALLY_CREATED, you can retry creation or send a request to delete the Multi-Region Access Point. If a Multi-Region Access Point has a status of PARTIALLY_DELETED, you can retry a delete request to finish the deletion of the Multi-Region Access Point.
     */
   var Status: js.UndefOr[MultiRegionAccessPointStatus] = js.undefined
 }

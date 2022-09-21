@@ -1,5 +1,8 @@
 package typings.cleanWebpackPlugin
 
+import typings.webpack.mod.Compilation
+import typings.webpack.mod.Compiler
+import typings.webpack.mod.Stats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,29 +11,25 @@ object mod {
   
   @JSImport("clean-webpack-plugin", "CleanWebpackPlugin")
   @js.native
-  class CleanWebpackPlugin () extends StObject {
+  open class CleanWebpackPlugin () extends StObject {
     def this(options: Options) = this()
     
     @JSName("apply")
-    def apply(
-      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
-    ): Unit = js.native
+    def apply(compiler: Compiler): Unit = js.native
     
-    /* private */ val cleanAfterEveryBuildPatterns: js.Any = js.native
+    /* private */ val cleanAfterEveryBuildPatterns: Any = js.native
     
-    /* private */ val cleanOnceBeforeBuildPatterns: js.Any = js.native
+    /* private */ val cleanOnceBeforeBuildPatterns: Any = js.native
     
-    /* private */ val cleanStaleWebpackAssets: js.Any = js.native
+    /* private */ val cleanStaleWebpackAssets: Any = js.native
     
-    /* private */ var currentAssets: js.Any = js.native
+    /* private */ var currentAssets: Any = js.native
     
-    /* private */ val dangerouslyAllowCleanPatternsOutsideProject: js.Any = js.native
+    /* private */ val dangerouslyAllowCleanPatternsOutsideProject: Any = js.native
     
-    /* private */ val dry: js.Any = js.native
+    /* private */ val dry: Any = js.native
     
-    def handleDone(
-      stats: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Stats */ js.Any
-    ): Unit = js.native
+    def handleDone(stats: Stats): Unit = js.native
     
     /**
       * Initially remove files from output directory prior to build.
@@ -41,18 +40,16 @@ object mod {
       */
     def handleInitial(compilation: Compilation): Unit = js.native
     
-    /* private */ var initialClean: js.Any = js.native
+    /* private */ var initialClean: Any = js.native
     
-    /* private */ var outputPath: js.Any = js.native
+    /* private */ var outputPath: Any = js.native
     
-    /* private */ val protectWebpackAssets: js.Any = js.native
+    /* private */ val protectWebpackAssets: Any = js.native
     
     def removeFiles(patterns: js.Array[String]): Unit = js.native
     
-    /* private */ val verbose: js.Any = js.native
+    /* private */ val verbose: Any = js.native
   }
-  
-  type Compilation = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compilationType.Compilation */ js.Any
   
   trait Options extends StObject {
     
@@ -127,13 +124,13 @@ object mod {
       
       inline def setCleanAfterEveryBuildPatternsUndefined: Self = StObject.set(x, "cleanAfterEveryBuildPatterns", js.undefined)
       
-      inline def setCleanAfterEveryBuildPatternsVarargs(value: String*): Self = StObject.set(x, "cleanAfterEveryBuildPatterns", js.Array(value :_*))
+      inline def setCleanAfterEveryBuildPatternsVarargs(value: String*): Self = StObject.set(x, "cleanAfterEveryBuildPatterns", js.Array(value*))
       
       inline def setCleanOnceBeforeBuildPatterns(value: js.Array[String]): Self = StObject.set(x, "cleanOnceBeforeBuildPatterns", value.asInstanceOf[js.Any])
       
       inline def setCleanOnceBeforeBuildPatternsUndefined: Self = StObject.set(x, "cleanOnceBeforeBuildPatterns", js.undefined)
       
-      inline def setCleanOnceBeforeBuildPatternsVarargs(value: String*): Self = StObject.set(x, "cleanOnceBeforeBuildPatterns", js.Array(value :_*))
+      inline def setCleanOnceBeforeBuildPatternsVarargs(value: String*): Self = StObject.set(x, "cleanOnceBeforeBuildPatterns", js.Array(value*))
       
       inline def setCleanStaleWebpackAssets(value: Boolean): Self = StObject.set(x, "cleanStaleWebpackAssets", value.asInstanceOf[js.Any])
       

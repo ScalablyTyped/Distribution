@@ -105,6 +105,7 @@
 | 0.8762100110154072 | [pascal-case](./p/pascal-case) | Transform into a string of capitalized words witho
 | 0.8761782960536695 | [isarray](./i/isarray) | Array
 | 0.8761502462001425 | [json-schema-traverse](./j/json-schema-traverse) | Traverse JSON Schema passing each schema object to
+| 0.8759394825605985 | [copy-webpack-plugin](./c/copy-webpack-plugin) | Copy files && directories with webpack
 | 0.8758131254451142 | [emotion__css](./e/emotion__css) | The Next Generation of CSS-in-JS.
 | 0.8753935717031375 | [sentry__hub](./s/sentry__hub) | Sentry hub which handles global state managment.
 | 0.8752912323037632 | [mime-db](./m/mime-db) | Media Type Database
@@ -182,10 +183,12 @@
 | 0.8632317643497559 | [react-error-boundary](./r/react-error-boundary) | Simple reusable React error boundary component
 | 0.8631020492971274 | [luxon](./l/luxon) | Immutable date wrapper
 | 0.8630891073613675 | [cssesc](./c/cssesc) | A JavaScript library for escaping CSS strings and 
+| 0.8628669599103143 | [memfs](./m/memfs) | In-memory file-system with Node's fs API.
 | 0.8628417528444216 | [lodash_dot_camelcase](./l/lodash_dot_camelcase) | The lodash method _.camelCase exported as a module
 | 0.8625558227204242 | [statuses](./s/statuses) | HTTP status utility
 | 0.8625536796567048 | [encodeurl](./e/encodeurl) | Encode a URL to a percent-encoded form, excluding 
 | 0.8617172039452854 | [fastq](./f/fastq) | Fast, in memory work queue
+| 0.8617007002817392 | [fork-ts-checker-webpack-p](./f/fork-ts-checker-webpack-plugin) | Runs typescript type checker and linter on separat
 | 0.8615586494106214 | [react-router](./r/react-router) | Declarative routing for React
 | 0.8614583763472952 | [normalize-path](./n/normalize-path) | Normalize slashes in a file path to be posix/unix-
 | 0.8613902302580275 | [storybook__components](./s/storybook__components) | Core Storybook Components
@@ -250,6 +253,7 @@
 | 0.8529164502151902 | [aws-sdk__config-resolver](./a/aws-sdk__config-resolver) | -
 | 0.8528927432178816 | [filesize](./f/filesize) | JavaScript library to generate a human readable St
 | 0.852814126516628 | [aws-sdk__credential-provi](./a/aws-sdk__credential-provider-node) | AWS credential provider that sources credentials f
+| 0.8527595067556228 | [safer-buffer](./s/safer-buffer) | Modern Buffer API polyfill without footguns
 | 0.8527388358803386 | [accepts](./a/accepts) | Higher-level content negotiation
 | 0.8527324580863276 | [aws-sdk__util-hex-encodin](./a/aws-sdk__util-hex-encoding) | Converts binary buffers to and from lowercase hexa
 | 0.8527153835100215 | [dir-glob](./d/dir-glob) | Convert directories to glob compatible strings
@@ -652,6 +656,7 @@
 | 0.8174640405643379 | [bail](./b/bail) | Throw a given error
 | 0.817354583046757 | [immediate](./i/immediate) | A cross browser microtask library
 | 0.8173459285994344 | [rollup__plugin-json](./r/rollup__plugin-json) | Convert .json files to ES6 modules
+| 0.8173192812160646 | [compression-webpack-plugi](./c/compression-webpack-plugin) | Prepare compressed versions of assets to serve the
 | 0.817313355766794 | [worker-farm](./w/worker-farm) | Distribute processing tasks to child processes wit
 | 0.8170097239542005 | [pidusage](./p/pidusage) | Cross-platform process cpu % and memory usage of a
 | 0.8168466421911473 | [storybook__addon-a11y](./s/storybook__addon-a11y) | Test component compliance with web accessibility s
@@ -718,6 +723,7 @@
 | 0.812608101124181 | [mjml](./m/mjml) | MJML: the only framework that makes responsive-ema
 | 0.8124845386194027 | [google-p12-pem](./g/google-p12-pem) | Convert Google .p12 keys to .pem keys.
 | 0.8123941875754952 | [workbox-strategies](./w/workbox-strategies) | A service worker helper library implementing commo
+| 0.8123860504479818 | [css-minimizer-webpack-plu](./c/css-minimizer-webpack-plugin) | cssnano plugin for Webpack
 | 0.812134719461292 | [hast-to-hyperscript](./h/hast-to-hyperscript) | hast utility to transform to something else (react
 | 0.8120872180257066 | [workbox-range-requests](./w/workbox-range-requests) | This library creates a new Response, given a sourc
 | 0.8119273254522439 | [workbox-routing](./w/workbox-routing) | A service worker helper library to route request U
@@ -775,6 +781,7 @@
 | 0.8094206564920263 | [redis-parser](./r/redis-parser) | Javascript Redis protocol (RESP) parser
 | 0.8093484094554622 | [workbox-expiration](./w/workbox-expiration) | A service worker helper library that expires cache
 | 0.8092146012412533 | [gtoken](./g/gtoken) | Node.js Google Authentication Service Account Toke
+| 0.8092074912036111 | [expo-font](./e/expo-font) | Load fonts at runtime and use them in React Native
 | 0.8091058066143586 | [cheerio-select](./c/cheerio-select) | CSS selector engine supporting jQuery selectors
 | 0.8090137431606929 | [expect](./e/expect) | This package exports the expect function used in 
 | 0.8090025016991513 | [unist-util-generated](./u/unist-util-generated) | unist utility to check if a node is generated
@@ -5322,6 +5329,7 @@
 | 0.6473894839403777 | [webpack-blocks__core](./w/webpack-blocks__core) | Functional approach to compose your webpack config
 | 0.6473734383021449 | [webpack-node-externals](./w/webpack-node-externals) | Easily exclude node_modules in Webpack bundle
 | 0.6473698668407106 | [nyaapi](./n/nyaapi) | Non-official api for getting torrent links from Ny
+| 0.6473519289831136 | [clean-webpack-plugin](./c/clean-webpack-plugin) | A webpack plugin to remove/clean your build folder
 | 0.6472954123173844 | [scroll-behavior](./s/scroll-behavior) | Pluggable browser scroll management
 | 0.6472481175771578 | [joi-password-complexity](./j/joi-password-complexity) | Joi validation for password complexity requirement
 | 0.6472478550228011 | [postgres-range](./p/postgres-range) | Range data type parser and serializer for PostgreS
@@ -7057,6 +7065,7 @@
 | 0.5661223702179665 | [aes-js](./a/aes-js) | A pure JavaScript implementation of the AES block 
 | 0.5661218605470969 | [toml](./t/toml) | TOML parser for Node.js (parses TOML spec v0.4.0)
 | 0.5660394793225917 | [angular-hotkeys](./a/angular-hotkeys) | Automatic keyboard shortcuts for your Angular Apps
+| 0.5659194096566684 | [swagger-stats](./s/swagger-stats) | API Telemetry and APM. Trace API calls and Monitor
 | 0.5659078784332887 | [angular-toastr](./a/angular-toastr) | -
 | 0.565847461708324 | [xmpp__time](./x/xmpp__time) | XMPP Date and Time Profiles for JavaScript
 | 0.5657419331510847 | [web-animations-js](./w/web-animations-js) | JavaScript implementation of the Web Animations AP
@@ -10377,7 +10386,6 @@
 | 0.20872984993854682 | [aws-sdk__url-parser-brows](./a/aws-sdk__url-parser-browser) | -
 | 0.20833440213969906 | [uifabric__foundation](./u/uifabric__foundation) | Foundation library for building Fabric components.
 | 0.20805367881968465 | [react-loader](./r/react-loader) | React component that displays a spinner via spin.j
-| 0.20756618934515741 | [aws-lambda-fastify](./a/aws-lambda-fastify) | aws-lambda-fastify@2.2.0 has been deprecated. Plea
 | 0.2070133941868863 | [atlaskit__analytics-next](./a/atlaskit__analytics-next) | React components, HOCs and hooks to assist with tr
 | 0.20688543644904045 | [uifabric__react-hooks](./u/uifabric__react-hooks) | Fluent UI React hooks.
 | 0.2067935646063157 | [pollyjs__adapter-xhr](./p/pollyjs__adapter-xhr) | XHR adapter for @pollyjs

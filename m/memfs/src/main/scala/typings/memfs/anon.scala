@@ -14,16 +14,92 @@ object anon {
   
   trait `0` extends StObject {
     
-    var bigint: `true`
+    var throwIfNoEntry: `false`
   }
   object `0` {
     
     inline def apply(): `0` = {
-      val __obj = js.Dynamic.literal(bigint = true)
+      val __obj = js.Dynamic.literal(throwIfNoEntry = false)
       __obj.asInstanceOf[`0`]
     }
     
     extension [Self <: `0`](x: Self) {
+      
+      inline def setThrowIfNoEntry(value: `false`): Self = StObject.set(x, "throwIfNoEntry", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait `1` extends StObject {
+    
+    var bigint: `false`
+    
+    var throwIfNoEntry: `false`
+  }
+  object `1` {
+    
+    inline def apply(): `1` = {
+      val __obj = js.Dynamic.literal(bigint = false, throwIfNoEntry = false)
+      __obj.asInstanceOf[`1`]
+    }
+    
+    extension [Self <: `1`](x: Self) {
+      
+      inline def setBigint(value: `false`): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
+      
+      inline def setThrowIfNoEntry(value: `false`): Self = StObject.set(x, "throwIfNoEntry", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait `2` extends StObject {
+    
+    var bigint: `true`
+    
+    var throwIfNoEntry: `false`
+  }
+  object `2` {
+    
+    inline def apply(): `2` = {
+      val __obj = js.Dynamic.literal(bigint = true, throwIfNoEntry = false)
+      __obj.asInstanceOf[`2`]
+    }
+    
+    extension [Self <: `2`](x: Self) {
+      
+      inline def setBigint(value: `true`): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
+      
+      inline def setThrowIfNoEntry(value: `false`): Self = StObject.set(x, "throwIfNoEntry", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait `3` extends StObject {
+    
+    var bigint: `false`
+  }
+  object `3` {
+    
+    inline def apply(): `3` = {
+      val __obj = js.Dynamic.literal(bigint = false)
+      __obj.asInstanceOf[`3`]
+    }
+    
+    extension [Self <: `3`](x: Self) {
+      
+      inline def setBigint(value: `false`): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait `4` extends StObject {
+    
+    var bigint: `true`
+  }
+  object `4` {
+    
+    inline def apply(): `4` = {
+      val __obj = js.Dynamic.literal(bigint = true)
+      __obj.asInstanceOf[`4`]
+    }
+    
+    extension [Self <: `4`](x: Self) {
       
       inline def setBigint(value: `true`): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
     }
@@ -94,7 +170,7 @@ object anon {
       
       inline def setSymlink(value: js.Array[String]): Self = StObject.set(x, "symlink", value.asInstanceOf[js.Any])
       
-      inline def setSymlinkVarargs(value: String*): Self = StObject.set(x, "symlink", js.Array(value :_*))
+      inline def setSymlinkVarargs(value: String*): Self = StObject.set(x, "symlink", js.Array(value*))
       
       inline def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     }
@@ -103,6 +179,8 @@ object anon {
   trait Bigint extends StObject {
     
     var bigint: `false`
+    
+    var throwIfNoEntry: js.UndefOr[`true`] = js.undefined
   }
   object Bigint {
     
@@ -114,6 +192,33 @@ object anon {
     extension [Self <: Bigint](x: Self) {
       
       inline def setBigint(value: `false`): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
+      
+      inline def setThrowIfNoEntry(value: `true`): Self = StObject.set(x, "throwIfNoEntry", value.asInstanceOf[js.Any])
+      
+      inline def setThrowIfNoEntryUndefined: Self = StObject.set(x, "throwIfNoEntry", js.undefined)
+    }
+  }
+  
+  trait BigintThrowIfNoEntry extends StObject {
+    
+    var bigint: `true`
+    
+    var throwIfNoEntry: js.UndefOr[`true`] = js.undefined
+  }
+  object BigintThrowIfNoEntry {
+    
+    inline def apply(): BigintThrowIfNoEntry = {
+      val __obj = js.Dynamic.literal(bigint = true)
+      __obj.asInstanceOf[BigintThrowIfNoEntry]
+    }
+    
+    extension [Self <: BigintThrowIfNoEntry](x: Self) {
+      
+      inline def setBigint(value: `true`): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
+      
+      inline def setThrowIfNoEntry(value: `true`): Self = StObject.set(x, "throwIfNoEntry", value.asInstanceOf[js.Any])
+      
+      inline def setThrowIfNoEntryUndefined: Self = StObject.set(x, "throwIfNoEntry", js.undefined)
     }
   }
   
@@ -380,30 +485,30 @@ object anon {
       
       inline def setChildren(value: js.Array[String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: String*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: String*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setIno(value: Double): Self = StObject.set(x, "ino", value.asInstanceOf[js.Any])
       
       inline def setSteps(value: js.Array[String]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
       
-      inline def setStepsVarargs(value: String*): Self = StObject.set(x, "steps", js.Array(value :_*))
+      inline def setStepsVarargs(value: String*): Self = StObject.set(x, "steps", js.Array(value*))
     }
   }
   
   trait File extends StObject {
     
-    var File: Instantiable1[/* args (repeated) */ js.Any, typings.memfs.nodeMod.File]
+    var File: Instantiable1[/* args (repeated) */ Any, typings.memfs.nodeMod.File]
     
-    var Link: Instantiable1[/* args (repeated) */ js.Any, typings.memfs.nodeMod.Link]
+    var Link: Instantiable1[/* args (repeated) */ Any, typings.memfs.nodeMod.Link]
     
-    var Node: Instantiable1[/* args (repeated) */ js.Any, typings.memfs.nodeMod.Node]
+    var Node: Instantiable1[/* args (repeated) */ Any, typings.memfs.nodeMod.Node]
   }
   object File {
     
     inline def apply(
-      File: Instantiable1[/* args (repeated) */ js.Any, typings.memfs.nodeMod.File],
-      Link: Instantiable1[/* args (repeated) */ js.Any, Link],
-      Node: Instantiable1[/* args (repeated) */ js.Any, Node]
+      File: Instantiable1[/* args (repeated) */ Any, typings.memfs.nodeMod.File],
+      Link: Instantiable1[/* args (repeated) */ Any, Link],
+      Node: Instantiable1[/* args (repeated) */ Any, Node]
     ): File = {
       val __obj = js.Dynamic.literal(File = File.asInstanceOf[js.Any], Link = Link.asInstanceOf[js.Any], Node = Node.asInstanceOf[js.Any])
       __obj.asInstanceOf[File]
@@ -411,11 +516,30 @@ object anon {
     
     extension [Self <: File](x: Self) {
       
-      inline def setFile(value: Instantiable1[/* args (repeated) */ js.Any, typings.memfs.nodeMod.File]): Self = StObject.set(x, "File", value.asInstanceOf[js.Any])
+      inline def setFile(value: Instantiable1[/* args (repeated) */ Any, typings.memfs.nodeMod.File]): Self = StObject.set(x, "File", value.asInstanceOf[js.Any])
       
-      inline def setLink(value: Instantiable1[/* args (repeated) */ js.Any, Link]): Self = StObject.set(x, "Link", value.asInstanceOf[js.Any])
+      inline def setLink(value: Instantiable1[/* args (repeated) */ Any, Link]): Self = StObject.set(x, "Link", value.asInstanceOf[js.Any])
       
-      inline def setNode(value: Instantiable1[/* args (repeated) */ js.Any, Node]): Self = StObject.set(x, "Node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Instantiable1[/* args (repeated) */ Any, Node]): Self = StObject.set(x, "Node", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ThrowIfNoEntry extends StObject {
+    
+    var throwIfNoEntry: js.UndefOr[`true`] = js.undefined
+  }
+  object ThrowIfNoEntry {
+    
+    inline def apply(): ThrowIfNoEntry = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ThrowIfNoEntry]
+    }
+    
+    extension [Self <: ThrowIfNoEntry](x: Self) {
+      
+      inline def setThrowIfNoEntry(value: `true`): Self = StObject.set(x, "throwIfNoEntry", value.asInstanceOf[js.Any])
+      
+      inline def setThrowIfNoEntryUndefined: Self = StObject.set(x, "throwIfNoEntry", js.undefined)
     }
   }
   

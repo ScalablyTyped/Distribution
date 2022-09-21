@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IStatOptions extends StObject {
   
   var bigint: js.UndefOr[Boolean] = js.undefined
+  
+  var throwIfNoEntry: js.UndefOr[Boolean] = js.undefined
 }
 object IStatOptions {
   
@@ -20,5 +22,9 @@ object IStatOptions {
     inline def setBigint(value: Boolean): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
     
     inline def setBigintUndefined: Self = StObject.set(x, "bigint", js.undefined)
+    
+    inline def setThrowIfNoEntry(value: Boolean): Self = StObject.set(x, "throwIfNoEntry", value.asInstanceOf[js.Any])
+    
+    inline def setThrowIfNoEntryUndefined: Self = StObject.set(x, "throwIfNoEntry", js.undefined)
   }
 }

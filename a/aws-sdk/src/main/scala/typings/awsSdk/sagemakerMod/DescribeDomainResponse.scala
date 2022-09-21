@@ -82,7 +82,7 @@ trait DescribeDomainResponse extends StObject {
   var SecurityGroupIdForDomainBoundary: js.UndefOr[SecurityGroupId] = js.undefined
   
   /**
-    * The Amazon Web Services SSO managed application instance ID.
+    * The IAM Identity Center managed application instance ID.
     */
   var SingleSignOnManagedApplicationInstanceId: js.UndefOr[String256] = js.undefined
   

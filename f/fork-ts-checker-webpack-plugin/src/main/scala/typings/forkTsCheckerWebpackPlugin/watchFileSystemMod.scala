@@ -1,278 +1,98 @@
 package typings.forkTsCheckerWebpackPlugin
 
-import typings.forkTsCheckerWebpackPlugin.anon.PartialWatchFileSystemOpt
-import typings.node.eventsMod.EventEmitter
-import typings.std.Iterable
+import typings.events.mod.EventEmitter
+import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.ignore
 import typings.std.Map
-import typings.std.RegExp
+import typings.std.Set
+import typings.webpack.mod.FileSystemInfoEntry
+import typings.webpack.mod.WatchOptions
+import typings.webpack.mod.Watcher
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object watchFileSystemMod {
   
-  @js.native
+  type Watch = js.Function7[
+    /* files */ js.Iterable[String], 
+    /* directories */ js.Iterable[String], 
+    /* missing */ js.Iterable[String], 
+    /* startTime */ Double, 
+    /* options */ WatchOptions, 
+    /* callback */ js.Function5[
+      /* arg0 */ js.UndefOr[js.Error], 
+      /* arg1 */ Map[String, FileSystemInfoEntry | ignore], 
+      /* arg2 */ Map[String, FileSystemInfoEntry | ignore], 
+      /* arg3 */ Set[String], 
+      /* arg4 */ Set[String], 
+      Unit
+    ], 
+    /* callbackUndelayed */ js.Function2[/* arg0 */ String, /* arg1 */ Double, Unit], 
+    Watcher
+  ]
+  
   trait WatchFileSystem extends StObject {
     
-    def watch(files: Iterable[String], dirs: Iterable[String], missing: Iterable[String]): Watcher = js.native
-    def watch(files: Iterable[String], dirs: Iterable[String], missing: Iterable[String], startTime: Double): Watcher = js.native
-    def watch(
-      files: Iterable[String],
-      dirs: Iterable[String],
-      missing: Iterable[String],
+    @JSName("watch")
+    var watch_Original: Watch
+    @JSName("watch")
+    def watch_ignore(
+      files: js.Iterable[String],
+      directories: js.Iterable[String],
+      missing: js.Iterable[String],
       startTime: Double,
-      options: Unit,
-      callback: js.Function
-    ): Watcher = js.native
-    def watch(
-      files: Iterable[String],
-      dirs: Iterable[String],
-      missing: Iterable[String],
-      startTime: Double,
-      options: Unit,
-      callback: js.Function,
-      callbackUndelayed: js.Function
-    ): Watcher = js.native
-    def watch(
-      files: Iterable[String],
-      dirs: Iterable[String],
-      missing: Iterable[String],
-      startTime: Double,
-      options: Unit,
-      callback: Unit,
-      callbackUndelayed: js.Function
-    ): Watcher = js.native
-    def watch(
-      files: Iterable[String],
-      dirs: Iterable[String],
-      missing: Iterable[String],
-      startTime: Double,
-      options: PartialWatchFileSystemOpt
-    ): Watcher = js.native
-    def watch(
-      files: Iterable[String],
-      dirs: Iterable[String],
-      missing: Iterable[String],
-      startTime: Double,
-      options: PartialWatchFileSystemOpt,
-      callback: js.Function
-    ): Watcher = js.native
-    def watch(
-      files: Iterable[String],
-      dirs: Iterable[String],
-      missing: Iterable[String],
-      startTime: Double,
-      options: PartialWatchFileSystemOpt,
-      callback: js.Function,
-      callbackUndelayed: js.Function
-    ): Watcher = js.native
-    def watch(
-      files: Iterable[String],
-      dirs: Iterable[String],
-      missing: Iterable[String],
-      startTime: Double,
-      options: PartialWatchFileSystemOpt,
-      callback: Unit,
-      callbackUndelayed: js.Function
-    ): Watcher = js.native
-    def watch(
-      files: Iterable[String],
-      dirs: Iterable[String],
-      missing: Iterable[String],
-      startTime: Unit,
-      options: Unit,
-      callback: js.Function
-    ): Watcher = js.native
-    def watch(
-      files: Iterable[String],
-      dirs: Iterable[String],
-      missing: Iterable[String],
-      startTime: Unit,
-      options: Unit,
-      callback: js.Function,
-      callbackUndelayed: js.Function
-    ): Watcher = js.native
-    def watch(
-      files: Iterable[String],
-      dirs: Iterable[String],
-      missing: Iterable[String],
-      startTime: Unit,
-      options: Unit,
-      callback: Unit,
-      callbackUndelayed: js.Function
-    ): Watcher = js.native
-    def watch(
-      files: Iterable[String],
-      dirs: Iterable[String],
-      missing: Iterable[String],
-      startTime: Unit,
-      options: PartialWatchFileSystemOpt
-    ): Watcher = js.native
-    def watch(
-      files: Iterable[String],
-      dirs: Iterable[String],
-      missing: Iterable[String],
-      startTime: Unit,
-      options: PartialWatchFileSystemOpt,
-      callback: js.Function
-    ): Watcher = js.native
-    def watch(
-      files: Iterable[String],
-      dirs: Iterable[String],
-      missing: Iterable[String],
-      startTime: Unit,
-      options: PartialWatchFileSystemOpt,
-      callback: js.Function,
-      callbackUndelayed: js.Function
-    ): Watcher = js.native
-    def watch(
-      files: Iterable[String],
-      dirs: Iterable[String],
-      missing: Iterable[String],
-      startTime: Unit,
-      options: PartialWatchFileSystemOpt,
-      callback: Unit,
-      callbackUndelayed: js.Function
-    ): Watcher = js.native
+      options: WatchOptions,
+      callback: js.Function5[
+          /* arg0 */ js.UndefOr[js.Error], 
+          /* arg1 */ Map[String, FileSystemInfoEntry | ignore], 
+          /* arg2 */ Map[String, FileSystemInfoEntry | ignore], 
+          /* arg3 */ Set[String], 
+          /* arg4 */ Set[String], 
+          Unit
+        ],
+      callbackUndelayed: js.Function2[/* arg0 */ String, /* arg1 */ Double, Unit]
+    ): Watcher
     
-    var watcher: Watchpack = js.native
+    var watcher: js.UndefOr[Watchpack] = js.undefined
     
-    var wfs: js.UndefOr[typings.forkTsCheckerWebpackPlugin.anon.Watcher] = js.native
+    var wfs: js.UndefOr[typings.forkTsCheckerWebpackPlugin.anon.Watcher] = js.undefined
   }
-  
-  trait WatchFileSystemOptions extends StObject {
-    
-    var aggregateTimeout: Double
-    
-    var followSymlinks: Boolean
-    
-    var ignored: String | RegExp | (js.Array[String | RegExp])
-    
-    var poll: Boolean
-  }
-  object WatchFileSystemOptions {
+  object WatchFileSystem {
     
     inline def apply(
-      aggregateTimeout: Double,
-      followSymlinks: Boolean,
-      ignored: String | RegExp | (js.Array[String | RegExp]),
-      poll: Boolean
-    ): WatchFileSystemOptions = {
-      val __obj = js.Dynamic.literal(aggregateTimeout = aggregateTimeout.asInstanceOf[js.Any], followSymlinks = followSymlinks.asInstanceOf[js.Any], ignored = ignored.asInstanceOf[js.Any], poll = poll.asInstanceOf[js.Any])
-      __obj.asInstanceOf[WatchFileSystemOptions]
+      watch: (/* files */ js.Iterable[String], /* directories */ js.Iterable[String], /* missing */ js.Iterable[String], /* startTime */ Double, /* options */ WatchOptions, /* callback */ js.Function5[
+          /* arg0 */ js.UndefOr[js.Error], 
+          /* arg1 */ Map[String, FileSystemInfoEntry | ignore], 
+          /* arg2 */ Map[String, FileSystemInfoEntry | ignore], 
+          /* arg3 */ Set[String], 
+          /* arg4 */ Set[String], 
+          Unit
+        ], /* callbackUndelayed */ js.Function2[/* arg0 */ String, /* arg1 */ Double, Unit]) => Watcher
+    ): WatchFileSystem = {
+      val __obj = js.Dynamic.literal(watch = js.Any.fromFunction7(watch))
+      __obj.asInstanceOf[WatchFileSystem]
     }
     
-    extension [Self <: WatchFileSystemOptions](x: Self) {
+    extension [Self <: WatchFileSystem](x: Self) {
       
-      inline def setAggregateTimeout(value: Double): Self = StObject.set(x, "aggregateTimeout", value.asInstanceOf[js.Any])
+      inline def setWatch(
+        value: (/* files */ js.Iterable[String], /* directories */ js.Iterable[String], /* missing */ js.Iterable[String], /* startTime */ Double, /* options */ WatchOptions, /* callback */ js.Function5[
+              /* arg0 */ js.UndefOr[js.Error], 
+              /* arg1 */ Map[String, FileSystemInfoEntry | ignore], 
+              /* arg2 */ Map[String, FileSystemInfoEntry | ignore], 
+              /* arg3 */ Set[String], 
+              /* arg4 */ Set[String], 
+              Unit
+            ], /* callbackUndelayed */ js.Function2[/* arg0 */ String, /* arg1 */ Double, Unit]) => Watcher
+      ): Self = StObject.set(x, "watch", js.Any.fromFunction7(value))
       
-      inline def setFollowSymlinks(value: Boolean): Self = StObject.set(x, "followSymlinks", value.asInstanceOf[js.Any])
+      inline def setWatcher(value: Watchpack): Self = StObject.set(x, "watcher", value.asInstanceOf[js.Any])
       
-      inline def setIgnored(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
+      inline def setWatcherUndefined: Self = StObject.set(x, "watcher", js.undefined)
       
-      inline def setIgnoredVarargs(value: (String | RegExp)*): Self = StObject.set(x, "ignored", js.Array(value :_*))
+      inline def setWfs(value: typings.forkTsCheckerWebpackPlugin.anon.Watcher): Self = StObject.set(x, "wfs", value.asInstanceOf[js.Any])
       
-      inline def setPoll(value: Boolean): Self = StObject.set(x, "poll", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.forkTsCheckerWebpackPlugin.watchFileSystemMod.WatcherV4
-    - typings.forkTsCheckerWebpackPlugin.watchFileSystemMod.WatcherV5
-  */
-  trait Watcher extends StObject
-  object Watcher {
-    
-    inline def WatcherV4(
-      close: () => Unit,
-      getContextTimestamps: () => Map[String, Double],
-      getFileTimestamps: () => Map[String, Double],
-      pause: () => Unit
-    ): typings.forkTsCheckerWebpackPlugin.watchFileSystemMod.WatcherV4 = {
-      val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), getContextTimestamps = js.Any.fromFunction0(getContextTimestamps), getFileTimestamps = js.Any.fromFunction0(getFileTimestamps), pause = js.Any.fromFunction0(pause))
-      __obj.asInstanceOf[typings.forkTsCheckerWebpackPlugin.watchFileSystemMod.WatcherV4]
-    }
-    
-    inline def WatcherV5(
-      close: () => Unit,
-      getContextTimeInfoEntries: () => Map[String, Double],
-      getFileTimeInfoEntries: () => Map[String, Double],
-      pause: () => Unit
-    ): typings.forkTsCheckerWebpackPlugin.watchFileSystemMod.WatcherV5 = {
-      val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), getContextTimeInfoEntries = js.Any.fromFunction0(getContextTimeInfoEntries), getFileTimeInfoEntries = js.Any.fromFunction0(getFileTimeInfoEntries), pause = js.Any.fromFunction0(pause))
-      __obj.asInstanceOf[typings.forkTsCheckerWebpackPlugin.watchFileSystemMod.WatcherV5]
-    }
-  }
-  
-  trait WatcherV4
-    extends StObject
-       with Watcher {
-    
-    def close(): Unit
-    
-    def getContextTimestamps(): Map[String, Double]
-    
-    def getFileTimestamps(): Map[String, Double]
-    
-    def pause(): Unit
-  }
-  object WatcherV4 {
-    
-    inline def apply(
-      close: () => Unit,
-      getContextTimestamps: () => Map[String, Double],
-      getFileTimestamps: () => Map[String, Double],
-      pause: () => Unit
-    ): WatcherV4 = {
-      val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), getContextTimestamps = js.Any.fromFunction0(getContextTimestamps), getFileTimestamps = js.Any.fromFunction0(getFileTimestamps), pause = js.Any.fromFunction0(pause))
-      __obj.asInstanceOf[WatcherV4]
-    }
-    
-    extension [Self <: WatcherV4](x: Self) {
-      
-      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
-      
-      inline def setGetContextTimestamps(value: () => Map[String, Double]): Self = StObject.set(x, "getContextTimestamps", js.Any.fromFunction0(value))
-      
-      inline def setGetFileTimestamps(value: () => Map[String, Double]): Self = StObject.set(x, "getFileTimestamps", js.Any.fromFunction0(value))
-      
-      inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
-    }
-  }
-  
-  trait WatcherV5
-    extends StObject
-       with Watcher {
-    
-    def close(): Unit
-    
-    def getContextTimeInfoEntries(): Map[String, Double]
-    
-    def getFileTimeInfoEntries(): Map[String, Double]
-    
-    def pause(): Unit
-  }
-  object WatcherV5 {
-    
-    inline def apply(
-      close: () => Unit,
-      getContextTimeInfoEntries: () => Map[String, Double],
-      getFileTimeInfoEntries: () => Map[String, Double],
-      pause: () => Unit
-    ): WatcherV5 = {
-      val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), getContextTimeInfoEntries = js.Any.fromFunction0(getContextTimeInfoEntries), getFileTimeInfoEntries = js.Any.fromFunction0(getFileTimeInfoEntries), pause = js.Any.fromFunction0(pause))
-      __obj.asInstanceOf[WatcherV5]
-    }
-    
-    extension [Self <: WatcherV5](x: Self) {
-      
-      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
-      
-      inline def setGetContextTimeInfoEntries(value: () => Map[String, Double]): Self = StObject.set(x, "getContextTimeInfoEntries", js.Any.fromFunction0(value))
-      
-      inline def setGetFileTimeInfoEntries(value: () => Map[String, Double]): Self = StObject.set(x, "getFileTimeInfoEntries", js.Any.fromFunction0(value))
-      
-      inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+      inline def setWfsUndefined: Self = StObject.set(x, "wfs", js.undefined)
     }
   }
   

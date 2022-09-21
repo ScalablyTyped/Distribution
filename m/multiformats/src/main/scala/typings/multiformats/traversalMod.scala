@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object traversalMod {
   
-  @JSImport("multiformats/types/src/traversal", JSImport.Namespace)
+  @JSImport("multiformats/dist/types/src/traversal", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def walk[T](hasCidLoadSeen: Load[T]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("walk")(hasCidLoadSeen.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def walk(hasCidLoadSeen: Load): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("walk")(hasCidLoadSeen.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  type Block[T] = typings.multiformats.blockMod.Block[T]
+  type BlockView[T, C, A, V] = typings.multiformats.blockInterfaceMod.BlockView[T, C, A, V]
   
-  type CID = typings.multiformats.cidMod.CID
+  type CID[C, A, V] = typings.multiformats.cidMod.CID[Any, C, A, V]
 }

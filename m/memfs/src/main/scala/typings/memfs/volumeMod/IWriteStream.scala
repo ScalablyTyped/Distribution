@@ -20,9 +20,7 @@ trait IWriteStream extends Writable {
   
   var bytesWritten: Double = js.native
   
-  def close(): js.Any = js.native
-  
-  def open(): js.Any = js.native
+  def open(): Any = js.native
   
   var path: String = js.native
 }

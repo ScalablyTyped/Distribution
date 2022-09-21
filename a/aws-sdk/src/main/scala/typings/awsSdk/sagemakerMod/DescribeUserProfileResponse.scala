@@ -32,12 +32,12 @@ trait DescribeUserProfileResponse extends StObject {
   var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The Amazon Web Services SSO user identifier.
+    * The IAM Identity Center user identifier.
     */
   var SingleSignOnUserIdentifier: js.UndefOr[typings.awsSdk.sagemakerMod.SingleSignOnUserIdentifier] = js.undefined
   
   /**
-    * The Amazon Web Services SSO user value.
+    * The IAM Identity Center user value.
     */
   var SingleSignOnUserValue: js.UndefOr[String256] = js.undefined
   

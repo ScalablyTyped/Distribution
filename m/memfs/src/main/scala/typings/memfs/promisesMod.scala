@@ -4,11 +4,13 @@ import typings.memfs.encodingMod.TDataOut
 import typings.memfs.statsMod.TStatNumber
 import typings.memfs.statsMod.default
 import typings.memfs.volumeMod.IAppendFileOptions
+import typings.memfs.volumeMod.IFStatOptions
 import typings.memfs.volumeMod.IMkdirOptions
 import typings.memfs.volumeMod.IOptions
 import typings.memfs.volumeMod.IReadFileOptions
 import typings.memfs.volumeMod.IReaddirOptions
 import typings.memfs.volumeMod.IRealpathOptions
+import typings.memfs.volumeMod.IRmOptions
 import typings.memfs.volumeMod.IStatOptions
 import typings.memfs.volumeMod.IWriteFileOptions
 import typings.memfs.volumeMod.TData
@@ -17,10 +19,9 @@ import typings.memfs.volumeMod.TFlagsCopy
 import typings.memfs.volumeMod.TMode
 import typings.memfs.volumeMod.TTime
 import typings.memfs.volumeMod.Volume
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.fsMod.PathLike
 import typings.node.fsMod.symlink.Type
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,14 +36,16 @@ object promisesMod {
   
   @JSImport("memfs/lib/promises", "FileHandle")
   @js.native
-  class FileHandle protected ()
+  open class FileHandle protected ()
     extends StObject
        with IFileHandle {
     def this(vol: Volume, fd: Double) = this()
     
+    def stat(options: IFStatOptions): js.Promise[default[TStatNumber]] = js.native
+    
     def sync(): js.Promise[Unit] = js.native
     
-    /* private */ var vol: js.Any = js.native
+    /* private */ var vol: Any = js.native
   }
   
   @js.native
@@ -62,8 +65,8 @@ object promisesMod {
     
     var fd: Double = js.native
     
+    def read(buffer: js.typedarray.Uint8Array, offset: Double, length: Double, position: Double): js.Promise[TFileHandleReadResult] = js.native
     def read(buffer: Buffer, offset: Double, length: Double, position: Double): js.Promise[TFileHandleReadResult] = js.native
-    def read(buffer: Uint8Array, offset: Double, length: Double, position: Double): js.Promise[TFileHandleReadResult] = js.native
     
     def readFile(): js.Promise[TDataOut] = js.native
     def readFile(options: String): js.Promise[TDataOut] = js.native
@@ -77,6 +80,14 @@ object promisesMod {
     
     def utimes(atime: TTime, mtime: TTime): js.Promise[Unit] = js.native
     
+    def write(buffer: js.typedarray.Uint8Array): js.Promise[TFileHandleWriteResult] = js.native
+    def write(buffer: js.typedarray.Uint8Array, offset: Double): js.Promise[TFileHandleWriteResult] = js.native
+    def write(buffer: js.typedarray.Uint8Array, offset: Double, length: Double): js.Promise[TFileHandleWriteResult] = js.native
+    def write(buffer: js.typedarray.Uint8Array, offset: Double, length: Double, position: Double): js.Promise[TFileHandleWriteResult] = js.native
+    def write(buffer: js.typedarray.Uint8Array, offset: Double, length: Unit, position: Double): js.Promise[TFileHandleWriteResult] = js.native
+    def write(buffer: js.typedarray.Uint8Array, offset: Unit, length: Double): js.Promise[TFileHandleWriteResult] = js.native
+    def write(buffer: js.typedarray.Uint8Array, offset: Unit, length: Double, position: Double): js.Promise[TFileHandleWriteResult] = js.native
+    def write(buffer: js.typedarray.Uint8Array, offset: Unit, length: Unit, position: Double): js.Promise[TFileHandleWriteResult] = js.native
     def write(buffer: Buffer): js.Promise[TFileHandleWriteResult] = js.native
     def write(buffer: Buffer, offset: Double): js.Promise[TFileHandleWriteResult] = js.native
     def write(buffer: Buffer, offset: Double, length: Double): js.Promise[TFileHandleWriteResult] = js.native
@@ -85,14 +96,6 @@ object promisesMod {
     def write(buffer: Buffer, offset: Unit, length: Double): js.Promise[TFileHandleWriteResult] = js.native
     def write(buffer: Buffer, offset: Unit, length: Double, position: Double): js.Promise[TFileHandleWriteResult] = js.native
     def write(buffer: Buffer, offset: Unit, length: Unit, position: Double): js.Promise[TFileHandleWriteResult] = js.native
-    def write(buffer: Uint8Array): js.Promise[TFileHandleWriteResult] = js.native
-    def write(buffer: Uint8Array, offset: Double): js.Promise[TFileHandleWriteResult] = js.native
-    def write(buffer: Uint8Array, offset: Double, length: Double): js.Promise[TFileHandleWriteResult] = js.native
-    def write(buffer: Uint8Array, offset: Double, length: Double, position: Double): js.Promise[TFileHandleWriteResult] = js.native
-    def write(buffer: Uint8Array, offset: Double, length: Unit, position: Double): js.Promise[TFileHandleWriteResult] = js.native
-    def write(buffer: Uint8Array, offset: Unit, length: Double): js.Promise[TFileHandleWriteResult] = js.native
-    def write(buffer: Uint8Array, offset: Unit, length: Double, position: Double): js.Promise[TFileHandleWriteResult] = js.native
-    def write(buffer: Uint8Array, offset: Unit, length: Unit, position: Double): js.Promise[TFileHandleWriteResult] = js.native
     
     def writeFile(data: TData): js.Promise[Unit] = js.native
     def writeFile(data: TData, options: IWriteFileOptions): js.Promise[Unit] = js.native
@@ -101,7 +104,7 @@ object promisesMod {
   @js.native
   trait IPromisesAPI extends StObject {
     
-    var FileHandle: js.Any = js.native
+    var FileHandle: Any = js.native
     
     def access(path: PathLike): js.Promise[Unit] = js.native
     def access(path: PathLike, mode: Double): js.Promise[Unit] = js.native
@@ -153,6 +156,9 @@ object promisesMod {
     
     def rename(oldPath: PathLike, newPath: PathLike): js.Promise[Unit] = js.native
     
+    def rm(path: PathLike): js.Promise[Unit] = js.native
+    def rm(path: PathLike, options: IRmOptions): js.Promise[Unit] = js.native
+    
     def rmdir(path: PathLike): js.Promise[Unit] = js.native
     
     def stat(path: PathLike): js.Promise[default[TStatNumber]] = js.native
@@ -176,20 +182,20 @@ object promisesMod {
   
   trait TFileHandleReadResult extends StObject {
     
-    var buffer: Buffer | Uint8Array
+    var buffer: Buffer | js.typedarray.Uint8Array
     
     var bytesRead: Double
   }
   object TFileHandleReadResult {
     
-    inline def apply(buffer: Buffer | Uint8Array, bytesRead: Double): TFileHandleReadResult = {
+    inline def apply(buffer: Buffer | js.typedarray.Uint8Array, bytesRead: Double): TFileHandleReadResult = {
       val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], bytesRead = bytesRead.asInstanceOf[js.Any])
       __obj.asInstanceOf[TFileHandleReadResult]
     }
     
     extension [Self <: TFileHandleReadResult](x: Self) {
       
-      inline def setBuffer(value: Buffer | Uint8Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: Buffer | js.typedarray.Uint8Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
       inline def setBytesRead(value: Double): Self = StObject.set(x, "bytesRead", value.asInstanceOf[js.Any])
     }
@@ -197,20 +203,20 @@ object promisesMod {
   
   trait TFileHandleWriteResult extends StObject {
     
-    var buffer: Buffer | Uint8Array
+    var buffer: Buffer | js.typedarray.Uint8Array
     
     var bytesWritten: Double
   }
   object TFileHandleWriteResult {
     
-    inline def apply(buffer: Buffer | Uint8Array, bytesWritten: Double): TFileHandleWriteResult = {
+    inline def apply(buffer: Buffer | js.typedarray.Uint8Array, bytesWritten: Double): TFileHandleWriteResult = {
       val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], bytesWritten = bytesWritten.asInstanceOf[js.Any])
       __obj.asInstanceOf[TFileHandleWriteResult]
     }
     
     extension [Self <: TFileHandleWriteResult](x: Self) {
       
-      inline def setBuffer(value: Buffer | Uint8Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: Buffer | js.typedarray.Uint8Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
       inline def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
     }

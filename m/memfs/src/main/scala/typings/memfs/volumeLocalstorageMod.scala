@@ -14,44 +14,44 @@ object volumeLocalstorageMod {
   
   @JSImport("memfs/lib/volume-localstorage", "ObjectStore")
   @js.native
-  class ObjectStore protected () extends StObject {
-    def this(obj: js.Any) = this()
+  open class ObjectStore protected () extends StObject {
+    def this(obj: Any) = this()
     
-    def getItem(key: String): js.Any = js.native
+    def getItem(key: String): Any = js.native
     
     var obj: js.Object = js.native
     
     def removeItem(key: String): Unit = js.native
     
-    def setItem(key: String, json: js.Any): Unit = js.native
+    def setItem(key: String, json: Any): Unit = js.native
   }
   
-  inline def createVolume(namespace: String): Instantiable1[/* args (repeated) */ js.Any, Volume] = ^.asInstanceOf[js.Dynamic].applyDynamic("createVolume")(namespace.asInstanceOf[js.Any]).asInstanceOf[Instantiable1[/* args (repeated) */ js.Any, Volume]]
-  inline def createVolume(namespace: String, LS: js.Object): Instantiable1[/* args (repeated) */ js.Any, Volume] = (^.asInstanceOf[js.Dynamic].applyDynamic("createVolume")(namespace.asInstanceOf[js.Any], LS.asInstanceOf[js.Any])).asInstanceOf[Instantiable1[/* args (repeated) */ js.Any, Volume]]
-  inline def createVolume(namespace: String, LS: IStore): Instantiable1[/* args (repeated) */ js.Any, Volume] = (^.asInstanceOf[js.Dynamic].applyDynamic("createVolume")(namespace.asInstanceOf[js.Any], LS.asInstanceOf[js.Any])).asInstanceOf[Instantiable1[/* args (repeated) */ js.Any, Volume]]
+  inline def createVolume(namespace: String): Instantiable1[/* args (repeated) */ Any, Volume] = ^.asInstanceOf[js.Dynamic].applyDynamic("createVolume")(namespace.asInstanceOf[js.Any]).asInstanceOf[Instantiable1[/* args (repeated) */ Any, Volume]]
+  inline def createVolume(namespace: String, LS: js.Object): Instantiable1[/* args (repeated) */ Any, Volume] = (^.asInstanceOf[js.Dynamic].applyDynamic("createVolume")(namespace.asInstanceOf[js.Any], LS.asInstanceOf[js.Any])).asInstanceOf[Instantiable1[/* args (repeated) */ Any, Volume]]
+  inline def createVolume(namespace: String, LS: IStore): Instantiable1[/* args (repeated) */ Any, Volume] = (^.asInstanceOf[js.Dynamic].applyDynamic("createVolume")(namespace.asInstanceOf[js.Any], LS.asInstanceOf[js.Any])).asInstanceOf[Instantiable1[/* args (repeated) */ Any, Volume]]
   
   trait IStore extends StObject {
     
-    def getItem(key: String): js.Any
+    def getItem(key: String): Any
     
-    def removeItem(key: String): js.Any
+    def removeItem(key: String): Any
     
-    def setItem(key: String, json: js.Any): js.Any
+    def setItem(key: String, json: Any): Any
   }
   object IStore {
     
-    inline def apply(getItem: String => js.Any, removeItem: String => js.Any, setItem: (String, js.Any) => js.Any): IStore = {
+    inline def apply(getItem: String => Any, removeItem: String => Any, setItem: (String, Any) => Any): IStore = {
       val __obj = js.Dynamic.literal(getItem = js.Any.fromFunction1(getItem), removeItem = js.Any.fromFunction1(removeItem), setItem = js.Any.fromFunction2(setItem))
       __obj.asInstanceOf[IStore]
     }
     
     extension [Self <: IStore](x: Self) {
       
-      inline def setGetItem(value: String => js.Any): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
+      inline def setGetItem(value: String => Any): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
       
-      inline def setRemoveItem(value: String => js.Any): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
+      inline def setRemoveItem(value: String => Any): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
       
-      inline def setSetItem(value: (String, js.Any) => js.Any): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
+      inline def setSetItem(value: (String, Any) => Any): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
     }
   }
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@wordpress/element" : "4.15.0"
+      "@wordpress/element" : "4.16.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@wordpress/element" : "4.15.0"
+      "@wordpress/element" : "4.16.0"
     }
   ],
   "compile-devDependencies" : [

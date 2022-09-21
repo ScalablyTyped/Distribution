@@ -22,7 +22,7 @@ trait ListRegionalBucketsRequest extends StObject {
   var NextToken: js.UndefOr[NonEmptyMaxLength1024String] = js.undefined
   
   /**
-    * The ID of the Outposts.  This is required by Amazon S3 on Outposts buckets. 
+    * The ID of the Outposts resource.  This ID is required by Amazon S3 on Outposts buckets. 
     */
   var OutpostId: js.UndefOr[NonEmptyMaxLength64String] = js.undefined
 }

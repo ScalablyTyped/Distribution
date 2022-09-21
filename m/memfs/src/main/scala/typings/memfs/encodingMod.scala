@@ -1,8 +1,8 @@
 package typings.memfs
 
 import typings.memfs.memfsStrings.buffer
-import typings.node.Buffer
-import typings.node.BufferEncoding
+import typings.node.bufferMod.global.Buffer
+import typings.node.bufferMod.global.BufferEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

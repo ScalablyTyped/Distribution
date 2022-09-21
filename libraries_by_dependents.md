@@ -481,7 +481,6 @@
 | 0.0 | [aws-iot-device-sdk](./a/aws-iot-device-sdk) | AWS IoT Node.js SDK for Embedded Devices
 | 0.0 | [aws-kcl](./a/aws-kcl) | Kinesis Client Libray (KCL) in Node.js.
 | 0.0 | [aws-lambda](./a/aws-lambda) | Deploy AWS Lambda functions from command line usin
-| 0.0 | [aws-lambda-fastify](./a/aws-lambda-fastify) | aws-lambda-fastify@2.2.0 has been deprecated. Plea
 | 0.0 | [aws-lambda-http-server](./a/aws-lambda-http-server) | run http server as aws lambda function
 | 0.0 | [aws-lambda-mock-context](./a/aws-lambda-mock-context) | AWS Lambda mock context object
 | 0.0 | [aws-param-store](./a/aws-param-store) | Library for loading parameters from AWS Parameter 
@@ -1229,6 +1228,7 @@
 | 0.0 | [clean-regexp](./c/clean-regexp) | Clean up regular expressions
 | 0.0 | [clean-semver](./c/clean-semver) | Clean a semver-compatible version.
 | 0.0 | [clean-stack](./c/clean-stack) | Clean up error stack traces
+| 0.0 | [clean-webpack-plugin](./c/clean-webpack-plugin) | A webpack plugin to remove/clean your build folder
 | 0.0 | [clear](./c/clear) | Clear the terminal screen if possible
 | 0.0 | [clear-module](./c/clear-module) | Clear a module from the cache
 | 0.0 | [cleasby-vigfusson-diction](./c/cleasby-vigfusson-dictionary) | The Cleasby & Vigfusson Old Norse to English Dicti
@@ -1379,6 +1379,7 @@
 | 0.0 | [compressible](./c/compressible) | Compressible Content-Type / mime checking
 | 0.0 | [compression](./c/compression) | Node.js compression middleware
 | 0.0 | [compression-next](./c/compression-next) | Node.js compression middleware
+| 0.0 | [compression-webpack-plugi](./c/compression-webpack-plugin) | Prepare compressed versions of assets to serve the
 | 0.0 | [compute-argmax](./c/compute-argmax) | Computes the maximum value of a numeric array and 
 | 0.0 | [compute-gcd](./c/compute-gcd) | Computes the greatest common divisor (gcd).
 | 0.0 | [compute-lcm](./c/compute-lcm) | Computes the least common multiple (lcm).
@@ -1472,6 +1473,7 @@
 | 0.0 | [copy-paste](./c/copy-paste) | A command line utility that allows read/write (i.e
 | 0.0 | [copy-text-to-clipboard](./c/copy-text-to-clipboard) | Copy text to the clipboard in modern browsers (0.2
 | 0.0 | [copy-to-clipboard](./c/copy-to-clipboard) | Copy stuff into clipboard using JS with fallbacks
+| 0.0 | [copy-webpack-plugin](./c/copy-webpack-plugin) | Copy files && directories with webpack
 | 0.0 | [copyfiles](./c/copyfiles) | copy some files
 | 0.0 | [cordova](./c/cordova) | Cordova command line interface tool
 | 0.0 | [cordova-plugin-app-versio](./c/cordova-plugin-app-version) | Cordova plugin to return the version number of the
@@ -1616,6 +1618,7 @@
 | 0.0 | [css-jss](./c/css-jss) | Implements css() interface on top of JSS
 | 0.0 | [css-line-break](./c/css-line-break) | css-line-break ==============
 | 0.0 | [css-mediaquery](./c/css-mediaquery) | Parses and determines if a given CSS Media Query m
+| 0.0 | [css-minimizer-webpack-plu](./c/css-minimizer-webpack-plugin) | cssnano plugin for Webpack
 | 0.0 | [css-modules](./c/css-modules) | -
 | 0.0 | [css-modules-loader-core](./c/css-modules-loader-core) | A loader-agnostic CSS Modules implementation, base
 | 0.0 | [css-modules-require-hook](./c/css-modules-require-hook) | A require hook to compile CSS Modules on the fly
@@ -2421,6 +2424,7 @@
 | 0.0 | [expo-asset](./e/expo-asset) | An Expo universal module to download assets and pa
 | 0.0 | [expo-error-recovery](./e/expo-error-recovery) | Utilities for helping you gracefully handle crashe
 | 0.0 | [expo-file-system](./e/expo-file-system) | Provides access to the local file system on the de
+| 0.0 | [expo-font](./e/expo-font) | Load fonts at runtime and use them in React Native
 | 0.0 | [expo-linear-gradient](./e/expo-linear-gradient) | Provides a React component that renders a gradient
 | 0.0 | [expo-localization](./e/expo-localization) | Provides an interface for native user localization
 | 0.0 | [expo-mixpanel-analytics](./e/expo-mixpanel-analytics) | Mixpanel integration for use with React Native app
@@ -2857,6 +2861,7 @@
 | 0.0 | [forever-monitor](./f/forever-monitor) | Core forever process monitor
 | 0.0 | [forge-apis](./f/forge-apis) | The Forge Platform contains an expanding collectio
 | 0.0 | [forge-di](./f/forge-di) | a dependency injector for node.js
+| 0.0 | [fork-ts-checker-webpack-p](./f/fork-ts-checker-webpack-plugin) | Runs typescript type checker and linter on separat
 | 0.0 | [form-data](./f/form-data) | A library to create readable "multipart/form-data"
 | 0.0 | [form-data-encoder](./f/form-data-encoder) | Encode FormData content into the multipart/form-da
 | 0.0 | [form-serialize](./f/form-serialize) | serialize html forms
@@ -5663,6 +5668,7 @@
 | 0.0 | [mem-fs-editor](./m/mem-fs-editor) | File edition helpers working on top of mem-fs
 | 0.0 | [memcached](./m/memcached) | A fully featured Memcached API client, supporting 
 | 0.0 | [memdown](./m/memdown) | An drop-in replacement for LevelDOWN that works in
+| 0.0 | [memfs](./m/memfs) | In-memory file-system with Node's fs API.
 | 0.0 | [memize](./m/memize) | Unabashedly-barebones memoization library with an 
 | 0.0 | [memjs](./m/memjs) | A memcache client for node using the binary protoc
 | 0.0 | [memmonit](./m/memmonit) | Library to help monitor operating system memory
@@ -8675,6 +8681,7 @@
 | 0.0 | [safe-regex](./s/safe-regex) | detect possibly catastrophic, exponential-time reg
 | 0.0 | [safe-stable-stringify](./s/safe-stable-stringify) | Deterministic and safely JSON.stringify to quickly
 | 0.0 | [safe-timers](./s/safe-timers) | Timers with near-infinite duration support
+| 0.0 | [safer-buffer](./s/safer-buffer) | Modern Buffer API polyfill without footguns
 | 0.0 | [sails_dot_io_dot_js](./s/sails_dot_io_dot_js) | Javascript SDK for communicating w/ a Sails server
 | 0.0 | [sailthru-client](./s/sailthru-client) | Node.js client for Sailthru API
 | 0.0 | [sales-tax](./s/sales-tax) | International sales tax calculator for Node (offli
@@ -9502,6 +9509,7 @@
 | 0.0 | [swagger-restify-mw](./s/swagger-restify-mw) | Swagger loader and middleware for Restify
 | 0.0 | [swagger-sails-hook](./s/swagger-sails-hook) | Sails.js hook for Swagger projects
 | 0.0 | [swagger-schema-official](./s/swagger-schema-official) | Swagger JSON Schema
+| 0.0 | [swagger-stats](./s/swagger-stats) | API Telemetry and APM. Trace API calls and Monitor
 | 0.0 | [swagger-tools](./s/swagger-tools) | Various tools for using and integrating with Swagg
 | 0.0 | [swagger-ui](./s/swagger-ui) | -
 | 0.0 | [swagger-ui-dist](./s/swagger-ui-dist) | -

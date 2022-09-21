@@ -1,14 +1,24 @@
 organization := "org.scalablytyped"
 name := "css-minimizer-webpack-plugin"
-version := "1.1-dt-20201105Z-f3ebbe"
-scalaVersion := "3.0.1"
+version := "4.1.0-292d2b"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "cssnano" % "4.0-dt-20180802Z-2ed10d",
-  "org.scalablytyped" %%% "postcss" % "7.0.35-7d3225",
-  "org.scalablytyped" %%% "source-map" % "0.7.3-081b8e",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "ajv" % "8.11.0-025d79",
+  "org.scalablytyped" %%% "estree" % "1.0-dt-20220712Z-bee5c7",
+  "org.scalablytyped" %%% "jest-worker" % "29.0.3-4f8570",
+  "org.scalablytyped" %%% "json-schema" % "7.0-dt-20220325Z-aaec85",
+  "org.scalablytyped" %%% "node" % "18.7-dt-20220913Z-77cc8d",
+  "org.scalablytyped" %%% "postcss" % "8.4.16-aeb026",
+  "org.scalablytyped" %%% "re2" % "1.17.7-22ea4f",
+  "org.scalablytyped" %%% "schema-utils" % "4.0.0-ca6ee9",
+  "org.scalablytyped" %%% "source-map" % "0.7.4-e0c113",
+  "org.scalablytyped" %%% "source-map-js" % "1.0.2-4da518",
+  "org.scalablytyped" %%% "std" % "4.8-958c79",
+  "org.scalablytyped" %%% "tapable" % "2.2.1-b2feca",
+  "org.scalablytyped" %%% "uri-js" % "4.4.1-33748e",
+  "org.scalablytyped" %%% "webpack" % "5.74.0-8b6e44")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -3,7 +3,6 @@ package typings.memfs
 import typings.memfs.memfsBooleans.`false`
 import typings.memfs.memfsBooleans.`true`
 import typings.memfs.nodeMod.Node
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ object statsMod {
   
   @JSImport("memfs/lib/Stats", JSImport.Default)
   @js.native
-  class default[T] () extends Stats[T]
+  open class default[T] () extends Stats[T]
   /* static members */
   object default {
     
@@ -30,15 +29,15 @@ object statsMod {
   
   @JSImport("memfs/lib/Stats", "Stats")
   @js.native
-  class Stats[T] () extends StObject {
+  open class Stats[T] () extends StObject {
     
-    /* private */ var _checkModeProperty: js.Any = js.native
+    /* private */ var _checkModeProperty: Any = js.native
     
-    var atime: Date = js.native
+    var atime: js.Date = js.native
     
     var atimeMs: T = js.native
     
-    var birthtime: Date = js.native
+    var birthtime: js.Date = js.native
     
     var birthtimeMs: T = js.native
     
@@ -46,7 +45,7 @@ object statsMod {
     
     var blocks: T = js.native
     
-    var ctime: Date = js.native
+    var ctime: js.Date = js.native
     
     var ctimeMs: T = js.native
     
@@ -72,7 +71,7 @@ object statsMod {
     
     var mode: T = js.native
     
-    var mtime: Date = js.native
+    var mtime: js.Date = js.native
     
     var mtimeMs: T = js.native
     

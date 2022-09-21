@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object issuePositionMod {
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/issue/IssuePosition", JSImport.Namespace)
+  @JSImport("fork-ts-checker-webpack-plugin/lib/issue/issue-position", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

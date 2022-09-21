@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UserSettings extends StObject {
   
   /**
+    * The Canvas app settings.
+    */
+  var CanvasAppSettings: js.UndefOr[typings.awsSdk.sagemakerMod.CanvasAppSettings] = js.undefined
+  
+  /**
     * The execution role for the user.
     */
   var ExecutionRole: js.UndefOr[RoleArn] = js.undefined
@@ -54,6 +59,10 @@ object UserSettings {
   }
   
   extension [Self <: UserSettings](x: Self) {
+    
+    inline def setCanvasAppSettings(value: CanvasAppSettings): Self = StObject.set(x, "CanvasAppSettings", value.asInstanceOf[js.Any])
+    
+    inline def setCanvasAppSettingsUndefined: Self = StObject.set(x, "CanvasAppSettings", js.undefined)
     
     inline def setExecutionRole(value: RoleArn): Self = StObject.set(x, "ExecutionRole", value.asInstanceOf[js.Any])
     

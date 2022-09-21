@@ -5,6 +5,7 @@ import typings.ipldCar.anon.BlockLength
 import typings.ipldCar.anon.BlockOffset
 import typings.ipldCar.anon.Code
 import typings.ipldCar.anon.TestBlockobjectany
+import typings.multiformats.linkInterfaceMod.Version
 import typings.multiformats.mod.CID
 import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject
@@ -35,7 +36,7 @@ object commonMod {
   
   @JSImport("@ipld/car/types/test/common", "goCarRoots")
   @js.native
-  val goCarRoots: js.Array[CID] = js.native
+  val goCarRoots: js.Array[CID[Any, Double, Double, Version]] = js.native
   
   @JSImport("@ipld/car/types/test/common", "goCarV2Bytes")
   @js.native
@@ -47,7 +48,7 @@ object commonMod {
   
   @JSImport("@ipld/car/types/test/common", "goCarV2Roots")
   @js.native
-  val goCarV2Roots: js.Array[CID] = js.native
+  val goCarV2Roots: js.Array[CID[Any, Double, Double, Version]] = js.native
   
   inline def makeData(): js.Promise[AllBlocks] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeData")().asInstanceOf[js.Promise[AllBlocks]]
   
@@ -55,7 +56,7 @@ object commonMod {
   
   @JSImport("@ipld/car/types/test/common", "rndCid")
   @js.native
-  val rndCid: CID = js.native
+  val rndCid: CID[Any, Double, Double, Version] = js.native
   
   inline def toBlock(`object`: Any, codec: Code): js.Promise[TestBlockobjectany] = (^.asInstanceOf[js.Dynamic].applyDynamic("toBlock")(`object`.asInstanceOf[js.Any], codec.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TestBlockobjectany]]
   inline def toBlock(
@@ -79,13 +80,13 @@ object commonMod {
     
     var bytes: js.typedarray.Uint8Array
     
-    var cid: CID
+    var cid: CID[Any, Double, Double, Version]
     
     var `object`: Any
   }
   object TestBlock {
     
-    inline def apply(bytes: js.typedarray.Uint8Array, cid: CID, `object`: Any): TestBlock = {
+    inline def apply(bytes: js.typedarray.Uint8Array, cid: CID[Any, Double, Double, Version], `object`: Any): TestBlock = {
       val __obj = js.Dynamic.literal(bytes = bytes.asInstanceOf[js.Any], cid = cid.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TestBlock]
@@ -95,7 +96,7 @@ object commonMod {
       
       inline def setBytes(value: js.typedarray.Uint8Array): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
       
-      inline def setCid(value: CID): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
+      inline def setCid(value: CID[Any, Double, Double, Version]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
       inline def setObject(value: Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     }
